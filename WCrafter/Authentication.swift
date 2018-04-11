@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class Authentication: UIViewController {
     
     // UI Outlets
     @IBOutlet weak var user: UITextField!
@@ -20,6 +20,10 @@ class FirstViewController: UIViewController {
     
     // UI Actions
     @IBAction func login(_ sender: Any) {
+        // Force true.
+        /**/performSegue(withIdentifier: "authToSelection", sender: self)
+        /**/return
+        
         // Prevents multiple data task sessions.
         if dataTask != nil {
             dataTask?.cancel()
@@ -27,7 +31,7 @@ class FirstViewController: UIViewController {
         
         // Prevents logins with no values.
         if user.text!.isEmpty || pass.text!.isEmpty {
-            printInvalid(title: "Credenciales vacías.", message: "El usuario y/o contraseña se encuentran vacíos.")
+            printAlert(title: "Credenciales vacías.", message: "El usuario y/o contraseña se encuentran vacíos.")
             return
         }
         
@@ -61,21 +65,28 @@ class FirstViewController: UIViewController {
     
     @IBAction func passForget(_ sender: Any) {
         // Algorithm to request a password reset sent to the email. Code at a later time.
+        
+        printAlert(title: "Recuperación de Contraseña", message: "Recibirá un correo con instrucciones pronto.");
     }
     
     // Functions
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let newView = segue.destination as! Selection
+        newView.userText = user.text!
+    }
     func verifyResult(data: Data){
         let value = NSString(data: data, encoding: String.Encoding.ascii.rawValue)
         
-        // Algorithm to pass to the next view. Code at a later time.
-        // if value == "true" { nextView() }
-        if value == "false" {
-            printInvalid(title: "Credenciales Inválidas", message: "El usuario y/o contraseña ingresados son incorrectos.")
+        // Advance to the next view, or send an alert of failure.
+        if value == "true" {
+            performSegue(withIdentifier: "authToSelection", sender: self)
+        } else {
+            printAlert(title: "Credenciales Inválidas", message: "El usuario y/o contraseña ingresados son incorrectos.")
             return
         }
     }
     
-    func printInvalid(title: String, message: String){
+    func printAlert(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default)
         alert.addAction(action)
