@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>VWHead-Bold.otf</string>
+		<string>VWHead-BoldItalic.otf</string>
+		<string>VWHead-Regular.otf</string>
+		<string>VWHead-RegularItalic.otf</string>
+		<string>VWText-Bold.otf</string>
+		<string>VWText-BoldItalic.otf</string>
+		<string>VWText-Regular.otf</string>
+		<string>VWText-RegularItalic.otf</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

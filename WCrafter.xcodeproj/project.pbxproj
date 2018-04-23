@@ -14,6 +14,9 @@
 		FB03D01F20509B3F00AFEA84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB03D01D20509B3F00AFEA84 /* LaunchScreen.storyboard */; };
 		FB03D02A20509B3F00AFEA84 /* WCrafterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03D02920509B3F00AFEA84 /* WCrafterTests.swift */; };
 		FB03D03520509B3F00AFEA84 /* WCrafterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03D03420509B3F00AFEA84 /* WCrafterUITests.swift */; };
+		FB681309208E5F3700223332 /* VW_Text in Resources */ = {isa = PBXBuildFile; fileRef = FB681307208E5F3600223332 /* VW_Text */; };
+		FB68130A208E5F3700223332 /* VW_Head in Resources */ = {isa = PBXBuildFile; fileRef = FB681308208E5F3700223332 /* VW_Head */; };
+		FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68130D208E646E00223332 /* CrafterTableViewCell.swift */; };
 		FBE4A3822076B11C008EFCD2 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE4A3812076B11C008EFCD2 /* Selection.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +51,9 @@
 		FB03D03020509B3F00AFEA84 /* WCrafterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WCrafterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB03D03420509B3F00AFEA84 /* WCrafterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCrafterUITests.swift; sourceTree = "<group>"; };
 		FB03D03620509B3F00AFEA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB681307208E5F3600223332 /* VW_Text */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VW_Text; sourceTree = "<group>"; };
+		FB681308208E5F3700223332 /* VW_Head */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VW_Head; sourceTree = "<group>"; };
+		FB68130D208E646E00223332 /* CrafterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrafterTableViewCell.swift; sourceTree = "<group>"; };
 		FBE4A3812076B11C008EFCD2 /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,13 +105,15 @@
 		FB03D01120509B3F00AFEA84 /* WCrafter */ = {
 			isa = PBXGroup;
 			children = (
+				FB68130B208E623D00223332 /* Fonts */,
 				FB03D01220509B3F00AFEA84 /* AppDelegate.swift */,
-				FB03D01420509B3F00AFEA84 /* Authentication.swift */,
 				FB03D01820509B3F00AFEA84 /* Main.storyboard */,
 				FB03D01B20509B3F00AFEA84 /* Assets.xcassets */,
 				FB03D01D20509B3F00AFEA84 /* LaunchScreen.storyboard */,
-				FBE4A3812076B11C008EFCD2 /* Selection.swift */,
 				FB03D02020509B3F00AFEA84 /* Info.plist */,
+				FB03D01420509B3F00AFEA84 /* Authentication.swift */,
+				FBE4A3812076B11C008EFCD2 /* Selection.swift */,
+				FB68130D208E646E00223332 /* CrafterTableViewCell.swift */,
 			);
 			path = WCrafter;
 			sourceTree = "<group>";
@@ -126,6 +134,15 @@
 				FB03D03620509B3F00AFEA84 /* Info.plist */,
 			);
 			path = WCrafterUITests;
+			sourceTree = "<group>";
+		};
+		FB68130B208E623D00223332 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FB681308208E5F3700223332 /* VW_Head */,
+				FB681307208E5F3600223332 /* VW_Text */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +208,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Alumno;
 				TargetAttributes = {
 					FB03D00E20509B3F00AFEA84 = {
@@ -235,8 +252,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB681309208E5F3700223332 /* VW_Text in Resources */,
 				FB03D01F20509B3F00AFEA84 /* LaunchScreen.storyboard in Resources */,
 				FB03D01C20509B3F00AFEA84 /* Assets.xcassets in Resources */,
+				FB68130A208E5F3700223332 /* VW_Head in Resources */,
 				FB03D01A20509B3F00AFEA84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +284,7 @@
 				FBE4A3822076B11C008EFCD2 /* Selection.swift in Sources */,
 				FB03D01320509B3F00AFEA84 /* AppDelegate.swift in Sources */,
 				FB03D01520509B3F00AFEA84 /* Authentication.swift in Sources */,
+				FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +353,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -340,6 +361,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -390,6 +412,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -397,6 +420,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
