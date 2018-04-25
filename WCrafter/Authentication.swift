@@ -9,7 +9,6 @@
 import UIKit
 
 class Authentication: UIViewController {
-    
     // UI Outlets
     @IBOutlet weak var user: UITextField!
     @IBOutlet weak var pass: UITextField!
@@ -18,7 +17,7 @@ class Authentication: UIViewController {
     let defaultSession = URLSession(configuration: .default)
     var dataTask: URLSessionDataTask?
     
-    // View Controller Methods
+    // View Controller Functions
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -27,7 +26,7 @@ class Authentication: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Prepare the Selection ViewController to receive the username as the name to present.
         let newView = segue.destination as! Selection
         newView.userText = user.text!

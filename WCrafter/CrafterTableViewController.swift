@@ -78,16 +78,13 @@ class CrafterTableViewController: UITableViewController {
     /* Create each Crafter Data Model and add it to the Array to send to each TableViewCell */
     func loadCrafters(valueArray: [String]){
         // From the result given as a String, create a Crafter.
-        for index in 1...valueArray.count {
+        for index in stride(from:1, to: valueArray.count, by: 2) {
             guard let crafter = Crafter(image: valueArray[index], plate: valueArray[index+1]) else {
                 fatalError("Unable to create Crafter.")
             }
             
             // Add said Crafter to the Array of Crafters.
             crafters += [crafter]
-            
-            // Advance index in pairs.
-            index = index + 1
         }
     }
     

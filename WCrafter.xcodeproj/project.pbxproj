@@ -14,6 +14,7 @@
 		FB03D01F20509B3F00AFEA84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB03D01D20509B3F00AFEA84 /* LaunchScreen.storyboard */; };
 		FB03D02A20509B3F00AFEA84 /* WCrafterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03D02920509B3F00AFEA84 /* WCrafterTests.swift */; };
 		FB03D03520509B3F00AFEA84 /* WCrafterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03D03420509B3F00AFEA84 /* WCrafterUITests.swift */; };
+		FB5B28BA209146A50063C5D2 /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B28B9209146A50063C5D2 /* Confirmation.swift */; };
 		FB681309208E5F3700223332 /* VW_Text in Resources */ = {isa = PBXBuildFile; fileRef = FB681307208E5F3600223332 /* VW_Text */; };
 		FB68130A208E5F3700223332 /* VW_Head in Resources */ = {isa = PBXBuildFile; fileRef = FB681308208E5F3700223332 /* VW_Head */; };
 		FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68130D208E646E00223332 /* CrafterTableViewCell.swift */; };
@@ -53,6 +54,7 @@
 		FB03D03020509B3F00AFEA84 /* WCrafterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WCrafterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB03D03420509B3F00AFEA84 /* WCrafterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCrafterUITests.swift; sourceTree = "<group>"; };
 		FB03D03620509B3F00AFEA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB5B28B9209146A50063C5D2 /* Confirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
 		FB681307208E5F3600223332 /* VW_Text */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VW_Text; sourceTree = "<group>"; };
 		FB681308208E5F3700223332 /* VW_Head */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VW_Head; sourceTree = "<group>"; };
 		FB68130D208E646E00223332 /* CrafterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrafterTableViewCell.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				FB03D02020509B3F00AFEA84 /* Info.plist */,
 				FB03D01420509B3F00AFEA84 /* Authentication.swift */,
 				FBE4A3812076B11C008EFCD2 /* Selection.swift */,
+				FB5B28B9209146A50063C5D2 /* Confirmation.swift */,
 				FB68130D208E646E00223332 /* CrafterTableViewCell.swift */,
 				FBF69790208E966800424AE3 /* CrafterTableViewController.swift */,
 			);
@@ -290,6 +293,7 @@
 				FB681310208E8DE100223332 /* Crafter.swift in Sources */,
 				FBE4A3822076B11C008EFCD2 /* Selection.swift in Sources */,
 				FBF69791208E966800424AE3 /* CrafterTableViewController.swift in Sources */,
+				FB5B28BA209146A50063C5D2 /* Confirmation.swift in Sources */,
 				FB03D01320509B3F00AFEA84 /* AppDelegate.swift in Sources */,
 				FB03D01520509B3F00AFEA84 /* Authentication.swift in Sources */,
 				FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */,
