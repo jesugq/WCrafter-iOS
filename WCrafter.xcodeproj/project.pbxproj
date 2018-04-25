@@ -17,7 +17,9 @@
 		FB681309208E5F3700223332 /* VW_Text in Resources */ = {isa = PBXBuildFile; fileRef = FB681307208E5F3600223332 /* VW_Text */; };
 		FB68130A208E5F3700223332 /* VW_Head in Resources */ = {isa = PBXBuildFile; fileRef = FB681308208E5F3700223332 /* VW_Head */; };
 		FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68130D208E646E00223332 /* CrafterTableViewCell.swift */; };
+		FB681310208E8DE100223332 /* Crafter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68130F208E8DE100223332 /* Crafter.swift */; };
 		FBE4A3822076B11C008EFCD2 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE4A3812076B11C008EFCD2 /* Selection.swift */; };
+		FBF69791208E966800424AE3 /* CrafterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF69790208E966800424AE3 /* CrafterTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +56,9 @@
 		FB681307208E5F3600223332 /* VW_Text */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VW_Text; sourceTree = "<group>"; };
 		FB681308208E5F3700223332 /* VW_Head */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VW_Head; sourceTree = "<group>"; };
 		FB68130D208E646E00223332 /* CrafterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrafterTableViewCell.swift; sourceTree = "<group>"; };
+		FB68130F208E8DE100223332 /* Crafter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crafter.swift; sourceTree = "<group>"; };
 		FBE4A3812076B11C008EFCD2 /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
+		FBF69790208E966800424AE3 /* CrafterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrafterTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			children = (
 				FB68130B208E623D00223332 /* Fonts */,
 				FB03D01220509B3F00AFEA84 /* AppDelegate.swift */,
+				FB68130F208E8DE100223332 /* Crafter.swift */,
 				FB03D01820509B3F00AFEA84 /* Main.storyboard */,
 				FB03D01B20509B3F00AFEA84 /* Assets.xcassets */,
 				FB03D01D20509B3F00AFEA84 /* LaunchScreen.storyboard */,
@@ -114,6 +119,7 @@
 				FB03D01420509B3F00AFEA84 /* Authentication.swift */,
 				FBE4A3812076B11C008EFCD2 /* Selection.swift */,
 				FB68130D208E646E00223332 /* CrafterTableViewCell.swift */,
+				FBF69790208E966800424AE3 /* CrafterTableViewController.swift */,
 			);
 			path = WCrafter;
 			sourceTree = "<group>";
@@ -281,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB681310208E8DE100223332 /* Crafter.swift in Sources */,
 				FBE4A3822076B11C008EFCD2 /* Selection.swift in Sources */,
+				FBF69791208E966800424AE3 /* CrafterTableViewController.swift in Sources */,
 				FB03D01320509B3F00AFEA84 /* AppDelegate.swift in Sources */,
 				FB03D01520509B3F00AFEA84 /* Authentication.swift in Sources */,
 				FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */,

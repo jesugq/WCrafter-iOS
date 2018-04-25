@@ -92,6 +92,8 @@ class Authentication: UIViewController {
     
     /* Verifies the result from the Data Task performed, and starts a Segue or throws an Error depending on the entire value. The input would be seen as "true" or "false". This will be changed to VW's official output. */
     func verifyResult(data: Data){
+        // The result given is a String. The expected value for this example is the following.
+        // true / false
         let value = NSString(data: data, encoding: String.Encoding.ascii.rawValue)
         
         // Advance to the next view, or send an alert of failure.

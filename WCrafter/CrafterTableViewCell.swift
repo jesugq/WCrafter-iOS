@@ -12,10 +12,9 @@ class CrafterTableViewCell: UITableViewCell {
     
     // UI Outlets
     @IBOutlet var photo: UIImageView!
-    @IBOutlet var type: UILabel!
     @IBOutlet var plate: UILabel!
     
-    
+    // ViewController functions
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
