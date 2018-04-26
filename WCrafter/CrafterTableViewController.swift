@@ -22,7 +22,11 @@ class CrafterTableViewController: UITableViewController {
     let photo4 = UIImage(named: "crafter4")
     let photo5 = UIImage(named: "crafter5")
     
+    // Size Constant
+    let CELLHEIGHT: Int = 60;
+    
     // Functions
+    
     /* TO BE DELETED: Harcoded creation of a String given by the server, this will be modified to match VW's official server. */
     func hardcodeLoading(){
         let string = "crafter1\nUSA-03-64\ncrafter2\nIYO-23-81\ncrafter3\nNIL-76-21\ncrafter4\nINS-78-23\ncrafter5\nNEW-71-92"
@@ -78,7 +82,7 @@ class CrafterTableViewController: UITableViewController {
     /* Create each Crafter Data Model and add it to the Array to send to each TableViewCell */
     func loadCrafters(valueArray: [String]){
         // From the result given as a String, create a Crafter.
-        for index in stride(from:1, to: valueArray.count, by: 2) {
+        for index in stride(from:0, to: valueArray.count-1, by: 2) {
             guard let crafter = Crafter(image: valueArray[index], plate: valueArray[index+1]) else {
                 fatalError("Unable to create Crafter.")
             }
@@ -86,43 +90,54 @@ class CrafterTableViewController: UITableViewController {
             // Add said Crafter to the Array of Crafters.
             crafters += [crafter]
         }
+        //Debugging
+        /**/NSLog("%d\t%s", crafters.count, valueArray)
+    }
+    
+    /* Select an image depending on the String given. */
+    func givePhoto(image: String) -> UIImage {
+        switch image {
+        case "crafter1" :
+            return photo1!
+        case "crafter2" :
+            return photo2!
+        case "crafter3" :
+            return photo3!
+        case "crafter4" :
+            return photo4!
+        case "crafter5" :
+            return photo5!
+        default :
+            return photo1!
+        }
     }
     
     // ViewController Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Attempt to get the Crafter list.
         hardcodeLoading()
-        /**/performLoading()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        //performLoading()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return crafters.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Identify each cell to have a specific format and interface layout.
-        let cellIdentifier = "CrafterTableViewCell"
+        let cellIdentifier = "Crafter"
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? CrafterTableViewCell else {
             fatalError("The created instance is not a Crafter.")
         }
@@ -131,64 +146,14 @@ class CrafterTableViewController: UITableViewController {
         let crafter = crafters[indexPath.row]
         
         // Add the values in each cell.
-        switch crafter.image {
-        case "crafter1" :
-            cell.photo.image = photo1
-            break
-        case "crafter2" :
-            cell.photo.image = photo2
-            break
-        case "crafter3" :
-            cell.photo.image = photo3
-            break
-        case "crafter4" :
-            cell.photo.image = photo4
-            break
-        case "crafter5" :
-            cell.photo.image = photo5
-            break
-        default :
-            cell.photo.image = photo1
-        }
+        cell.photo.image = self.givePhoto(image: crafter.image)
         cell.plate.text = crafter.plate
         
         return cell
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CELLSIZE;
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     /*
     // MARK: - Navigation

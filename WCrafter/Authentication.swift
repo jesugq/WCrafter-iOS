@@ -15,15 +15,15 @@
 import UIKit
 
 class Authentication: UIViewController {
-    // UI Outlets
+    /* UI Outlets */
     @IBOutlet weak var user: UITextField!
     @IBOutlet weak var pass: UITextField!
     
-    // Attributes
+    /* Attributes */
     let defaultSession = URLSession(configuration: .default)
     var dataTask: URLSessionDataTask?
     
-    // View Controller Functions
+    /* View Controller Functions */
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -38,10 +38,10 @@ class Authentication: UIViewController {
         newView.userText = user.text!
     }
     
-    // UI Actions
+    /* UI Actions */
     @IBAction func login(_ sender: Any) {
         // Force true to advance without a server.
-        /**/performSegue(withIdentifier: "authToSelection", sender: self)
+        /**/performSegue(withIdentifier: "authToSelect", sender: self)
         /**/return
             
         self.performLogin()
@@ -52,7 +52,7 @@ class Authentication: UIViewController {
         printAlert(title: "Recuperación de Contraseña", message: "Recibirá un correo con instrucciones pronto.");
     }
     
-    // Functions.
+    /* Functions */
     /* Obtain data from the server, and attempt to verify the result once it's been received. */
     func performLogin(){
         // Prevents multiple data task sessions.
