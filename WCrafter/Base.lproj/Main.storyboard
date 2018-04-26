@@ -282,7 +282,7 @@
                         <viewLayoutGuide key="safeArea" id="9t5-s5-Qka"/>
                     </view>
                     <connections>
-                        <segue destination="HTz-Oq-QL9" kind="presentation" identifier="confirmToRutas" id="swA-ID-Tev"/>
+                        <segue destination="HTz-Oq-QL9" kind="presentation" identifier="confirmToRoutes" id="swA-ID-Tev"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Kw-VN-K0l" userLabel="First Responder" sceneMemberID="firstResponder"/>

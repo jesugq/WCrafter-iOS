@@ -1,3 +1,9 @@
+/*
+    Authentication.swift
+    WCrafter-iOS
+ 
+    Handles the authentication of the user, and sends this information over to the 
+*/
 //
 //  FirstViewController.swift
 //  WCrafter

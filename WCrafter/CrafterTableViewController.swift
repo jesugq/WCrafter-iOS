@@ -94,7 +94,7 @@ class CrafterTableViewController: UITableViewController {
         
         // Attempt to get the Crafter list.
         hardcodeLoading()
-        //performLoading()
+        /**/performLoading()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

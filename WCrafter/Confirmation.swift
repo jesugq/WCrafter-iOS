@@ -25,7 +25,7 @@ class Confirmation: UIViewController {
     
     // UI Actions
     @IBAction func confirm(_ sender: Any) {
-        performSegue(withIdentifier: "confirmToRutas", sender: self)
+        performSegue(withIdentifier: "confirmToRoutes", sender: self)
     }
 
 }
