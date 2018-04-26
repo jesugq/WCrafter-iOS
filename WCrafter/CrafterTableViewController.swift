@@ -22,9 +22,6 @@ class CrafterTableViewController: UITableViewController {
     let photo4 = UIImage(named: "crafter4")
     let photo5 = UIImage(named: "crafter5")
     
-    // Size Constant
-    let CELLHEIGHT: Int = 60;
-    
     // Functions
     
     /* TO BE DELETED: Harcoded creation of a String given by the server, this will be modified to match VW's official server. */
@@ -152,7 +149,7 @@ class CrafterTableViewController: UITableViewController {
         return cell
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CELLSIZE;
+        return 60;
     }
 
     /*
