@@ -15,6 +15,7 @@
 import UIKit
 
 class Authentication: UIViewController {
+    
     // UI Outlets
     @IBOutlet weak var user: UITextField!
     @IBOutlet weak var pass: UITextField!
@@ -58,7 +59,6 @@ class Authentication: UIViewController {
     
     func hardcodeLogin() {
         performSegue(withIdentifier: "authToSelect", sender: self)
-        return
     }
     
     func performLogin() {
