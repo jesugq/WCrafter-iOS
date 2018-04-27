@@ -15,6 +15,7 @@ class CrafterTableViewCell: UITableViewCell {
     @IBOutlet var plate: UILabel!
     
     // ViewController functions
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         photo.contentMode = .scaleAspectFit
