@@ -16,7 +16,7 @@ class Confirmation: UIViewController {
     
     
     // Prepared Attributes
-    var photoGiven : UIImage = UIImage(named: "")!
+    var photoGiven : UIImage = UIImage(named: "crafter1")!
     var plateGiven : String = ""
     
     // View Controller Functions

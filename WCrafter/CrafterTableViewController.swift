@@ -8,11 +8,6 @@
 
 import UIKit
 
-protocol ChildToParent : class {
-    func receiveFromChild(photoSent: UIImage, plateSent: String)
-    func advanceFromChild()
-}
-
 class CrafterTableViewController: UITableViewController {
 
     // Attributes
@@ -22,16 +17,13 @@ class CrafterTableViewController: UITableViewController {
     
     var photoSent : UIImage = UIImage(named: "crafter1")!
     var plateSent : String = ""
-    weak var delegate : ChildToParent? = nil
+    var parentView : Selection? = nil
     
     // Functions
     
     func shareWithParent(photoSent: UIImage, plateSent: String) {
-        delegate?.receiveFromChild(photoSent: photoSent, plateSent: plateSent)
-        delegate?.advanceFromChild()
-        
-        print("\nYes!\n")
-        // https://stackoverflow.com/questions/47447251/pass-values-from-container-view-to-parent-view-controller?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+        parentView?.receiveFromChild(photoSent: photoSent, plateSent: plateSent)
+        parentView?.advanceFromChild()
     }
     
     func hardcodeLoading(){
