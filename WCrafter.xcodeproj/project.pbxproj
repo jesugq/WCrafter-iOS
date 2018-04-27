@@ -16,10 +16,16 @@
 		FB03D03520509B3F00AFEA84 /* WCrafterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03D03420509B3F00AFEA84 /* WCrafterUITests.swift */; };
 		FB260AA02091549E00890A3D /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB260A9F2091549E00890A3D /* Passenger.swift */; };
 		FB5B28BA209146A50063C5D2 /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B28B9209146A50063C5D2 /* Confirmation.swift */; };
-		FB681309208E5F3700223332 /* VW_Text in Resources */ = {isa = PBXBuildFile; fileRef = FB681307208E5F3600223332 /* VW_Text */; };
-		FB68130A208E5F3700223332 /* VW_Head in Resources */ = {isa = PBXBuildFile; fileRef = FB681308208E5F3700223332 /* VW_Head */; };
 		FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68130D208E646E00223332 /* CrafterTableViewCell.swift */; };
 		FB681310208E8DE100223332 /* Crafter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68130F208E8DE100223332 /* Crafter.swift */; };
+		FBA015D12093DC1B00EC2F9C /* VWHead-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBA015CD2093DC1B00EC2F9C /* VWHead-RegularItalic.otf */; };
+		FBA015D22093DC1B00EC2F9C /* VWHead-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBA015CE2093DC1B00EC2F9C /* VWHead-Bold.otf */; };
+		FBA015D32093DC1B00EC2F9C /* VWHead-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBA015CF2093DC1B00EC2F9C /* VWHead-Regular.otf */; };
+		FBA015D42093DC1B00EC2F9C /* VWHead-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBA015D02093DC1B00EC2F9C /* VWHead-BoldItalic.otf */; };
+		FBA015D92093DC2400EC2F9C /* VWText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBA015D52093DC2400EC2F9C /* VWText-Bold.otf */; };
+		FBA015DA2093DC2400EC2F9C /* VWText-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBA015D62093DC2400EC2F9C /* VWText-BoldItalic.otf */; };
+		FBA015DB2093DC2400EC2F9C /* VWText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBA015D72093DC2400EC2F9C /* VWText-Regular.otf */; };
+		FBA015DC2093DC2400EC2F9C /* VWText-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBA015D82093DC2400EC2F9C /* VWText-RegularItalic.otf */; };
 		FBE4A3822076B11C008EFCD2 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE4A3812076B11C008EFCD2 /* Selection.swift */; };
 		FBF69791208E966800424AE3 /* CrafterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF69790208E966800424AE3 /* CrafterTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -57,10 +63,16 @@
 		FB03D03620509B3F00AFEA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB260A9F2091549E00890A3D /* Passenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
 		FB5B28B9209146A50063C5D2 /* Confirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
-		FB681307208E5F3600223332 /* VW_Text */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VW_Text; sourceTree = "<group>"; };
-		FB681308208E5F3700223332 /* VW_Head */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VW_Head; sourceTree = "<group>"; };
 		FB68130D208E646E00223332 /* CrafterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrafterTableViewCell.swift; sourceTree = "<group>"; };
 		FB68130F208E8DE100223332 /* Crafter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crafter.swift; sourceTree = "<group>"; };
+		FBA015CD2093DC1B00EC2F9C /* VWHead-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VWHead-RegularItalic.otf"; sourceTree = "<group>"; };
+		FBA015CE2093DC1B00EC2F9C /* VWHead-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VWHead-Bold.otf"; sourceTree = "<group>"; };
+		FBA015CF2093DC1B00EC2F9C /* VWHead-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VWHead-Regular.otf"; sourceTree = "<group>"; };
+		FBA015D02093DC1B00EC2F9C /* VWHead-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VWHead-BoldItalic.otf"; sourceTree = "<group>"; };
+		FBA015D52093DC2400EC2F9C /* VWText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VWText-Bold.otf"; sourceTree = "<group>"; };
+		FBA015D62093DC2400EC2F9C /* VWText-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VWText-BoldItalic.otf"; sourceTree = "<group>"; };
+		FBA015D72093DC2400EC2F9C /* VWText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VWText-Regular.otf"; sourceTree = "<group>"; };
+		FBA015D82093DC2400EC2F9C /* VWText-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VWText-RegularItalic.otf"; sourceTree = "<group>"; };
 		FBE4A3812076B11C008EFCD2 /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
 		FBF69790208E966800424AE3 /* CrafterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrafterTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,7 +125,7 @@
 		FB03D01120509B3F00AFEA84 /* WCrafter */ = {
 			isa = PBXGroup;
 			children = (
-				FB68130B208E623D00223332 /* Fonts */,
+				FBA015C42093DBD600EC2F9C /* Fonts */,
 				FB03D01220509B3F00AFEA84 /* AppDelegate.swift */,
 				FB68130F208E8DE100223332 /* Crafter.swift */,
 				FB03D01820509B3F00AFEA84 /* Main.storyboard */,
@@ -148,13 +160,20 @@
 			path = WCrafterUITests;
 			sourceTree = "<group>";
 		};
-		FB68130B208E623D00223332 /* Fonts */ = {
+		FBA015C42093DBD600EC2F9C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				FB681308208E5F3700223332 /* VW_Head */,
-				FB681307208E5F3600223332 /* VW_Text */,
+				FBA015CE2093DC1B00EC2F9C /* VWHead-Bold.otf */,
+				FBA015D02093DC1B00EC2F9C /* VWHead-BoldItalic.otf */,
+				FBA015CF2093DC1B00EC2F9C /* VWHead-Regular.otf */,
+				FBA015CD2093DC1B00EC2F9C /* VWHead-RegularItalic.otf */,
+				FBA015D52093DC2400EC2F9C /* VWText-Bold.otf */,
+				FBA015D62093DC2400EC2F9C /* VWText-BoldItalic.otf */,
+				FBA015D72093DC2400EC2F9C /* VWText-Regular.otf */,
+				FBA015D82093DC2400EC2F9C /* VWText-RegularItalic.otf */,
 			);
-			path = Fonts;
+			name = Fonts;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,11 +283,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB681309208E5F3700223332 /* VW_Text in Resources */,
 				FB03D01F20509B3F00AFEA84 /* LaunchScreen.storyboard in Resources */,
+				FBA015DC2093DC2400EC2F9C /* VWText-RegularItalic.otf in Resources */,
+				FBA015D42093DC1B00EC2F9C /* VWHead-BoldItalic.otf in Resources */,
+				FBA015DA2093DC2400EC2F9C /* VWText-BoldItalic.otf in Resources */,
+				FBA015D22093DC1B00EC2F9C /* VWHead-Bold.otf in Resources */,
 				FB03D01C20509B3F00AFEA84 /* Assets.xcassets in Resources */,
-				FB68130A208E5F3700223332 /* VW_Head in Resources */,
+				FBA015D32093DC1B00EC2F9C /* VWHead-Regular.otf in Resources */,
+				FBA015DB2093DC2400EC2F9C /* VWText-Regular.otf in Resources */,
 				FB03D01A20509B3F00AFEA84 /* Main.storyboard in Resources */,
+				FBA015D92093DC2400EC2F9C /* VWText-Bold.otf in Resources */,
+				FBA015D12093DC1B00EC2F9C /* VWHead-RegularItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

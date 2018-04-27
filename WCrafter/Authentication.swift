@@ -15,15 +15,19 @@
 import UIKit
 
 class Authentication: UIViewController {
-    /* UI Outlets */
+    
+    // UI Outlets
     @IBOutlet weak var user: UITextField!
     @IBOutlet weak var pass: UITextField!
     
-    /* Attributes */
+    // Attributes
     let defaultSession = URLSession(configuration: .default)
     var dataTask: URLSessionDataTask?
     
-    /* View Controller Functions */
+    var userSent : String = ""
+    
+    // View Controller Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -35,26 +39,29 @@ class Authentication: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Prepare the Selection ViewController to receive the username as the name to present.
         let newView = segue.destination as! Selection
-        newView.userText = user.text!
+        userSent = user.text!
+        newView.userGiven = userSent
     }
     
-    /* UI Actions */
+    // UI Actions
+    
     @IBAction func login(_ sender: Any) {
-        // Force true to advance without a server.
-        /**/performSegue(withIdentifier: "authToSelect", sender: self)
-        /**/return
-            
-        self.performLogin()
+        self.hardcodeLogin()
+        //self.performLogin()
     }
     
     @IBAction func passForget(_ sender: Any) {
         // Algorithm to request a password reset sent to the email. This will be changed to VW's official format.
-        printAlert(title: "Recuperación de Contraseña", message: "Recibirá un correo con instrucciones pronto.");
+        printAlert(title: "Recuperación de Contraseña", message: "Recibirá un correo con instrucciones pronto.")
     }
     
-    /* Functions */
-    /* Obtain data from the server, and attempt to verify the result once it's been received. */
-    func performLogin(){
+    // Functions
+    
+    func hardcodeLogin() {
+        performSegue(withIdentifier: "authToSelect", sender: self)
+    }
+    
+    func performLogin() {
         // Prevents multiple data task sessions.
         if dataTask != nil {
             dataTask?.cancel()
@@ -92,10 +99,8 @@ class Authentication: UIViewController {
             }
         }
         dataTask?.resume()
-        return
     }
     
-    /* Verifies the result from the Data Task performed, and starts a Segue or throws an Error depending on the entire value. The input would be seen as "true" or "false". This will be changed to VW's official output. */
     func verifyResult(data: Data){
         // The result given is a String. The expected value for this example is the following.
         // true / false
@@ -106,11 +111,9 @@ class Authentication: UIViewController {
             performSegue(withIdentifier: "authToSelection", sender: self)
         } else {
             printAlert(title: "Credenciales Inválidas", message: "El usuario y/o contraseña ingresados son incorrectos.")
-            return
         }
     }
     
-    /* Generic alert creator for multiple methods, receiving the title and the message to print. */
     func printAlert(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default)

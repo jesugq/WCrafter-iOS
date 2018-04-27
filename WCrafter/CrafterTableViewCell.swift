@@ -1,5 +1,5 @@
 //
-//  CrafterTableViewCell.swift
+//  CrafterTableViewCell.swift/Users/alumno/Documents/drag/WCrafter-iOS/WCrafter/CrafterTableViewCell.swift
 //  WCrafter
 //
 //  Created by Alumno on 23/04/18.
@@ -15,6 +15,7 @@ class CrafterTableViewCell: UITableViewCell {
     @IBOutlet var plate: UILabel!
     
     // ViewController functions
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         photo.contentMode = .scaleAspectFit
