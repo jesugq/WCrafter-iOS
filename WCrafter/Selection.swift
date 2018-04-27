@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class Selection : UIViewController {
     
     // UI Outlets
@@ -37,6 +39,9 @@ class Selection : UIViewController {
             let newView = segue.destination as! Confirmation
             newView.photoGiven = photoSent
             newView.plateGiven = plateSent
+        } else if segue.identifier == "selectToContainer" {
+            let containerView = segue.destination as! CrafterTableViewController
+            containerView.delegate = self as? ChildToParent
         }
     }
     
