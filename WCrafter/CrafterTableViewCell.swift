@@ -1,5 +1,5 @@
 //
-//  CrafterTableViewCell.swift/Users/alumno/Documents/drag/WCrafter-iOS/WCrafter/CrafterTableViewCell.swift
+//  CrafterTableViewCell.swift
 //  WCrafter
 //
 //  Created by Alumno on 23/04/18.
