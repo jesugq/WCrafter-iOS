@@ -1,11 +1,3 @@
-//
-//  CrafterTableViewController.swift
-//  WCrafter
-//
-//  Created by Alumno on 23/04/18.
-//  Copyright © 2018 Alumno. All rights reserved.
-//
-
 import UIKit
 
 class CrafterTableViewController: UITableViewController {
@@ -15,12 +7,65 @@ class CrafterTableViewController: UITableViewController {
     let defaultSession = URLSession(configuration: .default)
     var dataTask: URLSessionDataTask?
     
+    // Prepared Attributes
     var photoSent : UIImage = UIImage(named: "crafter1")!
     var plateSent : String = ""
     var parentView : Selection? = nil
     
-    // Functions
+    //
+    // ViewController Functions
+    //
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Attempt to get the Crafter list.
+        self.hardcodeLoading()
+        //performLoading()
+    }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return crafters.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Identify each cell to have a specific format and interface layout.
+        let cellIdentifier = "Crafter"
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? CrafterTableViewCell else {
+            fatalError("The created instance is not a Crafter.")
+        }
+        
+        // Obtain the values from the item at position indexPath in the array.
+        let crafter = crafters[indexPath.row]
+        
+        // Add the values in the cell.
+        cell.addValues(photo: crafter.photo, plate: crafter.plate)
+        
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let crafter = crafters[indexPath.row]
+        photoSent = crafter.photo
+        plateSent = crafter.plate
+        
+        self.shareWithParent(photoSent: photoSent, plateSent: plateSent)
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60;
+    }
+    
+    //
+    // Functions
+    //
     func shareWithParent(photoSent: UIImage, plateSent: String) {
         parentView?.receiveFromChild(photoSent: photoSent, plateSent: plateSent)
         parentView?.advanceFromChild()
@@ -41,7 +86,7 @@ class CrafterTableViewController: UITableViewController {
         
         // Temporary crafter receiving website. This will be changed to VW's official url.
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        let url = NSURL(string: "https://www.iroseapps.com/moviles/loading.php")
+        let url = NSURL(string: "https://www.iroseapps.com/moviles/crafters.php")
         
         // Request information from an URL with a Data Task, calling function verifyResult if successful.
         let request = URLRequest(url: url! as URL)
@@ -77,7 +122,7 @@ class CrafterTableViewController: UITableViewController {
     
     func loadCrafters(valueArray: [String]){
         // From the result given as a String, create a Crafter.
-        for index in stride(from:0, to: valueArray.count-1, by: 2) {
+        for index in stride(from: 0, to: valueArray.count-1, by: 2) {
             guard let crafter = Crafter(image: valueArray[index], plate: valueArray[index+1]) else {
                 fatalError("Unable to create Crafter.")
             }
@@ -85,57 +130,6 @@ class CrafterTableViewController: UITableViewController {
             // Add said Crafter to the Array of Crafters.
             crafters += [crafter]
         }
-    }
-    
-    // ViewController Functions
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Attempt to get the Crafter list.
-        self.hardcodeLoading()
-        //performLoading()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return crafters.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // Identify each cell to have a specific format and interface layout.
-        let cellIdentifier = "Crafter"
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? CrafterTableViewCell else {
-            fatalError("The created instance is not a Crafter.")
-        }
-        
-        // Obtain the values from each item in the Array.
-        let crafter = crafters[indexPath.row]
-        
-        // Add the values in each cell.
-        cell.photo.image = crafter.photo
-        cell.plate.text = crafter.plate
-        
-        return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let crafter = crafters[indexPath.row]
-        photoSent = crafter.photo
-        plateSent = crafter.plate
-        
-        self.shareWithParent(photoSent: photoSent, plateSent: plateSent)
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60;
     }
 
 }

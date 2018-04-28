@@ -1,17 +1,3 @@
-/*
-    Authentication.swift
-    WCrafter-iOS
- 
-    Handles the authentication of the user, and sends this information over to the 
-*/
-//
-//  FirstViewController.swift
-//  WCrafter
-//
-//  Created by ITESM WCrafter Team on 07/03/18.
-//  Copyright © 2018 ITESM WCrafter Team. All rights reserved.
-//
-
 import UIKit
 
 class Authentication: UIViewController {
@@ -24,10 +10,12 @@ class Authentication: UIViewController {
     let defaultSession = URLSession(configuration: .default)
     var dataTask: URLSessionDataTask?
     
+    // Prepared Attributes
     var userSent : String = ""
     
+    //
     // View Controller Functions
-    
+    //
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -43,8 +31,9 @@ class Authentication: UIViewController {
         newView.userGiven = userSent
     }
     
+    //
     // UI Actions
-    
+    //
     @IBAction func login(_ sender: Any) {
         self.hardcodeLogin()
         //self.performLogin()
@@ -55,8 +44,9 @@ class Authentication: UIViewController {
         printAlert(title: "Recuperación de Contraseña", message: "Recibirá un correo con instrucciones pronto.")
     }
     
+    //
     // Functions
-    
+    //
     func hardcodeLogin() {
         performSegue(withIdentifier: "authToSelect", sender: self)
     }
@@ -120,5 +110,6 @@ class Authentication: UIViewController {
         alert.addAction(action)
         self.present(alert, animated: true)
     }
+    
 }
 

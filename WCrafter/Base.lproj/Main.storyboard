@@ -416,21 +416,111 @@
             </objects>
             <point key="canvasLocation" x="874" y="-1104"/>
         </scene>
-        <!--Statistics-->
+        <!--Notices-->
         <scene sceneID="8Oa-JR-7pE">
             <objects>
-                <viewController title="Statistics" id="WIY-iG-3i1" sceneMemberID="viewController">
+                <viewController title="Notices" id="WIY-iG-3i1" customClass="Notices" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eWI-Ti-GZO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Rwh-Ee-2nj">
+                                <rect key="frame" x="16.5" y="79" width="288" height="29"/>
+                                <segments>
+                                    <segment title="Notificaciones"/>
+                                    <segment title="Fallas"/>
+                                </segments>
+                                <color key="tintColor" red="0.00332658086" green="0.60010772940000001" blue="0.85194152590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="typeSelected:" destination="WIY-iG-3i1" eventType="valueChanged" id="aiK-K7-HUu"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDl-NJ-Zu5">
+                                <rect key="frame" x="16" y="112" width="288" height="304"/>
+                                <connections>
+                                    <segue destination="h0u-qE-kQZ" kind="embed" id="nrr-Iw-uUW"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WDl-NJ-Zu5" firstAttribute="centerX" secondItem="eWI-Ti-GZO" secondAttribute="centerX" id="9RA-ZR-v1i"/>
+                            <constraint firstItem="Rwh-Ee-2nj" firstAttribute="centerX" secondItem="eWI-Ti-GZO" secondAttribute="centerX" id="Ku8-hY-O0Z"/>
+                            <constraint firstItem="Rwh-Ee-2nj" firstAttribute="top" secondItem="fsf-jW-VLS" secondAttribute="top" constant="15" id="fxe-PK-bVM"/>
+                            <constraint firstItem="WDl-NJ-Zu5" firstAttribute="width" secondItem="Rwh-Ee-2nj" secondAttribute="width" id="hDE-rt-LMZ"/>
+                            <constraint firstItem="WDl-NJ-Zu5" firstAttribute="top" secondItem="Rwh-Ee-2nj" secondAttribute="bottom" constant="5" id="ogA-CL-HUQ"/>
+                            <constraint firstItem="Rwh-Ee-2nj" firstAttribute="width" secondItem="eWI-Ti-GZO" secondAttribute="width" multiplier="0.9" id="s2k-Nz-A0q"/>
+                            <constraint firstItem="fsf-jW-VLS" firstAttribute="bottom" secondItem="WDl-NJ-Zu5" secondAttribute="bottom" constant="15" id="v7Z-Jp-pyL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fsf-jW-VLS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Estadísticas" id="zdB-oK-oQm"/>
+                    <tabBarItem key="tabBarItem" title="Avisos" id="zdB-oK-oQm"/>
+                    <connections>
+                        <outlet property="segmented" destination="Rwh-Ee-2nj" id="hwQ-Re-4d2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DwZ-ee-JYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="874" y="-429"/>
+            <point key="canvasLocation" x="873.75" y="-430"/>
+        </scene>
+        <!--Posts-->
+        <scene sceneID="2m7-CV-I8o">
+            <objects>
+                <tableViewController title="Posts" id="h0u-qE-kQZ" customClass="PostTableViewController" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="O56-r1-M2r">
+                        <rect key="frame" x="0.0" y="0.0" width="288" height="304"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Post" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Post" rowHeight="60" id="bJh-Zh-Ygd" userLabel="Post" customClass="PostTableViewCell" customModule="WCrafter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="288" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bJh-Zh-Ygd" id="4XJ-n8-h84">
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Failure Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHI-50-4vr">
+                                            <rect key="frame" x="7" y="4.5" width="216" height="21"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="desc"/>
+                                            <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="17"/>
+                                            <color key="textColor" red="0.109428294" green="0.117607899" blue="0.1217646971" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Failure Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRo-9f-hMB">
+                                            <rect key="frame" x="7" y="35.5" width="216" height="19"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="code"/>
+                                            <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="15"/>
+                                            <color key="textColor" red="0.40101248029999997" green="0.45025414229999999" blue="0.50808888669999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="FRo-9f-hMB" firstAttribute="centerY" secondItem="4XJ-n8-h84" secondAttribute="centerY" multiplier="1.5" id="1Wm-7u-AKh"/>
+                                        <constraint firstItem="aHI-50-4vr" firstAttribute="centerY" secondItem="4XJ-n8-h84" secondAttribute="centerY" multiplier="0.5" id="Wos-G8-diD"/>
+                                        <constraint firstItem="FRo-9f-hMB" firstAttribute="centerX" secondItem="4XJ-n8-h84" secondAttribute="centerX" multiplier="0.8" id="XHp-6v-FRK"/>
+                                        <constraint firstItem="aHI-50-4vr" firstAttribute="width" secondItem="4XJ-n8-h84" secondAttribute="width" multiplier="0.75" id="YMX-CL-UcA"/>
+                                        <constraint firstItem="FRo-9f-hMB" firstAttribute="width" secondItem="aHI-50-4vr" secondAttribute="width" id="ifb-Wj-fxJ"/>
+                                        <constraint firstItem="aHI-50-4vr" firstAttribute="centerX" secondItem="4XJ-n8-h84" secondAttribute="centerX" multiplier="0.8" id="tKk-6a-G99"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.95251113180000002" green="0.96079033609999998" blue="0.9648056626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Post"/>
+                                <connections>
+                                    <outlet property="code" destination="FRo-9f-hMB" id="h6V-na-hRY"/>
+                                    <outlet property="desc" destination="aHI-50-4vr" id="0bk-nd-XqM"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="h0u-qE-kQZ" id="vpg-Bu-GbB"/>
+                            <outlet property="delegate" destination="h0u-qE-kQZ" id="iK1-xw-WmL"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VDG-aj-kxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1783" y="-430"/>
         </scene>
         <!--Alerts-->
         <scene sceneID="Pgu-CJ-uw1">
@@ -451,7 +541,7 @@
         <!--Routes-->
         <scene sceneID="YsV-f1-S3Y">
             <objects>
-                <viewController title="Routes" id="joZ-h5-w1X" customClass="Route" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Routes" id="joZ-h5-w1X" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WSL-u5-I6K">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -565,14 +655,14 @@
                             </constraints>
                         </view>
                         <rightBarButtonItems>
-                            <barButtonItem style="plain" id="p9a-WO-ODz">
+                            <barButtonItem id="p9a-WO-ODz">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aSL-mH-U9U">
                                     <rect key="frame" x="274" y="7" width="30" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="second"/>
                                 </button>
                             </barButtonItem>
-                            <barButtonItem style="plain" id="Roc-Lg-xpg">
+                            <barButtonItem id="Roc-Lg-xpg">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FOH-Xd-hnC">
                                     <rect key="frame" x="236" y="7" width="30" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -606,7 +696,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Crafter" rowHeight="60" id="BRK-XC-xWv" customClass="CrafterTableViewCell" customModule="WCrafter" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Crafter" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Crafter" rowHeight="60" id="BRK-XC-xWv" customClass="CrafterTableViewCell" customModule="WCrafter" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="256" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BRK-XC-xWv" id="8ri-JB-fDP">
@@ -616,10 +706,10 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crafter1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BA5-HW-YzN">
                                             <rect key="frame" x="21.5" y="0.0" width="59.5" height="59.5"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KQS-61-17" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEl-o0-OmO">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crafter Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEl-o0-OmO">
                                             <rect key="frame" x="96" y="15" width="128" height="29.5"/>
                                             <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="20"/>
-                                            <color key="textColor" red="0.62989979979999999" green="0.65855950119999995" blue="0.68337291479999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.40101248029999997" green="0.45025414229999999" blue="0.50808888669999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -634,6 +724,8 @@
                                         <constraint firstItem="QEl-o0-OmO" firstAttribute="height" secondItem="8ri-JB-fDP" secondAttribute="height" multiplier="0.5" id="vZV-14-oJ3"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.95251113180000002" green="0.96079033609999998" blue="0.9648056626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Crafter"/>
                                 <connections>
                                     <outlet property="photo" destination="BA5-HW-YzN" id="LmG-Qn-NJM"/>
                                     <outlet property="plate" destination="QEl-o0-OmO" id="8EA-Dp-dp0"/>

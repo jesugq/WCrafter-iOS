@@ -14,6 +14,10 @@
 		FB03D01F20509B3F00AFEA84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB03D01D20509B3F00AFEA84 /* LaunchScreen.storyboard */; };
 		FB03D02A20509B3F00AFEA84 /* WCrafterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03D02920509B3F00AFEA84 /* WCrafterTests.swift */; };
 		FB03D03520509B3F00AFEA84 /* WCrafterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03D03420509B3F00AFEA84 /* WCrafterUITests.swift */; };
+		FB0B7418209509E2003FF85D /* Notices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B7417209509E2003FF85D /* Notices.swift */; };
+		FB0B741C20950E49003FF85D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B741B20950E49003FF85D /* Post.swift */; };
+		FB0B741E2095158B003FF85D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B741D2095158B003FF85D /* PostTableViewCell.swift */; };
+		FB0B742020952573003FF85D /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B741F20952573003FF85D /* PostTableViewController.swift */; };
 		FB260AA02091549E00890A3D /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB260A9F2091549E00890A3D /* Passenger.swift */; };
 		FB5B28BA209146A50063C5D2 /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B28B9209146A50063C5D2 /* Confirmation.swift */; };
 		FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68130D208E646E00223332 /* CrafterTableViewCell.swift */; };
@@ -61,6 +65,10 @@
 		FB03D03020509B3F00AFEA84 /* WCrafterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WCrafterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB03D03420509B3F00AFEA84 /* WCrafterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCrafterUITests.swift; sourceTree = "<group>"; };
 		FB03D03620509B3F00AFEA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0B7417209509E2003FF85D /* Notices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notices.swift; sourceTree = "<group>"; };
+		FB0B741B20950E49003FF85D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FB0B741D2095158B003FF85D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		FB0B741F20952573003FF85D /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
 		FB260A9F2091549E00890A3D /* Passenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
 		FB5B28B9209146A50063C5D2 /* Confirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
 		FB68130D208E646E00223332 /* CrafterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrafterTableViewCell.swift; sourceTree = "<group>"; };
@@ -131,11 +139,15 @@
 				FB03D01820509B3F00AFEA84 /* Main.storyboard */,
 				FB03D01B20509B3F00AFEA84 /* Assets.xcassets */,
 				FB03D01D20509B3F00AFEA84 /* LaunchScreen.storyboard */,
+				FB0B7417209509E2003FF85D /* Notices.swift */,
 				FB03D02020509B3F00AFEA84 /* Info.plist */,
 				FB03D01420509B3F00AFEA84 /* Authentication.swift */,
 				FBE4A3812076B11C008EFCD2 /* Selection.swift */,
 				FB5B28B9209146A50063C5D2 /* Confirmation.swift */,
 				FB68130D208E646E00223332 /* CrafterTableViewCell.swift */,
+				FB0B741B20950E49003FF85D /* Post.swift */,
+				FB0B741F20952573003FF85D /* PostTableViewController.swift */,
+				FB0B741D2095158B003FF85D /* PostTableViewCell.swift */,
 				FBF69790208E966800424AE3 /* CrafterTableViewController.swift */,
 				FB260A9F2091549E00890A3D /* Passenger.swift */,
 			);
@@ -318,6 +330,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0B741C20950E49003FF85D /* Post.swift in Sources */,
+				FB0B742020952573003FF85D /* PostTableViewController.swift in Sources */,
+				FB0B7418209509E2003FF85D /* Notices.swift in Sources */,
 				FB681310208E8DE100223332 /* Crafter.swift in Sources */,
 				FBE4A3822076B11C008EFCD2 /* Selection.swift in Sources */,
 				FB260AA02091549E00890A3D /* Passenger.swift in Sources */,
@@ -326,6 +341,7 @@
 				FB03D01320509B3F00AFEA84 /* AppDelegate.swift in Sources */,
 				FB03D01520509B3F00AFEA84 /* Authentication.swift in Sources */,
 				FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */,
+				FB0B741E2095158B003FF85D /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

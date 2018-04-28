@@ -1,11 +1,3 @@
-//
-//  Crafter.swift
-//  WCrafter
-//
-//  Created by Alumno on 23/04/18.
-//  Copyright © 2018 Alumno. All rights reserved.
-//
-
 import Foundation
 import UIKit
 
@@ -40,8 +32,9 @@ class Crafter {
         self.photo = self.createPhoto(image: image)
     }
     
+    //
     // Functions
-    
+    //
     func createPhoto(image: String) -> UIImage {
         switch image {
         case "crafter1" :

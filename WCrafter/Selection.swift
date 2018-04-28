@@ -1,14 +1,4 @@
-//
-//  Selection.swift
-//  WCrafter
-//
-//  Created by ITESM WCrafter Team on 05/04/18.
-//  Copyright © 2018 WCrafter Team. All rights reserved.
-//
-
 import UIKit
-
-
 
 class Selection : UIViewController {
     
@@ -22,8 +12,9 @@ class Selection : UIViewController {
     // Prepared Attributes
     var userGiven : String = ""
     
+    //
     // View Controller Functions
-    
+    //
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,8 +38,9 @@ class Selection : UIViewController {
         }
     }
     
+    //
     // Functions
-    
+    //
     func receiveFromChild(photoSent: UIImage, plateSent: String) {
         self.photoSent = photoSent
         self.plateSent = plateSent

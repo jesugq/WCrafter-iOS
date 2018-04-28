@@ -1,11 +1,3 @@
-//
-//  Confirmation.swift
-//  WCrafter
-//
-//  Created by Alumno on 25/04/18.
-//  Copyright © 2018 Alumno. All rights reserved.
-//
-
 import UIKit
 
 class Confirmation: UIViewController {
@@ -19,8 +11,9 @@ class Confirmation: UIViewController {
     var photoGiven : UIImage = UIImage(named: "crafter1")!
     var plateGiven : String = ""
     
+    //
     // View Controller Functions
-    
+    //
     override func viewDidLoad() {
         super.viewDidLoad()
         
