@@ -545,14 +545,14 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y0p-n5-9XJ">
-                                <rect key="frame" x="255" y="188.5" width="51" height="31"/>
+                                <rect key="frame" x="255" y="189" width="51" height="31"/>
                                 <color key="onTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <action selector="delaySelected:" destination="XfC-bZ-qsa" eventType="valueChanged" id="ZAW-Ki-O8C"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mf4-VB-pgT">
-                                <rect key="frame" x="255" y="241.5" width="51" height="31"/>
+                                <rect key="frame" x="255" y="242" width="51" height="31"/>
                                 <color key="onTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <action selector="otherSelected:" destination="XfC-bZ-qsa" eventType="valueChanged" id="g6o-2w-wCD"/>
@@ -571,19 +571,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retraso" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j5-jt-rTc">
-                                <rect key="frame" x="16" y="187" width="160" height="33.5"/>
+                                <rect key="frame" x="16" y="187" width="160" height="34"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Otro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyV-DC-DMK">
-                                <rect key="frame" x="16" y="240.5" width="160" height="34"/>
+                                <rect key="frame" x="16" y="241" width="160" height="34"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jow-SW-7uO">
-                                <rect key="frame" x="80" y="294.5" width="160" height="21"/>
+                                <rect key="frame" x="80" y="295" width="160" height="21"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comentarios" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7y-0b-wIl">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="21"/>
@@ -597,13 +597,13 @@
                                 </constraints>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FFM-4X-Man">
-                                <rect key="frame" x="16" y="335.5" width="288" height="30"/>
+                                <rect key="frame" x="16" y="336" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVY-Wb-NM4">
-                                <rect key="frame" x="80" y="385.5" width="160" height="31"/>
+                                <rect key="frame" x="80" y="386" width="160" height="31"/>
                                 <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="15"/>
                                 <state key="normal" title="Reportar">
@@ -762,12 +762,13 @@
             </objects>
             <point key="canvasLocation" x="874" y="-2363"/>
         </scene>
-        <!--Menú Principal-->
+        <!--Tabbed View Controller-->
         <scene sceneID="cGg-3n-5H4">
             <objects>
-                <tabBarController title="Menú Principal" id="HTz-Oq-QL9" customClass="TabbedViewController" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="HTz-Oq-QL9" customClass="TabbedViewController" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="RwF-nL-Uch">
                         <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title="Menú" id="qoC-P6-rbm"/>
                         <view key="titleView" contentMode="scaleToFill" id="DiD-bo-c7H">
                             <rect key="frame" x="160" y="22" width="0.0" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -801,6 +802,9 @@
                                     <rect key="frame" x="236" y="7" width="30" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="first"/>
+                                    <connections>
+                                        <action selector="advanceProfile:" destination="HTz-Oq-QL9" eventType="touchUpInside" id="RIA-hS-lTa"/>
+                                    </connections>
                                 </button>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -816,6 +820,7 @@
                         <segue destination="WIY-iG-3i1" kind="relationship" relationship="viewControllers" id="6Pv-RR-1Gv"/>
                         <segue destination="XfC-bZ-qsa" kind="relationship" relationship="viewControllers" id="PC7-zA-rEP"/>
                         <segue destination="fi4-ga-gl4" kind="show" identifier="tabbedToEmergencies" id="Yhj-F3-DK8"/>
+                        <segue destination="d7d-ZX-tHb" kind="show" identifier="tabbedToProfile" id="vwZ-uR-3mg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0R-mJ-hgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -870,7 +875,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emergencias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hj9-ow-klP">
-                                <rect key="frame" x="48" y="108" width="224" height="24.5"/>
+                                <rect key="frame" x="48" y="84" width="224" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -889,17 +894,76 @@
                             <constraint firstItem="mZy-mE-Uer" firstAttribute="centerY" secondItem="a48-oS-hoB" secondAttribute="centerY" multiplier="1.6" id="iHV-EC-Ty5"/>
                             <constraint firstItem="mZy-mE-Uer" firstAttribute="height" secondItem="UuA-EN-Bcn" secondAttribute="height" id="k02-jw-rBV"/>
                             <constraint firstItem="mZy-mE-Uer" firstAttribute="centerX" secondItem="a48-oS-hoB" secondAttribute="centerX" id="ldV-cs-fAO"/>
-                            <constraint firstItem="Hj9-ow-klP" firstAttribute="centerY" secondItem="a48-oS-hoB" secondAttribute="centerY" multiplier="0.5" id="rao-lr-vmC"/>
+                            <constraint firstItem="Hj9-ow-klP" firstAttribute="centerY" secondItem="a48-oS-hoB" secondAttribute="centerY" multiplier="0.4" id="rao-lr-vmC"/>
                             <constraint firstItem="Hj9-ow-klP" firstAttribute="width" secondItem="8xx-pd-xrI" secondAttribute="width" id="rlh-uB-Zko"/>
                             <constraint firstItem="8xx-pd-xrI" firstAttribute="width" secondItem="a48-oS-hoB" secondAttribute="width" multiplier="0.7" id="vRY-KZ-bGc"/>
                             <constraint firstItem="mZy-mE-Uer" firstAttribute="width" secondItem="UuA-EN-Bcn" secondAttribute="width" id="zGu-6h-hcZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Drz-QJ-zda"/>
                     </view>
+                    <navigationItem key="navigationItem" id="aNP-1R-7Qg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgJ-NH-gf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-253" y="494"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="5Xe-Tl-57t">
+            <objects>
+                <viewController id="d7d-ZX-tHb" customClass="Profile" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MYd-DI-MYU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perfil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYM-xj-8Vx">
+                                <rect key="frame" x="80" y="83.5" width="160" height="25"/>
+                                <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crafter1" translatesAutoresizingMaskIntoConstraints="NO" id="ZCt-k0-U9G">
+                                <rect key="frame" x="104" y="118.5" width="112" height="112"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZCt-k0-U9G" secondAttribute="height" multiplier="1:1" id="tVc-dL-cmX"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gu5-SI-DPk" appends="YES" id="Kid-Yn-fab"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comentarios" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMm-gU-K1p">
+                                <rect key="frame" x="32.5" y="240.5" width="256" height="21"/>
+                                <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oMm-gU-K1p" firstAttribute="top" secondItem="ZCt-k0-U9G" secondAttribute="bottom" constant="10" id="5ud-uu-ODr"/>
+                            <constraint firstItem="oMm-gU-K1p" firstAttribute="centerX" secondItem="MYd-DI-MYU" secondAttribute="centerX" id="JY8-2N-ddu"/>
+                            <constraint firstItem="ZCt-k0-U9G" firstAttribute="top" secondItem="zYM-xj-8Vx" secondAttribute="bottom" constant="10" id="Ux2-FW-Yde"/>
+                            <constraint firstItem="zYM-xj-8Vx" firstAttribute="width" secondItem="MYd-DI-MYU" secondAttribute="width" multiplier="0.5" id="anq-9d-TV6"/>
+                            <constraint firstItem="ZCt-k0-U9G" firstAttribute="centerX" secondItem="MYd-DI-MYU" secondAttribute="centerX" id="bJz-TR-cVx"/>
+                            <constraint firstItem="oMm-gU-K1p" firstAttribute="width" secondItem="MYd-DI-MYU" secondAttribute="width" multiplier="0.8" id="dVg-yX-apq"/>
+                            <constraint firstItem="zYM-xj-8Vx" firstAttribute="centerX" secondItem="MYd-DI-MYU" secondAttribute="centerX" id="tDy-N5-IDZ"/>
+                            <constraint firstItem="zYM-xj-8Vx" firstAttribute="centerY" secondItem="MYd-DI-MYU" secondAttribute="centerY" multiplier="0.4" id="yNx-sH-DJZ"/>
+                            <constraint firstItem="ZCt-k0-U9G" firstAttribute="width" secondItem="MYd-DI-MYU" secondAttribute="width" multiplier="0.35" id="zmD-e1-QK5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="caP-Dm-FTk"/>
+                    </view>
+                    <connections>
+                        <outlet property="selfie" destination="ZCt-k0-U9G" id="XnZ-P9-ZEq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6xS-xl-ZEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gu5-SI-DPk">
+                    <connections>
+                        <action selector="changeSelfie:" destination="d7d-ZX-tHb" id="Lhs-dZ-ZSz"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="874" y="494"/>
         </scene>
         <!--Crafters-->
         <scene sceneID="acw-Fk-Zam">

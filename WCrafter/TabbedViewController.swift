@@ -23,4 +23,8 @@ class TabbedViewController: UITabBarController {
         performSegue(withIdentifier: "tabbedToEmergencies", sender: self)
     }
     
+    @IBAction func advanceProfile(_ sender: Any) {
+        performSegue(withIdentifier: "tabbedToProfile", sender: self)
+    }
+    
 }
