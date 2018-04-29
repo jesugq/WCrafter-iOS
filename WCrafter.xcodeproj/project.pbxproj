@@ -19,6 +19,7 @@
 		FB0B741E2095158B003FF85D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B741D2095158B003FF85D /* PostTableViewCell.swift */; };
 		FB0B742020952573003FF85D /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B741F20952573003FF85D /* PostTableViewController.swift */; };
 		FB260AA02091549E00890A3D /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB260A9F2091549E00890A3D /* Passenger.swift */; };
+		FB3CE98A20962EEC005DC9F2 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3CE98920962EEC005DC9F2 /* Alerts.swift */; };
 		FB5B28BA209146A50063C5D2 /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B28B9209146A50063C5D2 /* Confirmation.swift */; };
 		FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68130D208E646E00223332 /* CrafterTableViewCell.swift */; };
 		FB681310208E8DE100223332 /* Crafter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68130F208E8DE100223332 /* Crafter.swift */; };
@@ -70,6 +71,7 @@
 		FB0B741D2095158B003FF85D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		FB0B741F20952573003FF85D /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
 		FB260A9F2091549E00890A3D /* Passenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
+		FB3CE98920962EEC005DC9F2 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		FB5B28B9209146A50063C5D2 /* Confirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
 		FB68130D208E646E00223332 /* CrafterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrafterTableViewCell.swift; sourceTree = "<group>"; };
 		FB68130F208E8DE100223332 /* Crafter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crafter.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				FB0B741D2095158B003FF85D /* PostTableViewCell.swift */,
 				FBF69790208E966800424AE3 /* CrafterTableViewController.swift */,
 				FB260A9F2091549E00890A3D /* Passenger.swift */,
+				FB3CE98920962EEC005DC9F2 /* Alerts.swift */,
 			);
 			path = WCrafter;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				FB260AA02091549E00890A3D /* Passenger.swift in Sources */,
 				FBF69791208E966800424AE3 /* CrafterTableViewController.swift in Sources */,
 				FB5B28BA209146A50063C5D2 /* Confirmation.swift in Sources */,
+				FB3CE98A20962EEC005DC9F2 /* Alerts.swift in Sources */,
 				FB03D01320509B3F00AFEA84 /* AppDelegate.swift in Sources */,
 				FB03D01520509B3F00AFEA84 /* Authentication.swift in Sources */,
 				FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */,
