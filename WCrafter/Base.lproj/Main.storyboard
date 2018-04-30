@@ -921,8 +921,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crafter1" translatesAutoresizingMaskIntoConstraints="NO" id="ZCt-k0-U9G">
-                                <rect key="frame" x="104" y="118.5" width="112" height="112"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crafter1" translatesAutoresizingMaskIntoConstraints="NO" id="ZCt-k0-U9G">
+                                <rect key="frame" x="112" y="118.5" width="96" height="96"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZCt-k0-U9G" secondAttribute="height" multiplier="1:1" id="tVc-dL-cmX"/>
@@ -931,24 +931,40 @@
                                     <outletCollection property="gestureRecognizers" destination="gu5-SI-DPk" appends="YES" id="Kid-Yn-fab"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comentarios" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMm-gU-K1p">
-                                <rect key="frame" x="32.5" y="240.5" width="256" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patricia González" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMm-gU-K1p">
+                                <rect key="frame" x="32.5" y="224.5" width="256" height="24.5"/>
+                                <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conductor(a)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQq-Ex-Euz">
+                                <rect key="frame" x="113.5" y="254" width="93.5" height="21"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="17"/>
+                                <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating: X.Y" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="270-xa-rYE">
+                                <rect key="frame" x="112.5" y="280" width="95.5" height="25"/>
+                                <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="270-xa-rYE" firstAttribute="centerX" secondItem="MYd-DI-MYU" secondAttribute="centerX" id="4rP-Nc-DuG"/>
                             <constraint firstItem="oMm-gU-K1p" firstAttribute="top" secondItem="ZCt-k0-U9G" secondAttribute="bottom" constant="10" id="5ud-uu-ODr"/>
                             <constraint firstItem="oMm-gU-K1p" firstAttribute="centerX" secondItem="MYd-DI-MYU" secondAttribute="centerX" id="JY8-2N-ddu"/>
                             <constraint firstItem="ZCt-k0-U9G" firstAttribute="top" secondItem="zYM-xj-8Vx" secondAttribute="bottom" constant="10" id="Ux2-FW-Yde"/>
+                            <constraint firstItem="rQq-Ex-Euz" firstAttribute="centerX" secondItem="MYd-DI-MYU" secondAttribute="centerX" id="WlZ-1q-4V3"/>
                             <constraint firstItem="zYM-xj-8Vx" firstAttribute="width" secondItem="MYd-DI-MYU" secondAttribute="width" multiplier="0.5" id="anq-9d-TV6"/>
                             <constraint firstItem="ZCt-k0-U9G" firstAttribute="centerX" secondItem="MYd-DI-MYU" secondAttribute="centerX" id="bJz-TR-cVx"/>
                             <constraint firstItem="oMm-gU-K1p" firstAttribute="width" secondItem="MYd-DI-MYU" secondAttribute="width" multiplier="0.8" id="dVg-yX-apq"/>
+                            <constraint firstItem="rQq-Ex-Euz" firstAttribute="top" secondItem="oMm-gU-K1p" secondAttribute="bottom" constant="5" id="gS3-Yx-fds"/>
+                            <constraint firstItem="270-xa-rYE" firstAttribute="top" secondItem="rQq-Ex-Euz" secondAttribute="bottom" constant="5" id="hEw-Be-dTU"/>
                             <constraint firstItem="zYM-xj-8Vx" firstAttribute="centerX" secondItem="MYd-DI-MYU" secondAttribute="centerX" id="tDy-N5-IDZ"/>
                             <constraint firstItem="zYM-xj-8Vx" firstAttribute="centerY" secondItem="MYd-DI-MYU" secondAttribute="centerY" multiplier="0.4" id="yNx-sH-DJZ"/>
-                            <constraint firstItem="ZCt-k0-U9G" firstAttribute="width" secondItem="MYd-DI-MYU" secondAttribute="width" multiplier="0.35" id="zmD-e1-QK5"/>
+                            <constraint firstItem="ZCt-k0-U9G" firstAttribute="width" secondItem="MYd-DI-MYU" secondAttribute="width" multiplier="0.3" id="zmD-e1-QK5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="caP-Dm-FTk"/>
                     </view>

@@ -1,11 +1,3 @@
-//
-//  Profile.swift
-//  WCrafter
-//
-//  Created by Alumno on 29/04/18.
-//  Copyright © 2018 Alumno. All rights reserved.
-//
-
 import UIKit
 
 class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -21,6 +13,7 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
     //
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loadImage()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,16 +27,15 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         if let image = info [UIImagePickerControllerOriginalImage] as? UIImage {
             selfie.image = image
         }
+        self.saveImage()
     }
     
     //
     // UI Actions
     //
     @IBAction func changeSelfie(_ sender: UITapGestureRecognizer) {
-        print("\nMe dieron click!\n")
         self.callPickerController()
     }
-    
     
     //
     // Functions
@@ -58,4 +50,19 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         }
     }
     
+    func saveImage() {
+        let fileManager = FileManager.default
+        let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).strings(byAppendingPaths: ["driver.jpg"])
+        fileManager.createFile(atPath: paths[0], contents: UIImageJPEGRepresentation(selfie.image!, 1), attributes: nil)
+    }
+    
+    func loadImage() {
+        let fileManager = FileManager.default
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let imagePath = (paths[0] as NSString).appendingPathComponent("driver.jpg")
+        
+        if fileManager.fileExists(atPath: imagePath) {
+            selfie.image = UIImage(contentsOfFile: imagePath)
+        }
+    }
 }
