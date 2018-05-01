@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EB5068B2098471F00F6F082 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB5068A2098471F00F6F082 /* Destination.swift */; };
 		FB03D01320509B3F00AFEA84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03D01220509B3F00AFEA84 /* AppDelegate.swift */; };
 		FB03D01520509B3F00AFEA84 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03D01420509B3F00AFEA84 /* Authentication.swift */; };
 		FB03D01A20509B3F00AFEA84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB03D01820509B3F00AFEA84 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9EB5068A2098471F00F6F082 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		FB03D00F20509B3F00AFEA84 /* WCrafter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WCrafter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB03D01220509B3F00AFEA84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB03D01420509B3F00AFEA84 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				FB68130D208E646E00223332 /* CrafterTableViewCell.swift */,
 				FBF69790208E966800424AE3 /* CrafterTableViewController.swift */,
 				FB260A9F2091549E00890A3D /* Passenger.swift */,
+				9EB5068A2098471F00F6F082 /* Destination.swift */,
 			);
 			path = WCrafter;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				FB260AA02091549E00890A3D /* Passenger.swift in Sources */,
 				FBF69791208E966800424AE3 /* CrafterTableViewController.swift in Sources */,
 				FB5B28BA209146A50063C5D2 /* Confirmation.swift in Sources */,
+				9EB5068B2098471F00F6F082 /* Destination.swift in Sources */,
 				FB03D01320509B3F00AFEA84 /* AppDelegate.swift in Sources */,
 				FB03D01520509B3F00AFEA84 /* Authentication.swift in Sources */,
 				FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */,
