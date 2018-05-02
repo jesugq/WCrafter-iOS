@@ -2,9 +2,7 @@
 //  PostTableViewCell.swift
 //  WCrafter
 //
-//  Created by Alumno on 28/04/18.
-//  Copyright © 2018 Alumno. All rights reserved.
-//
+
 
 import UIKit
 

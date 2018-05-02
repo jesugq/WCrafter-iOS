@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		9E591149209A43590017DCFD /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E591148209A43590017DCFD /* ChangePassword.swift */; };
 		9EB5068B2098471F00F6F082 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB5068A2098471F00F6F082 /* Destination.swift */; };
+		9EE53F46209A5CC200C42A7C /* ConnectionFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE53F45209A5CC200C42A7C /* ConnectionFile.m */; };
+		9EE53F49209A5D2A00C42A7C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE53F48209A5D2A00C42A7C /* libsqlite3.tbd */; };
+		9EE53F55209A5E0C00C42A7C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE53F4A209A5E0200C42A7C /* FMResultSet.m */; };
+		9EE53F56209A5E0C00C42A7C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE53F4B209A5E0300C42A7C /* FMDatabaseQueue.m */; };
+		9EE53F57209A5E0C00C42A7C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE53F4C209A5E0300C42A7C /* FMDatabasePool.m */; };
+		9EE53F58209A5E0C00C42A7C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE53F4E209A5E0500C42A7C /* FMDatabase.m */; };
+		9EE53F59209A5E0C00C42A7C /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE53F51209A5E0900C42A7C /* FMDatabaseAdditions.m */; };
+		9EE53F5D209A5EC400C42A7C /* PassengerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE53F5C209A5EC400C42A7C /* PassengerModel.swift */; };
+		9EE53F5F209A67B800C42A7C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE53F5E209A67B800C42A7C /* Comment.swift */; };
 		FB03D01320509B3F00AFEA84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03D01220509B3F00AFEA84 /* AppDelegate.swift */; };
 		FB03D01520509B3F00AFEA84 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03D01420509B3F00AFEA84 /* Authentication.swift */; };
 		FB03D01A20509B3F00AFEA84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB03D01820509B3F00AFEA84 /* Main.storyboard */; };
@@ -60,6 +69,22 @@
 /* Begin PBXFileReference section */
 		9E591148209A43590017DCFD /* ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
 		9EB5068A2098471F00F6F082 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		9EE53F44209A5CC100C42A7C /* WCrafter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WCrafter-Bridging-Header.h"; sourceTree = "<group>"; };
+		9EE53F45209A5CC200C42A7C /* ConnectionFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectionFile.m; sourceTree = "<group>"; };
+		9EE53F48209A5D2A00C42A7C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9EE53F4A209A5E0200C42A7C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		9EE53F4B209A5E0300C42A7C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		9EE53F4C209A5E0300C42A7C /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		9EE53F4D209A5E0400C42A7C /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		9EE53F4E209A5E0500C42A7C /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		9EE53F4F209A5E0700C42A7C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		9EE53F50209A5E0800C42A7C /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		9EE53F51209A5E0900C42A7C /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		9EE53F52209A5E0900C42A7C /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		9EE53F53209A5E0B00C42A7C /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		9EE53F54209A5E0C00C42A7C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		9EE53F5C209A5EC400C42A7C /* PassengerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerModel.swift; sourceTree = "<group>"; };
+		9EE53F5E209A67B800C42A7C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		FB03D00F20509B3F00AFEA84 /* WCrafter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WCrafter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB03D01220509B3F00AFEA84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB03D01420509B3F00AFEA84 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
@@ -102,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EE53F49209A5D2A00C42A7C /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +148,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EE53F47209A5D2900C42A7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EE53F48209A5D2A00C42A7C /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB03D00620509B3F00AFEA84 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +163,7 @@
 				FB03D02820509B3F00AFEA84 /* WCrafterTests */,
 				FB03D03320509B3F00AFEA84 /* WCrafterUITests */,
 				FB03D01020509B3F00AFEA84 /* Products */,
+				9EE53F47209A5D2900C42A7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +190,17 @@
 				FB03D02020509B3F00AFEA84 /* Info.plist */,
 				FB03D01420509B3F00AFEA84 /* Authentication.swift */,
 				FBE4A3812076B11C008EFCD2 /* Selection.swift */,
+				9EE53F50209A5E0800C42A7C /* FMDatabase.h */,
+				9EE53F4E209A5E0500C42A7C /* FMDatabase.m */,
+				9EE53F4F209A5E0700C42A7C /* FMDatabaseAdditions.h */,
+				9EE53F51209A5E0900C42A7C /* FMDatabaseAdditions.m */,
+				9EE53F4D209A5E0400C42A7C /* FMDatabasePool.h */,
+				9EE53F4C209A5E0300C42A7C /* FMDatabasePool.m */,
+				9EE53F53209A5E0B00C42A7C /* FMDatabaseQueue.h */,
+				9EE53F4B209A5E0300C42A7C /* FMDatabaseQueue.m */,
+				9EE53F52209A5E0900C42A7C /* FMDB.h */,
+				9EE53F54209A5E0C00C42A7C /* FMResultSet.h */,
+				9EE53F4A209A5E0200C42A7C /* FMResultSet.m */,
 				FB5B28B9209146A50063C5D2 /* Confirmation.swift */,
 				FB3CE98D209647DC005DC9F2 /* TabbedViewController.swift */,
 				FB3CE98B209644D2005DC9F2 /* Emergencies.swift */,
@@ -168,6 +214,10 @@
 				FB3CE9902096878C005DC9F2 /* Profile.swift */,
 				9EB5068A2098471F00F6F082 /* Destination.swift */,
 				9E591148209A43590017DCFD /* ChangePassword.swift */,
+				9EE53F45209A5CC200C42A7C /* ConnectionFile.m */,
+				9EE53F44209A5CC100C42A7C /* WCrafter-Bridging-Header.h */,
+				9EE53F5C209A5EC400C42A7C /* PassengerModel.swift */,
+				9EE53F5E209A67B800C42A7C /* Comment.swift */,
 			);
 			path = WCrafter;
 			sourceTree = "<group>";
@@ -274,6 +324,7 @@
 				TargetAttributes = {
 					FB03D00E20509B3F00AFEA84 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					FB03D02420509B3F00AFEA84 = {
@@ -351,19 +402,27 @@
 				FB0B741C20950E49003FF85D /* Post.swift in Sources */,
 				FB0B742020952573003FF85D /* PostTableViewController.swift in Sources */,
 				FB0B7418209509E2003FF85D /* Notices.swift in Sources */,
+				9EE53F57209A5E0C00C42A7C /* FMDatabasePool.m in Sources */,
+				9EE53F59209A5E0C00C42A7C /* FMDatabaseAdditions.m in Sources */,
 				FB681310208E8DE100223332 /* Crafter.swift in Sources */,
 				FBE4A3822076B11C008EFCD2 /* Selection.swift in Sources */,
 				FB3CE98E209647DC005DC9F2 /* TabbedViewController.swift in Sources */,
 				FB260AA02091549E00890A3D /* Passenger.swift in Sources */,
 				FBF69791208E966800424AE3 /* CrafterTableViewController.swift in Sources */,
+				9EE53F55209A5E0C00C42A7C /* FMResultSet.m in Sources */,
 				FB5B28BA209146A50063C5D2 /* Confirmation.swift in Sources */,
 				FB3CE9912096878C005DC9F2 /* Profile.swift in Sources */,
+				9EE53F46209A5CC200C42A7C /* ConnectionFile.m in Sources */,
+				9EE53F5D209A5EC400C42A7C /* PassengerModel.swift in Sources */,
 				9E591149209A43590017DCFD /* ChangePassword.swift in Sources */,
+				9EE53F58209A5E0C00C42A7C /* FMDatabase.m in Sources */,
 				FB3CE98A20962EEC005DC9F2 /* Alerts.swift in Sources */,
 				9EB5068B2098471F00F6F082 /* Destination.swift in Sources */,
 				FB03D01320509B3F00AFEA84 /* AppDelegate.swift in Sources */,
 				FB03D01520509B3F00AFEA84 /* Authentication.swift in Sources */,
+				9EE53F5F209A67B800C42A7C /* Comment.swift in Sources */,
 				FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */,
+				9EE53F56209A5E0C00C42A7C /* FMDatabaseQueue.m in Sources */,
 				FB0B741E2095158B003FF85D /* PostTableViewCell.swift in Sources */,
 				FB3CE98C209644D2005DC9F2 /* Emergencies.swift in Sources */,
 			);
@@ -535,11 +594,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WCrafter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ITESM.WCrafter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WCrafter/WCrafter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -549,11 +611,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WCrafter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ITESM.WCrafter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WCrafter/WCrafter-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

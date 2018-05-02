@@ -2,21 +2,18 @@
 //  Destination.swift
 //  WCrafter
 //
-//  Created by Hugo Cruz on 01/05/18.
-//  Copyright © 2018 Alumno. All rights reserved.
+// Class to check where the crafter goes, for every stop and shows the time
 //
-
 import UIKit
 import MapKit
 
 class Destination: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
-    
+    //Outlets
     @IBOutlet weak var origin: UILabel!
     @IBOutlet weak var dest: UILabel!
-    @IBOutlet weak var time: UILabel!
     @IBOutlet weak var timLeft: UILabel!
     @IBOutlet weak var cond: UILabel!
-    
+    //Atributttes
     var manager = CLLocationManager()
     var timer = Timer()
     var isTimer = false
@@ -33,6 +30,7 @@ class Destination: UIViewController, MKMapViewDelegate, CLLocationManagerDelegat
         manager.startUpdatingLocation()
         
     }
+    //Update the condition of the user, if he/she is on time or not
     @objc func updateTimer(){
         minLeft -= 1
         timLeft.text = "\(minLeft) min"
@@ -46,15 +44,18 @@ class Destination: UIViewController, MKMapViewDelegate, CLLocationManagerDelegat
             timer.invalidate()
         }
     }
+    //Stop the time
     func stopTimer(){
         minLeft = 0
         timer.invalidate()
     }
+    //Creates timer
     func timeLeft(t: Int){
         minLeft = t
         timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
     }
   
+    //Check for what stop is the crafter and the hour
     func changeRoute(){
         let date = Date()
         let calendar = Calendar.current

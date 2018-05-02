@@ -1,22 +1,21 @@
 //
 //  ChangePassword.swift
 //  WCrafter
-//
-//  Created by Hugo Cruz on 02/05/18.
-//  Copyright © 2018 Alumno. All rights reserved.
-//
+//  Class for change the password
 
 import UIKit
 
 class ChangePassword: UIViewController {
-
+    // Outlets
     @IBOutlet weak var cuur: UITextField!
     @IBOutlet weak var newPassword: UITextField!
     @IBOutlet weak var newPassword2: UITextField!
     @IBOutlet weak var button: UIButton!
-    
+    //Atributes
     let defaultSession = URLSession(configuration: .default)
     var dataTask: URLSessionDataTask?
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,5 +83,20 @@ class ChangePassword: UIViewController {
             dataTask?.resume()
         }
     }
+        
+        func verifyResult(data: Data){
+            // The result given is a String. The expected value for this example is the following.
+            // true / false
+            let value = NSString(data: data, encoding: String.Encoding.ascii.rawValue)
+            
+            // Advance to the next view, or send an alert of failure.
+            if value == "true" {
+                performSegue(withIdentifier: "authToSelection", sender: self)
+            } else {
+                let alertController = UIAlertController(title: "Incorrect", message:
+                    "Contraseñas incorrectas", preferredStyle: UIAlertControllerStyle.alert)
+                self.present(alertController, animated: true, completion: nil)            }
+        }
+    }
     
-}
+
