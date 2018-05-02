@@ -48,6 +48,12 @@ class Authentication: UIViewController {
     // Functions
     //
     func hardcodeLogin() {
+        // Prevents logins with no values.
+        if user.text!.isEmpty || pass.text!.isEmpty {
+            printAlert(title: "Credenciales vacías.", message: "El usuario y/o contraseña se encuentran vacíos.")
+            return
+        }
+        
         performSegue(withIdentifier: "authToSelect", sender: self)
     }
     
