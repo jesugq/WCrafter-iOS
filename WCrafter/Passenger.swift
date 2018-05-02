@@ -22,7 +22,11 @@ class Passenger: UIViewController {
     }
     
     @IBAction func less(_ sender: UITapGestureRecognizer) {
-        cont-=1
-        number.text = "\(cont)"
+        if cont == 0 {
+            number.text = "\(cont)"
+        } else {
+            cont-=1
+            number.text = "\(cont)"
+        }
     }
 }

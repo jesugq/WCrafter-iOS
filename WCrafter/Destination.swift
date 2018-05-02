@@ -192,17 +192,17 @@ class Destination: UIViewController, MKMapViewDelegate, CLLocationManagerDelegat
         } else if fabs(locValue.latitude - nave83.latitudeDelta) <= Double.ulpOfOne && fabs(locValue.longitude - nave83.longitudeDelta) <= Double.ulpOfOne {
             if guide {
                 origin.text = "Nave 83"
-                dest.text = "Estacion 9"
+                dest.text = "Estación 9"
             } else {
                 origin.text = "Nave 83"
                 dest.text = "Nave 84"
             }
         } else if fabs(locValue.latitude - est9.latitudeDelta) <= Double.ulpOfOne && fabs(locValue.longitude - est9.longitudeDelta) <= Double.ulpOfOne {
             if guide {
-                origin.text = "Estacion 9"
+                origin.text = "Estación 9"
                 dest.text = "Puerta 5"
             } else {
-                origin.text = "Estacion 9"
+                origin.text = "Estación 9"
                 dest.text = "Nave 83"
             }
         } else if fabs(locValue.latitude - pue5.latitudeDelta) <= Double.ulpOfOne && fabs(locValue.longitude - pue5.longitudeDelta) <= Double.ulpOfOne {
@@ -211,7 +211,7 @@ class Destination: UIViewController, MKMapViewDelegate, CLLocationManagerDelegat
                 dest.text = "Puerta 4"
             } else {
                 origin.text = "Puerta 5"
-                dest.text = "Estacion 9"
+                dest.text = "Estación 9"
             }
         } else if fabs(locValue.latitude - pue4.latitudeDelta) <= Double.ulpOfOne && fabs(locValue.longitude - pue4.longitudeDelta) <= Double.ulpOfOne {
             if guide {
