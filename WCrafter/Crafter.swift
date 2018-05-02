@@ -7,13 +7,6 @@ class Crafter {
     var photo : UIImage
     var plate : String = ""
     
-    // Image Constants
-    let photo1 = UIImage(named: "crafter1")
-    let photo2 = UIImage(named: "crafter2")
-    let photo3 = UIImage(named: "crafter3")
-    let photo4 = UIImage(named: "crafter4")
-    let photo5 = UIImage(named: "crafter5")
-    
     // Constructor
     init?(image: String, plate: String){
         // No image given.
@@ -38,17 +31,17 @@ class Crafter {
     func createPhoto(image: String) -> UIImage {
         switch image {
         case "crafter1" :
-            return photo1!
+            return UIImage(named: "crafter1")!
         case "crafter2" :
-            return photo2!
+            return UIImage(named: "crafter2")!
         case "crafter3" :
-            return photo3!
+            return UIImage(named: "crafter3")!
         case "crafter4" :
-            return photo4!
+            return UIImage(named: "crafter4")!
         case "crafter5" :
-            return photo5!
+            return UIImage(named: "crafter5")!
         default :
-            return photo1!
+            return UIImage(named: "crafter1")!
         }
     }
 

@@ -28,6 +28,9 @@
 		FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68130D208E646E00223332 /* CrafterTableViewCell.swift */; };
 		FB681310208E8DE100223332 /* Crafter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68130F208E8DE100223332 /* Crafter.swift */; };
 		FB9F0A27209A3DC100BCC82A /* ToppedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9F0A26209A3DC100BCC82A /* ToppedViewController.swift */; };
+		FB9F0A2B209A453300BCC82A /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9F0A2A209A453300BCC82A /* Stat.swift */; };
+		FB9F0A2D209A58E300BCC82A /* StatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9F0A2C209A58E300BCC82A /* StatTableViewController.swift */; };
+		FB9F0A2F209A5CD900BCC82A /* StatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9F0A2E209A5CD900BCC82A /* StatTableViewCell.swift */; };
 		FBA015D12093DC1B00EC2F9C /* VWHead-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBA015CD2093DC1B00EC2F9C /* VWHead-RegularItalic.otf */; };
 		FBA015D22093DC1B00EC2F9C /* VWHead-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBA015CE2093DC1B00EC2F9C /* VWHead-Bold.otf */; };
 		FBA015D32093DC1B00EC2F9C /* VWHead-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBA015CF2093DC1B00EC2F9C /* VWHead-Regular.otf */; };
@@ -85,6 +88,9 @@
 		FB68130D208E646E00223332 /* CrafterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrafterTableViewCell.swift; sourceTree = "<group>"; };
 		FB68130F208E8DE100223332 /* Crafter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crafter.swift; sourceTree = "<group>"; };
 		FB9F0A26209A3DC100BCC82A /* ToppedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppedViewController.swift; sourceTree = "<group>"; };
+		FB9F0A2A209A453300BCC82A /* Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
+		FB9F0A2C209A58E300BCC82A /* StatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTableViewController.swift; sourceTree = "<group>"; };
+		FB9F0A2E209A5CD900BCC82A /* StatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTableViewCell.swift; sourceTree = "<group>"; };
 		FBA015CD2093DC1B00EC2F9C /* VWHead-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VWHead-RegularItalic.otf"; sourceTree = "<group>"; };
 		FBA015CE2093DC1B00EC2F9C /* VWHead-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VWHead-Bold.otf"; sourceTree = "<group>"; };
 		FBA015CF2093DC1B00EC2F9C /* VWHead-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VWHead-Regular.otf"; sourceTree = "<group>"; };
@@ -147,27 +153,30 @@
 			children = (
 				FBA015C42093DBD600EC2F9C /* Fonts */,
 				FB03D01220509B3F00AFEA84 /* AppDelegate.swift */,
+				FB03D01420509B3F00AFEA84 /* Authentication.swift */,
+				FBE4A3812076B11C008EFCD2 /* Selection.swift */,
+				FBF69790208E966800424AE3 /* CrafterTableViewController.swift */,
 				FB68130F208E8DE100223332 /* Crafter.swift */,
+				FB68130D208E646E00223332 /* CrafterTableViewCell.swift */,
+				FB5B28B9209146A50063C5D2 /* Confirmation.swift */,
+				FB9F0A26209A3DC100BCC82A /* ToppedViewController.swift */,
+				FB3CE98D209647DC005DC9F2 /* TabbedViewController.swift */,
+				9EB5068A2098471F00F6F082 /* Destination.swift */,
+				FB260A9F2091549E00890A3D /* Passenger.swift */,
+				FB0B7417209509E2003FF85D /* Notices.swift */,
+				FB0B741F20952573003FF85D /* PostTableViewController.swift */,
+				FB0B741B20950E49003FF85D /* Post.swift */,
+				FB0B741D2095158B003FF85D /* PostTableViewCell.swift */,
+				FB3CE98920962EEC005DC9F2 /* Alerts.swift */,
+				FB3CE98B209644D2005DC9F2 /* Emergencies.swift */,
+				FB3CE9902096878C005DC9F2 /* Profile.swift */,
+				FB9F0A2C209A58E300BCC82A /* StatTableViewController.swift */,
+				FB9F0A2A209A453300BCC82A /* Stat.swift */,
+				FB9F0A2E209A5CD900BCC82A /* StatTableViewCell.swift */,
 				FB03D01820509B3F00AFEA84 /* Main.storyboard */,
 				FB03D01B20509B3F00AFEA84 /* Assets.xcassets */,
 				FB03D01D20509B3F00AFEA84 /* LaunchScreen.storyboard */,
-				FB9F0A26209A3DC100BCC82A /* ToppedViewController.swift */,
-				FB0B7417209509E2003FF85D /* Notices.swift */,
 				FB03D02020509B3F00AFEA84 /* Info.plist */,
-				FB03D01420509B3F00AFEA84 /* Authentication.swift */,
-				FBE4A3812076B11C008EFCD2 /* Selection.swift */,
-				FB5B28B9209146A50063C5D2 /* Confirmation.swift */,
-				FB3CE98D209647DC005DC9F2 /* TabbedViewController.swift */,
-				FB3CE98B209644D2005DC9F2 /* Emergencies.swift */,
-				FB68130D208E646E00223332 /* CrafterTableViewCell.swift */,
-				FB0B741B20950E49003FF85D /* Post.swift */,
-				FB0B741F20952573003FF85D /* PostTableViewController.swift */,
-				FB0B741D2095158B003FF85D /* PostTableViewCell.swift */,
-				FBF69790208E966800424AE3 /* CrafterTableViewController.swift */,
-				FB260A9F2091549E00890A3D /* Passenger.swift */,
-				FB3CE98920962EEC005DC9F2 /* Alerts.swift */,
-				FB3CE9902096878C005DC9F2 /* Profile.swift */,
-				9EB5068A2098471F00F6F082 /* Destination.swift */,
 			);
 			path = WCrafter;
 			sourceTree = "<group>";
@@ -353,15 +362,18 @@
 				FB0B7418209509E2003FF85D /* Notices.swift in Sources */,
 				FB681310208E8DE100223332 /* Crafter.swift in Sources */,
 				FBE4A3822076B11C008EFCD2 /* Selection.swift in Sources */,
+				FB9F0A2B209A453300BCC82A /* Stat.swift in Sources */,
 				FB3CE98E209647DC005DC9F2 /* TabbedViewController.swift in Sources */,
 				FB260AA02091549E00890A3D /* Passenger.swift in Sources */,
 				FBF69791208E966800424AE3 /* CrafterTableViewController.swift in Sources */,
 				FB9F0A27209A3DC100BCC82A /* ToppedViewController.swift in Sources */,
+				FB9F0A2F209A5CD900BCC82A /* StatTableViewCell.swift in Sources */,
 				FB5B28BA209146A50063C5D2 /* Confirmation.swift in Sources */,
 				FB3CE9912096878C005DC9F2 /* Profile.swift in Sources */,
 				FB3CE98A20962EEC005DC9F2 /* Alerts.swift in Sources */,
 				9EB5068B2098471F00F6F082 /* Destination.swift in Sources */,
 				FB03D01320509B3F00AFEA84 /* AppDelegate.swift in Sources */,
+				FB9F0A2D209A58E300BCC82A /* StatTableViewController.swift in Sources */,
 				FB03D01520509B3F00AFEA84 /* Authentication.swift in Sources */,
 				FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */,
 				FB0B741E2095158B003FF85D /* PostTableViewCell.swift in Sources */,

@@ -46,6 +46,10 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         self.callPickerController()
     }
     
+    @IBAction func advancePerformance(_ sender: Any) {
+        performSegue(withIdentifier: "profileToPerformance", sender: self)
+    }
+    
     //
     // Functions
     //

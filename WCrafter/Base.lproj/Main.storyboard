@@ -1009,6 +1009,7 @@
                                     <color key="titleColor" red="0.9999160171" green="1" blue="0.99987202880000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="advancePerformance:" destination="d7d-ZX-tHb" eventType="touchUpInside" id="pDC-jI-B91"/>
                                     <action selector="confirm:" destination="jgs-R1-BaK" eventType="touchUpInside" id="c5l-C5-bRC"/>
                                     <action selector="firemen:" destination="fi4-ga-gl4" eventType="touchUpInside" id="Qap-dl-VnL"/>
                                     <action selector="login:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Zce-W8-UGx"/>
@@ -1049,6 +1050,7 @@
                         <outlet property="driver" destination="oMm-gU-K1p" id="yog-GY-f31"/>
                         <outlet property="rating" destination="270-xa-rYE" id="961-Od-vDC"/>
                         <outlet property="selfie" destination="ZCt-k0-U9G" id="XnZ-P9-ZEq"/>
+                        <segue destination="epF-kN-6Zu" kind="show" identifier="profileToPerformance" id="qCr-PZ-RWC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xS-xl-ZEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1059,6 +1061,79 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="873.75" y="493.75"/>
+        </scene>
+        <!--Stat Table View Controller-->
+        <scene sceneID="9gR-74-5tI">
+            <objects>
+                <tableViewController id="epF-kN-6Zu" customClass="StatTableViewController" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ntm-QS-Bx6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Stat" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Stat" rowHeight="60" id="r17-9b-gV2" userLabel="Stat" customClass="StatTableViewCell" customModule="WCrafter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r17-9b-gV2" id="ELQ-Ol-BtZ" customClass="SKView">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W8s-he-skt">
+                                            <rect key="frame" x="10.5" y="0.0" width="59.5" height="59.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="W8s-he-skt" secondAttribute="height" multiplier="1:1" id="E41-md-cXh"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OLe-Tv-I5J">
+                                            <rect key="frame" x="80" y="5" width="240" height="21"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistic Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9J-N7-TxM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="21"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="desc"/>
+                                                    <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="17"/>
+                                                    <color key="textColor" red="0.109428294" green="0.117607899" blue="0.1217646971" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistic Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bF3-ZU-sUt">
+                                            <rect key="frame" x="80" y="35.5" width="240" height="18.5"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="desc"/>
+                                            <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="15"/>
+                                            <color key="textColor" red="0.40101248029999997" green="0.45025414229999999" blue="0.50808888669999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="W8s-he-skt" firstAttribute="height" secondItem="ELQ-Ol-BtZ" secondAttribute="height" id="43p-vR-dFi"/>
+                                        <constraint firstItem="W8s-he-skt" firstAttribute="centerX" secondItem="ELQ-Ol-BtZ" secondAttribute="centerX" multiplier="0.25" id="4t3-hw-OYE"/>
+                                        <constraint firstItem="bF3-ZU-sUt" firstAttribute="centerX" secondItem="ELQ-Ol-BtZ" secondAttribute="centerX" multiplier="1.25" id="CZr-mK-FH7"/>
+                                        <constraint firstItem="W8s-he-skt" firstAttribute="centerY" secondItem="ELQ-Ol-BtZ" secondAttribute="centerY" id="Cx2-dv-ZaO"/>
+                                        <constraint firstItem="OLe-Tv-I5J" firstAttribute="centerY" secondItem="ELQ-Ol-BtZ" secondAttribute="centerY" multiplier="0.5" id="Cxl-iz-yYV"/>
+                                        <constraint firstItem="OLe-Tv-I5J" firstAttribute="width" secondItem="ELQ-Ol-BtZ" secondAttribute="width" multiplier="0.75" id="PgG-ul-Azf"/>
+                                        <constraint firstItem="bF3-ZU-sUt" firstAttribute="width" secondItem="E9J-N7-TxM" secondAttribute="width" id="fVW-Yf-LF9"/>
+                                        <constraint firstItem="OLe-Tv-I5J" firstAttribute="centerX" secondItem="ELQ-Ol-BtZ" secondAttribute="centerX" multiplier="1.25" id="sBF-bk-jOA"/>
+                                        <constraint firstItem="bF3-ZU-sUt" firstAttribute="centerY" secondItem="ELQ-Ol-BtZ" secondAttribute="centerY" multiplier="1.5" id="sDg-XZ-wij"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.95251113180000002" green="0.96079033609999998" blue="0.9648056626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Stat"/>
+                                <connections>
+                                    <outlet property="descr" destination="bF3-ZU-sUt" id="kc3-U4-DYN"/>
+                                    <outlet property="photo" destination="W8s-he-skt" id="SGM-Xg-PuA"/>
+                                    <outlet property="value" destination="E9J-N7-TxM" id="Fbu-sG-ge8"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="epF-kN-6Zu" id="DeW-s9-Z8N"/>
+                            <outlet property="delegate" destination="epF-kN-6Zu" id="nhh-X8-XFN"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oo8-kq-klJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2452.5" y="493.75"/>
         </scene>
         <!--Crafters-->
         <scene sceneID="acw-Fk-Zam">

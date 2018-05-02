@@ -130,6 +130,7 @@ class CrafterTableViewController: UITableViewController {
             // Add said Crafter to the Array of Crafters.
             crafters += [crafter]
         }
+        self.tableView?.reloadData()
     }
 
 }

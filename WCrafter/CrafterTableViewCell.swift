@@ -11,8 +11,6 @@ class CrafterTableViewCell: UITableViewCell {
     //
     override func awakeFromNib() {
         super.awakeFromNib()
-        //photo.contentMode = .scaleAspectFit
-        //photo.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

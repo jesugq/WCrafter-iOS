@@ -1,45 +1,52 @@
+//
+//  StatTableViewController.swift
+//  WCrafter
+//
+//  Created by Alumno on 02/05/18.
+//  Copyright © 2018 Alumno. All rights reserved.
+//
+
 import UIKit
 
-class PostTableViewController: UITableViewController {
-
+class StatTableViewController: UITableViewController {
+    
     // Attributes
-    var posts = [Post]()
-    var typeGiven : String = ""
+    var stats = [Stat]()
     
     let defaultSession = URLSession(configuration: .default)
     var dataTask: URLSessionDataTask?
-    
+
     //
-    // View Controller Functions
+    // View Conroller Functions
     //
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.defineStats()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count
+        return stats.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Identify each cell to have a specific format and interface layout.
-        let cellIdentifier = "Post"
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? PostTableViewCell else {
-            fatalError("The created instance is not a Post.")
+        let cellIdentifier = "Stat"
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? StatTableViewCell else {
+            fatalError("The created instance is not a Stat.")
         }
         
         // Obtain the values from the item at position indexPath in the array.
-        let post = posts[indexPath.row]
+        let stat = stats[indexPath.row]
         
-        // Add in the values in the cell
-        cell.addValues(desc: post.desc, code: post.code)
+        cell.addValues(photo: stat.photo, value: stat.value, descr: stat.descr)
         
         return cell
     }
@@ -48,28 +55,17 @@ class PostTableViewController: UITableViewController {
         return 60
     }
     
-    //
-    // Functions
-    //
-    func updateType() {
-        // Reinitialize the posts array for values of the other type.
-        posts = [Post]()
+    func defineStats() {
+        stats = [Stat]()
         self.hardcodeLoading()
         //self.performLoading()
     }
     
     func hardcodeLoading() {
-        if typeGiven == "Notificaciones" {
-            let string = "Mantenimiento del motor\nMDM-817\nRevision del vehiculo\nRVV-812\nMantenimiento preventivo\nMPR-901"
-            let data = string.data(using: String.Encoding(rawValue: String.Encoding.ascii.rawValue))
-            
-            self.sendResult(data: data!)
-        } else if typeGiven == "Fallas" {
-            let string = "Falla de Motor\nXYZ-781\nSobrecalentamiento de Motor\nSBC-681"
-            let data = string.data(using: String.Encoding(rawValue: String.Encoding.ascii.rawValue))
-            
-            self.sendResult(data: data!)
-        }
+        let string = "card\n3G1F08\nodometerdelta\n13.4\nroad\n8465 KM\nbattery\nRegular\nenginetime\n13 horas\nodometer\nRP\nspeed\n52 KM/hora\nspeedbreak\n8465\nengine\nRegular"
+        let data = string.data(using: String.Encoding(rawValue: String.Encoding.ascii.rawValue))
+        
+        self.sendResult(data: data!)
     }
     
     func performLoading() {
@@ -78,12 +74,9 @@ class PostTableViewController: UITableViewController {
             dataTask?.cancel()
         }
         
-        // Convert the characters to php compatible format.
-        let typeEntry = typeGiven.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
-        
         // Temporary login website. This will be changed to VW's official url.
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        let url = NSURL(string: "http://www.iroseapps.com/moviles/\(typeEntry).php)")
+        let url = NSURL(string: "http://www.iroseapps.com/moviles/Stats.php)")
         
         // Request information from an URL with a Data Task, calling function verifyResult() if successful.
         let request = URLRequest(url: url! as URL)
@@ -107,26 +100,28 @@ class PostTableViewController: UITableViewController {
     
     func sendResult(data: Data) {
         // The result given is a String. The expected value for this example is the following.
-        // Motor failure    (Description for each post)
-        // MF-09            (Error code for each post)
+        // card     (statistic type)
+        // 3G1F08   (statistic value)
         let value = NSString(data: data, encoding: String.Encoding.ascii.rawValue)
         let valueArray : [String] = (value?.components(separatedBy: "\n"))!
         
         // Create the necessary amount of elements for the TableView.
-        self.loadPosts(valueArray: valueArray)
+        self.loadStats(valueArray: valueArray)
     }
     
-    func loadPosts(valueArray : [String]) {
-        // From the result given as a String, create a Post.
+    func loadStats(valueArray: [String]) {
+        // From the result given as a String, create a Stat.
         for index in stride(from: 0, to: valueArray.count-1, by: 2) {
-            guard let post = Post(desc: valueArray[index], code: valueArray[index+1]) else {
-                fatalError("Unable to create Post.")
+            print("\n\(index)\n")
+            guard let stat = Stat(type: valueArray[index], value: valueArray[index+1]) else {
+                fatalError("Unable to create Stat.")
             }
             
-            // Add said Post to the Array of Posts.
-            posts += [post]
+            // Add said Stat to the Array of Stats.
+            stats += [stat]
         }
         self.tableView?.reloadData()
     }
+
     
 }
