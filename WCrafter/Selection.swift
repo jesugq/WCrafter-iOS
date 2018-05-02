@@ -5,11 +5,10 @@ class Selection : UIViewController {
     // UI Outlets
     @IBOutlet weak var welcome: UILabel!
     
-    // Attributes
+    // Prepared Attributes
     var photoSent : UIImage = UIImage(named: "crafter1")!
     var plateSent : String = ""
     
-    // Prepared Attributes
     var userGiven : String = ""
     
     //
@@ -30,6 +29,7 @@ class Selection : UIViewController {
             let newView = segue.destination as! Confirmation
             newView.photoGiven = photoSent
             newView.plateGiven = plateSent
+            newView.userGiven = self.userGiven
         }
         
         if segue.identifier == "selectToContainer" {

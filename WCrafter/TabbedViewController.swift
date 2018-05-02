@@ -2,6 +2,9 @@ import UIKit
 
 class TabbedViewController: UITabBarController {
 
+    // Prepared Attributes
+    var userGiven : String = ""
+    
     //
     // View Controller Functions
     //
@@ -14,6 +17,13 @@ class TabbedViewController: UITabBarController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tabbedToProfile" {
+            let newView = segue.destination as! Profile
+            newView.userGiven = self.userGiven
+        }
     }
     
     //
