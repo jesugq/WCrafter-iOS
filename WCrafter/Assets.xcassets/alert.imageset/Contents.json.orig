@@ -2,7 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+<<<<<<< HEAD
+      "filename" : "alert.png",
+=======
       "filename" : "Alert.png",
+>>>>>>> desfersada
       "scale" : "1x"
     },
     {

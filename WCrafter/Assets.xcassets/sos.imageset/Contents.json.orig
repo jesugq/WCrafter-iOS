@@ -2,7 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Alert.png",
+<<<<<<< HEAD
+      "filename" : "sos.png",
+=======
+      "filename" : "SOS.png",
+>>>>>>> desfersada
       "scale" : "1x"
     },
     {
