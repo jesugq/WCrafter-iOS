@@ -801,7 +801,7 @@
                         </view>
                         <rightBarButtonItems>
                             <barButtonItem id="p9a-WO-ODz">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aSL-mH-U9U">
+                                <button key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" id="aSL-mH-U9U">
                                     <rect key="frame" x="274" y="7" width="30" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="second"/>
@@ -828,6 +828,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <outlet property="profileBar" destination="Roc-Lg-xpg" id="wbJ-UY-pOe"/>
+                        <outlet property="profileButton" destination="FOH-Xd-hnC" id="B4w-Xg-RZc"/>
+                        <outlet property="sosBar" destination="p9a-WO-ODz" id="zOn-4Q-Nr9"/>
+                        <outlet property="sosButton" destination="aSL-mH-U9U" id="ALc-LY-JYi"/>
                         <segue destination="joZ-h5-w1X" kind="relationship" relationship="viewControllers" id="xPS-pV-R6A"/>
                         <segue destination="Ym6-Lw-ger" kind="relationship" relationship="viewControllers" id="bt7-W7-WF1"/>
                         <segue destination="WIY-iG-3i1" kind="relationship" relationship="viewControllers" id="6Pv-RR-1Gv"/>

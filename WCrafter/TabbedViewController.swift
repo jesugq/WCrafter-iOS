@@ -5,18 +5,21 @@ class TabbedViewController: UITabBarController {
     // Prepared Attributes
     var userGiven : String = ""
     
+    // UI Outlets
+    @IBOutlet weak var profileButton: UIButton!
+    @IBOutlet weak var sosButton: UIButton!
+    @IBOutlet weak var profileBar: UIBarButtonItem!
+    @IBOutlet weak var sosBar: UIBarButtonItem!
+    
     //
     // View Controller Functions
     //
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
