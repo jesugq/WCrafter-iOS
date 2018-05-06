@@ -1,32 +1,19 @@
-//Class Passagener
-//Count how many passenger are in the crafter
-
 import UIKit
-import MapKit
 
-class Passenger: UIViewController, CLLocationManagerDelegate {
-    //Outlets
+class Passenger: UIViewController {
+
     @IBOutlet weak var number: UILabel!
-    //Atributtes
-    var cont = 0
-    let defaultSession = URLSession(configuration: .default)
-    var dataTask: URLSessionDataTask?
-    var manager = CLLocationManager()
+    var cont = 0;
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        manager.delegate = self
-        if manager.responds(to: #selector(CLLocationManager.requestWhenInUseAuthorization)){
-            manager.requestWhenInUseAuthorization()
-        }
-        manager.startUpdatingLocation()
-        let locValue: CLLocationCoordinate2D = (manager.location?.coordinate)!
-        
-        _ = ModelManager.instance.saveNumberPassenger(number: cont, lat: String(locValue.latitude), lon: String(locValue.longitude))
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func more(_ sender: UITapGestureRecognizer) {
@@ -35,11 +22,7 @@ class Passenger: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func less(_ sender: UITapGestureRecognizer) {
-        if cont == 0 {
-            number.text = "\(cont)"
-        } else {
-            cont-=1
-            number.text = "\(cont)"
-        }
+        cont-=1
+        number.text = "\(cont)"
     }
 }

@@ -2,18 +2,21 @@
 //  Destination.swift
 //  WCrafter
 //
-// Class to check where the crafter goes, for every stop and shows the time
+//  Created by Hugo Cruz on 01/05/18.
+//  Copyright © 2018 Alumno. All rights reserved.
 //
+
 import UIKit
 import MapKit
 
 class Destination: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
-    //Outlets
+    
     @IBOutlet weak var origin: UILabel!
     @IBOutlet weak var dest: UILabel!
+    @IBOutlet weak var time: UILabel!
     @IBOutlet weak var timLeft: UILabel!
     @IBOutlet weak var cond: UILabel!
-    //Atributttes
+    
     var manager = CLLocationManager()
     var timer = Timer()
     var isTimer = false
@@ -30,7 +33,6 @@ class Destination: UIViewController, MKMapViewDelegate, CLLocationManagerDelegat
         manager.startUpdatingLocation()
         
     }
-    //Update the condition of the user, if he/she is on time or not
     @objc func updateTimer(){
         minLeft -= 1
         timLeft.text = "\(minLeft) min"
@@ -44,18 +46,15 @@ class Destination: UIViewController, MKMapViewDelegate, CLLocationManagerDelegat
             timer.invalidate()
         }
     }
-    //Stop the time
     func stopTimer(){
         minLeft = 0
         timer.invalidate()
     }
-    //Creates timer
     func timeLeft(t: Int){
         minLeft = t
         timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
     }
   
-    //Check for what stop is the crafter and the hour
     func changeRoute(){
         let date = Date()
         let calendar = Calendar.current
@@ -193,17 +192,17 @@ class Destination: UIViewController, MKMapViewDelegate, CLLocationManagerDelegat
         } else if fabs(locValue.latitude - nave83.latitudeDelta) <= Double.ulpOfOne && fabs(locValue.longitude - nave83.longitudeDelta) <= Double.ulpOfOne {
             if guide {
                 origin.text = "Nave 83"
-                dest.text = "Estación 9"
+                dest.text = "Estacion 9"
             } else {
                 origin.text = "Nave 83"
                 dest.text = "Nave 84"
             }
         } else if fabs(locValue.latitude - est9.latitudeDelta) <= Double.ulpOfOne && fabs(locValue.longitude - est9.longitudeDelta) <= Double.ulpOfOne {
             if guide {
-                origin.text = "Estación 9"
+                origin.text = "Estacion 9"
                 dest.text = "Puerta 5"
             } else {
-                origin.text = "Estación 9"
+                origin.text = "Estacion 9"
                 dest.text = "Nave 83"
             }
         } else if fabs(locValue.latitude - pue5.latitudeDelta) <= Double.ulpOfOne && fabs(locValue.longitude - pue5.longitudeDelta) <= Double.ulpOfOne {
@@ -212,7 +211,7 @@ class Destination: UIViewController, MKMapViewDelegate, CLLocationManagerDelegat
                 dest.text = "Puerta 4"
             } else {
                 origin.text = "Puerta 5"
-                dest.text = "Estación 9"
+                dest.text = "Estacion 9"
             }
         } else if fabs(locValue.latitude - pue4.latitudeDelta) <= Double.ulpOfOne && fabs(locValue.longitude - pue4.longitudeDelta) <= Double.ulpOfOne {
             if guide {
