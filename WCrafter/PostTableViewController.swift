@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-=======
+
 //
 //  PostTableViewController.swift
 //  WCrafter
-//
-
->>>>>>> desfersada
 import UIKit
 
 class PostTableViewController: UITableViewController {

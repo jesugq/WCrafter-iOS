@@ -9,21 +9,10 @@ class Passenger: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var number: UILabel!
     //Atributtes
     var cont = 0
-    let defaultSession = URLSession(configuration: .default)
-    var dataTask: URLSessionDataTask?
-    var manager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        manager.delegate = self
-        if manager.responds(to: #selector(CLLocationManager.requestWhenInUseAuthorization)){
-            manager.requestWhenInUseAuthorization()
-        }
-        manager.startUpdatingLocation()
-        let locValue: CLLocationCoordinate2D = (manager.location?.coordinate)!
-        
-        _ = ModelManager.instance.saveNumberPassenger(number: cont, lat: String(locValue.latitude), lon: String(locValue.longitude))
-    }
+            }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

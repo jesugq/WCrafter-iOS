@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SbA-1E-4XL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SbA-1E-4XL">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
@@ -13,6 +13,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="VWHead-Bold.otf">
+            <string>VWHead-Bold</string>
+        </array>
         <array key="VWHead-Regular.otf">
             <string>VWHead</string>
         </array>
@@ -397,7 +400,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ihg-Td-F47"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Registro" image="Registro" id="pk4-Aw-cKm"/>
+                    <tabBarItem key="tabBarItem" title="Registro" image="registro" id="pk4-Aw-cKm"/>
                     <connections>
                         <outlet property="number" destination="Ah7-bN-K3n" id="yps-MM-68g"/>
                     </connections>
@@ -425,7 +428,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Rwh-Ee-2nj">
-                                <rect key="frame" x="16" y="35" width="288" height="29"/>
+                                <rect key="frame" x="16" y="79" width="288" height="29"/>
                                 <segments>
                                     <segment title="Notificaciones"/>
                                     <segment title="Fallas"/>
@@ -436,7 +439,7 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDl-NJ-Zu5">
-                                <rect key="frame" x="16" y="68" width="288" height="348"/>
+                                <rect key="frame" x="16" y="112" width="288" height="304"/>
                                 <connections>
                                     <segue destination="h0u-qE-kQZ" kind="embed" id="nrr-Iw-uUW"/>
                                 </connections>
@@ -454,7 +457,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fsf-jW-VLS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Avisos" image="Rendimiento" id="zdB-oK-oQm"/>
+                    <tabBarItem key="tabBarItem" title="Avisos" image="rendimiento" id="zdB-oK-oQm"/>
                     <connections>
                         <outlet property="segmented" destination="Rwh-Ee-2nj" id="hwQ-Re-4d2"/>
                     </connections>
@@ -468,7 +471,7 @@
             <objects>
                 <tableViewController title="Posts" id="h0u-qE-kQZ" customClass="PostTableViewController" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="O56-r1-M2r">
-                        <rect key="frame" x="0.0" y="0.0" width="288" height="348"/>
+                        <rect key="frame" x="0.0" y="0.0" width="288" height="304"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -656,7 +659,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gx9-kf-TAJ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Alertas" image="Alert" id="urQ-eh-ie7"/>
+                    <tabBarItem key="tabBarItem" title="Alertas" image="alert" id="urQ-eh-ie7"/>
                     <connections>
                         <outlet property="accident" destination="ibd-rc-hFl" id="Dds-wq-feS"/>
                         <outlet property="comment" destination="FFM-4X-Man" id="RYV-vY-IUJ"/>
@@ -747,7 +750,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="l9l-RT-gES"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Destinos" image="Location" id="C4R-db-W3m"/>
+                    <tabBarItem key="tabBarItem" title="Destinos" image="location" id="C4R-db-W3m"/>
                     <connections>
                         <outlet property="cond" destination="1O4-Jk-enT" id="uQt-qg-jaI"/>
                         <outlet property="dest" destination="jYm-05-Ixv" id="bpD-EN-9Px"/>
@@ -786,7 +789,7 @@
                         <nil key="title"/>
                         <barButtonItem key="backBarButtonItem" title="Menú" id="qoC-P6-rbm"/>
                         <view key="titleView" contentMode="scaleToFill" id="DiD-bo-c7H">
-                            <rect key="frame" x="160" y="22" width="0.0" height="0.0"/>
+                            <rect key="frame" x="8" y="22" width="0.0" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volkswagen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLg-BP-Cf5">
@@ -803,23 +806,23 @@
                             </constraints>
                         </view>
                         <rightBarButtonItems>
-                            <barButtonItem image="SOS" id="p9a-WO-ODz">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aSL-mH-U9U">
-                                    <rect key="frame" x="264" y="2" width="40" height="40"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" image="sos"/>
-                                    <connections>
-                                        <action selector="advanceEmergencies:" destination="HTz-Oq-QL9" eventType="touchUpInside" id="70h-kl-wc4"/>
-                                    </connections>
-                                </button>
-                            </barButtonItem>
-                            <barButtonItem image="User" id="Roc-Lg-xpg">
+                            <barButtonItem image="user" id="Roc-Lg-xpg">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FOH-Xd-hnC">
-                                    <rect key="frame" x="216" y="2" width="40" height="40"/>
+                                    <rect key="frame" x="264" y="2" width="40" height="40"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="user" backgroundImage="user"/>
                                     <connections>
                                         <action selector="advanceProfile:" destination="HTz-Oq-QL9" eventType="touchUpInside" id="RIA-hS-lTa"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem image="sos" id="p9a-WO-ODz">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aSL-mH-U9U">
+                                    <rect key="frame" x="14" y="0.0" width="250" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="sos"/>
+                                    <connections>
+                                        <action selector="advanceEmergencies:" destination="HTz-Oq-QL9" eventType="touchUpInside" id="70h-kl-wc4"/>
                                     </connections>
                                 </button>
                             </barButtonItem>
@@ -1060,7 +1063,6 @@
                         <outlet property="driver" destination="oMm-gU-K1p" id="yog-GY-f31"/>
                         <outlet property="rating" destination="270-xa-rYE" id="961-Od-vDC"/>
                         <outlet property="selfie" destination="ZCt-k0-U9G" id="XnZ-P9-ZEq"/>
-                        <segue destination="epF-kN-6Zu" kind="show" identifier="profileToPerformance" id="qCr-PZ-RWC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xS-xl-ZEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1274,22 +1276,20 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Alert" width="30" height="26"/>
-        <image name="Location" width="30" height="36"/>
-        <image name="Registro" width="30" height="30"/>
-        <image name="Rendimiento" width="30" height="23"/>
-        <image name="SOS" width="30" height="30"/>
-        <image name="User" width="30" height="30"/>
+        <image name="alert" width="30" height="26"/>
         <image name="arrow down" width="980" height="950"/>
         <image name="arrow up" width="980" height="950"/>
         <image name="crafter1" width="750" height="594"/>
+        <image name="location" width="30" height="36"/>
+        <image name="registro" width="30" height="30"/>
+        <image name="rendimiento" width="30" height="23"/>
         <image name="second" width="30" height="30"/>
-        <image name="sos" width="40" height="40"/>
-        <image name="user" width="40" height="40"/>
+        <image name="sos" width="30" height="30"/>
+        <image name="user" width="30" height="30"/>
         <image name="vwlogo" width="520" height="518"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vwZ-uR-3mg"/>
+        <segue reference="YAd-Y4-a4Z"/>
         <segue reference="MQK-4q-qzK"/>
     </inferredMetricsTieBreakers>
 </document>
