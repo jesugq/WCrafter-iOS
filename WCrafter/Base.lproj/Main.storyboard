@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SbA-1E-4XL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SbA-1E-4XL">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
@@ -812,7 +812,7 @@
                             </barButtonItem>
                             <barButtonItem id="Roc-Lg-xpg">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FOH-Xd-hnC">
-                                    <rect key="frame" x="236" y="7" width="30" height="30"/>
+                                    <rect key="frame" x="226" y="2" width="40" height="40"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="first"/>
                                     <connections>
@@ -977,6 +977,7 @@
                                     <action selector="confirm:" destination="jgs-R1-BaK" eventType="touchUpInside" id="40R-MI-SKW"/>
                                     <action selector="firemen:" destination="fi4-ga-gl4" eventType="touchUpInside" id="fyC-Pc-zpZ"/>
                                     <action selector="login:" destination="9pv-A4-QxB" eventType="touchUpInside" id="PJ2-fP-16v"/>
+                                    <segue destination="9pv-A4-QxB" kind="show" id="MQK-4q-qzK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohW-MY-2hq">
@@ -1054,7 +1055,7 @@
                         <outlet property="driver" destination="oMm-gU-K1p" id="yog-GY-f31"/>
                         <outlet property="rating" destination="270-xa-rYE" id="961-Od-vDC"/>
                         <outlet property="selfie" destination="ZCt-k0-U9G" id="XnZ-P9-ZEq"/>
-                        <segue destination="epF-kN-6Zu" kind="show" identifier="profileToPerformance" id="qCr-PZ-RWC"/>
+                        <segue destination="epF-kN-6Zu" kind="show" identifier="profileToPerformance" id="10c-pf-rtp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xS-xl-ZEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1137,7 +1138,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oo8-kq-klJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2452.5" y="493.75"/>
+            <point key="canvasLocation" x="-253" y="1291"/>
         </scene>
         <!--Crafters-->
         <scene sceneID="acw-Fk-Zam">
@@ -1203,4 +1204,7 @@
         <image name="second" width="30" height="30"/>
         <image name="vwlogo" width="520" height="518"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="MQK-4q-qzK"/>
+    </inferredMetricsTieBreakers>
 </document>

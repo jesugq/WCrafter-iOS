@@ -3,7 +3,8 @@ import UIKit
 class Passenger: UIViewController {
 
     @IBOutlet weak var number: UILabel!
-    var cont = 0;
+    //Atributtes
+    var cont = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
