@@ -49,6 +49,15 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
     @IBAction func advancePerformance(_ sender: Any) {
         performSegue(withIdentifier: "profileToPerformance", sender: self)
     }
+    @IBAction func advanceComments(_ sender: Any) {
+        performSegue(withIdentifier: "profileToComments", sender: self)
+    }
+    @IBAction func advanceChange(_ sender: Any) {
+        performSegue(withIdentifier: "profileToChange", sender: self)
+    }
+    @IBAction func advanceClose(_ sender: Any) {
+        performSegue(withIdentifier: "profileToClose", sender: self)
+    }
     
     //
     // Functions

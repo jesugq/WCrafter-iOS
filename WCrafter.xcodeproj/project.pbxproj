@@ -20,6 +20,7 @@
 		FB0B741E2095158B003FF85D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B741D2095158B003FF85D /* PostTableViewCell.swift */; };
 		FB0B742020952573003FF85D /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B741F20952573003FF85D /* PostTableViewController.swift */; };
 		FB260AA02091549E00890A3D /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB260A9F2091549E00890A3D /* Passenger.swift */; };
+		FB276FD9209FA25500E4ECCD /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB276FD8209FA25500E4ECCD /* ChangePassword.swift */; };
 		FB3CE98A20962EEC005DC9F2 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3CE98920962EEC005DC9F2 /* Alerts.swift */; };
 		FB3CE98C209644D2005DC9F2 /* Emergencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3CE98B209644D2005DC9F2 /* Emergencies.swift */; };
 		FB3CE98E209647DC005DC9F2 /* TabbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3CE98D209647DC005DC9F2 /* TabbedViewController.swift */; };
@@ -80,6 +81,7 @@
 		FB0B741D2095158B003FF85D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		FB0B741F20952573003FF85D /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
 		FB260A9F2091549E00890A3D /* Passenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
+		FB276FD8209FA25500E4ECCD /* ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
 		FB3CE98920962EEC005DC9F2 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		FB3CE98B209644D2005DC9F2 /* Emergencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emergencies.swift; sourceTree = "<group>"; };
 		FB3CE98D209647DC005DC9F2 /* TabbedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				FB9F0A2C209A58E300BCC82A /* StatTableViewController.swift */,
 				FB9F0A2A209A453300BCC82A /* Stat.swift */,
 				FB9F0A2E209A5CD900BCC82A /* StatTableViewCell.swift */,
+				FB276FD8209FA25500E4ECCD /* ChangePassword.swift */,
 				FB03D01820509B3F00AFEA84 /* Main.storyboard */,
 				FB03D01B20509B3F00AFEA84 /* Assets.xcassets */,
 				FB03D01D20509B3F00AFEA84 /* LaunchScreen.storyboard */,
@@ -365,6 +368,7 @@
 				FB9F0A2B209A453300BCC82A /* Stat.swift in Sources */,
 				FB3CE98E209647DC005DC9F2 /* TabbedViewController.swift in Sources */,
 				FB260AA02091549E00890A3D /* Passenger.swift in Sources */,
+				FB276FD9209FA25500E4ECCD /* ChangePassword.swift in Sources */,
 				FBF69791208E966800424AE3 /* CrafterTableViewController.swift in Sources */,
 				FB9F0A27209A3DC100BCC82A /* ToppedViewController.swift in Sources */,
 				FB9F0A2F209A5CD900BCC82A /* StatTableViewCell.swift in Sources */,
