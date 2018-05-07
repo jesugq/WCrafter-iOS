@@ -21,6 +21,8 @@ class Passenger: UIViewController {
         if cont == 20{
             let alertController = UIAlertController(title: "Error", message:
                 "No puedes llevar más de 20 pasajeros.", preferredStyle: UIAlertControllerStyle.alert)
+            let action = UIAlertAction(title: "OK", style: .default)
+            alertController.addAction(action)
             self.present(alertController, animated: true, completion: nil)
         } else {
             cont+=1
