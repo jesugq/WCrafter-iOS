@@ -20,6 +20,11 @@ class Authentication: UIViewController {
         super.viewDidLoad()
     }
     
+    //Hide keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true);
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

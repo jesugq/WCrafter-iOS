@@ -350,7 +350,7 @@
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8M-w5-uW1" colorLabel="IBBuiltInLabel-Green">
                                 <rect key="frame" x="0.0" y="216" width="320" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.48335830479452052" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -362,7 +362,7 @@
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXb-eu-3oe" colorLabel="IBBuiltInLabel-Green">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.20000000000000001" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -712,8 +712,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nave 31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYm-05-Ixv">
-                                <rect key="frame" x="188" y="167" width="91" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nave 82" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYm-05-Ixv">
+                                <rect key="frame" x="188" y="167" width="91" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -782,6 +782,16 @@
                     <navigationItem key="navigationItem" id="RwF-nL-Uch">
                         <nil key="title"/>
                         <barButtonItem key="backBarButtonItem" title="Menú" id="qoC-P6-rbm"/>
+                        <barButtonItem key="leftBarButtonItem" id="rRm-gJ-8Pb">
+                            <button key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" id="57y-GH-Xcd" userLabel="Logo Button">
+                                <rect key="frame" x="16" y="4.5" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="logoSmall"/>
+                                <connections>
+                                    <action selector="advanceEmergencies:" destination="HTz-Oq-QL9" eventType="touchUpInside" id="nic-Ih-TOj"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="DiD-bo-c7H">
                             <rect key="frame" x="160" y="22" width="0.0" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -804,7 +814,7 @@
                                 <button key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" id="aSL-mH-U9U">
                                     <rect key="frame" x="274" y="7" width="30" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" image="second"/>
+                                    <state key="normal" image="sos"/>
                                     <connections>
                                         <action selector="advanceEmergencies:" destination="HTz-Oq-QL9" eventType="touchUpInside" id="70h-kl-wc4"/>
                                     </connections>
@@ -814,7 +824,7 @@
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FOH-Xd-hnC">
                                     <rect key="frame" x="226" y="2" width="40" height="40"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" image="first"/>
+                                    <state key="normal" image="user"/>
                                     <connections>
                                         <action selector="advanceProfile:" destination="HTz-Oq-QL9" eventType="touchUpInside" id="RIA-hS-lTa"/>
                                     </connections>
@@ -1415,14 +1425,17 @@
         <image name="arrow down" width="980" height="950"/>
         <image name="arrow up" width="980" height="950"/>
         <image name="crafter1" width="750" height="594"/>
-        <image name="first" width="30" height="30"/>
         <image name="location" width="30" height="36"/>
+        <image name="logoSmall" width="35" height="35"/>
         <image name="registro" width="30" height="30"/>
         <image name="rendimiento" width="30" height="23"/>
         <image name="second" width="30" height="30"/>
+        <image name="sos" width="30" height="30"/>
+        <image name="user" width="30" height="30"/>
         <image name="vwlogo" width="520" height="518"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="bdA-jv-lnp"/>
         <segue reference="MQK-4q-qzK"/>
     </inferredMetricsTieBreakers>
 </document>
