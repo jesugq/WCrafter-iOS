@@ -425,7 +425,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Rwh-Ee-2nj">
-                                <rect key="frame" x="16" y="35" width="288" height="29"/>
+                                <rect key="frame" x="16" y="79" width="288" height="29"/>
                                 <segments>
                                     <segment title="Notificaciones"/>
                                     <segment title="Fallas"/>
@@ -436,7 +436,7 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDl-NJ-Zu5">
-                                <rect key="frame" x="16" y="68" width="288" height="348"/>
+                                <rect key="frame" x="16" y="112" width="288" height="304"/>
                                 <connections>
                                     <segue destination="h0u-qE-kQZ" kind="embed" id="nrr-Iw-uUW"/>
                                 </connections>
@@ -468,7 +468,7 @@
             <objects>
                 <tableViewController title="Posts" id="h0u-qE-kQZ" customClass="PostTableViewController" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="O56-r1-M2r">
-                        <rect key="frame" x="0.0" y="0.0" width="288" height="348"/>
+                        <rect key="frame" x="0.0" y="0.0" width="288" height="304"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -1427,6 +1427,7 @@
         <image name="arrow up" width="980" height="950"/>
         <image name="crafter1" width="750" height="594"/>
         <image name="location" width="30" height="36"/>
+        <image name="logo" width="1920" height="1080"/>
         <image name="logoSmall" width="35" height="35"/>
         <image name="registro" width="30" height="30"/>
         <image name="rendimiento" width="30" height="23"/>
@@ -1436,7 +1437,6 @@
         <image name="vwlogo" width="520" height="518"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bdA-jv-lnp"/>
         <segue reference="MQK-4q-qzK"/>
     </inferredMetricsTieBreakers>
 </document>
