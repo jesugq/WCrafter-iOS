@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SbA-1E-4XL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SbA-1E-4XL">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
@@ -397,7 +397,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ihg-Td-F47"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Registro" id="pk4-Aw-cKm"/>
+                    <tabBarItem key="tabBarItem" title="Registro" image="registro" id="pk4-Aw-cKm"/>
                     <connections>
                         <outlet property="number" destination="Ah7-bN-K3n" id="yps-MM-68g"/>
                     </connections>
@@ -454,7 +454,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fsf-jW-VLS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Avisos" id="zdB-oK-oQm"/>
+                    <tabBarItem key="tabBarItem" title="Avisos" image="rendimiento" id="zdB-oK-oQm"/>
                     <connections>
                         <outlet property="segmented" destination="Rwh-Ee-2nj" id="hwQ-Re-4d2"/>
                     </connections>
@@ -656,7 +656,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gx9-kf-TAJ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Alertas" id="urQ-eh-ie7"/>
+                    <tabBarItem key="tabBarItem" title="Alertas" image="alert" id="urQ-eh-ie7"/>
                     <connections>
                         <outlet property="accident" destination="ibd-rc-hFl" id="Dds-wq-feS"/>
                         <outlet property="comment" destination="FFM-4X-Man" id="RYV-vY-IUJ"/>
@@ -744,7 +744,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="l9l-RT-gES"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Destinos" id="C4R-db-W3m"/>
+                    <tabBarItem key="tabBarItem" title="Destinos" image="location" id="C4R-db-W3m"/>
                     <connections>
                         <outlet property="cond" destination="1O4-Jk-enT" id="uQt-qg-jaI"/>
                         <outlet property="dest" destination="jYm-05-Ixv" id="bpD-EN-9Px"/>
@@ -1411,10 +1411,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="alert" width="30" height="26"/>
         <image name="arrow down" width="980" height="950"/>
         <image name="arrow up" width="980" height="950"/>
         <image name="crafter1" width="750" height="594"/>
         <image name="first" width="30" height="30"/>
+        <image name="location" width="30" height="36"/>
+        <image name="registro" width="30" height="30"/>
+        <image name="rendimiento" width="30" height="23"/>
         <image name="second" width="30" height="30"/>
         <image name="vwlogo" width="520" height="518"/>
     </resources>
