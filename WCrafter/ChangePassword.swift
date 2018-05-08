@@ -41,6 +41,8 @@ class ChangePassword: UIViewController {
             //If not, it asks again
             let alertController = UIAlertController(title: "No same password", message:
                 "Las contraseñas no coinciden.", preferredStyle: UIAlertControllerStyle.alert)
+            let action = UIAlertAction(title: "OK", style: .default)
+            alertController.addAction(action)
             self.present(alertController, animated: true, completion: nil)
         } else{
             // Prevents multiple data task sessions.
@@ -51,6 +53,8 @@ class ChangePassword: UIViewController {
             //Save in data base
             let alertController = UIAlertController(title: "Correct", message:
                 "Contraseña guardada", preferredStyle: UIAlertControllerStyle.alert)
+            let action = UIAlertAction(title: "OK", style: .default)
+            alertController.addAction(action)
             self.present(alertController, animated: true, completion: nil)
             
             //Convert the characters to php compatible format
