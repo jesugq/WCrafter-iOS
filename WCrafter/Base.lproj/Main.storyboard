@@ -1405,12 +1405,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p83-Si-k9l">
-                                <rect key="frame" x="24" y="116.5" width="240" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKr-F3-oCb">
                                 <rect key="frame" x="112" y="367.5" width="96" height="33"/>
                                 <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1423,46 +1417,58 @@
                                     <action selector="savePassword:" destination="4nq-2f-aMI" eventType="touchUpInside" id="RaP-Ph-zhO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña actual: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUq-au-fxd">
-                                <rect key="frame" x="28" y="85.5" width="168.5" height="21"/>
-                                <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nueva contraseña:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYS-Xy-BLJ">
-                                <rect key="frame" x="28" y="181.5" width="168.5" height="21"/>
+                                <rect key="frame" x="28" y="205.5" width="168.5" height="21"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmar contraseña:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpo-FF-vlE">
-                                <rect key="frame" x="28" y="277.5" width="168.5" height="21"/>
+                                <rect key="frame" x="28" y="276.5" width="168.5" height="21"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9uS-Ww-zgj">
-                                <rect key="frame" x="24" y="212.5" width="240" height="30"/>
+                                <rect key="frame" x="24" y="236.5" width="240" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DO1-aA-jDz">
-                                <rect key="frame" x="24" y="308.5" width="240" height="30"/>
+                                <rect key="frame" x="24" y="307.5" width="240" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cambiar Contraseña" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccO-bK-6gH">
+                                <rect key="frame" x="70.5" y="83.5" width="180" height="25"/>
+                                <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p83-Si-k9l">
+                                <rect key="frame" x="24" y="149.5" width="240" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña actual: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUq-au-fxd">
+                                <rect key="frame" x="28" y="118.5" width="168.5" height="21"/>
+                                <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="p83-Si-k9l" firstAttribute="width" secondItem="4rZ-2D-Liy" secondAttribute="width" multiplier="0.75" id="0YV-re-tS9"/>
                             <constraint firstItem="p83-Si-k9l" firstAttribute="centerX" secondItem="4rZ-2D-Liy" secondAttribute="centerX" multiplier="0.9" id="2uf-CU-Ll1"/>
+                            <constraint firstItem="mUq-au-fxd" firstAttribute="top" secondItem="ccO-bK-6gH" secondAttribute="bottom" constant="10" id="50U-74-bHt"/>
                             <constraint firstItem="Vpo-FF-vlE" firstAttribute="width" secondItem="zYS-Xy-BLJ" secondAttribute="width" id="6f6-4y-IDx"/>
                             <constraint firstItem="9uS-Ww-zgj" firstAttribute="width" secondItem="p83-Si-k9l" secondAttribute="width" id="6yo-ok-2PG"/>
                             <constraint firstItem="p83-Si-k9l" firstAttribute="top" secondItem="mUq-au-fxd" secondAttribute="bottom" constant="10" id="FQJ-Zt-ynL"/>
                             <constraint firstItem="fKr-F3-oCb" firstAttribute="centerY" secondItem="4rZ-2D-Liy" secondAttribute="centerY" multiplier="1.6" id="FZx-gh-xUd"/>
-                            <constraint firstItem="Vpo-FF-vlE" firstAttribute="centerY" secondItem="4rZ-2D-Liy" secondAttribute="centerY" multiplier="1.2" id="GTu-wB-g22"/>
                             <constraint firstItem="fKr-F3-oCb" firstAttribute="centerX" secondItem="4rZ-2D-Liy" secondAttribute="centerX" id="Gby-v8-aU5"/>
                             <constraint firstItem="fKr-F3-oCb" firstAttribute="width" secondItem="4rZ-2D-Liy" secondAttribute="width" multiplier="0.3" id="HY9-ji-ydf"/>
                             <constraint firstItem="DO1-aA-jDz" firstAttribute="width" secondItem="9uS-Ww-zgj" secondAttribute="width" id="LOA-gc-JmB"/>
@@ -1472,9 +1478,11 @@
                             <constraint firstItem="zYS-Xy-BLJ" firstAttribute="width" secondItem="mUq-au-fxd" secondAttribute="width" id="WSS-h4-2It"/>
                             <constraint firstItem="9uS-Ww-zgj" firstAttribute="centerX" secondItem="4rZ-2D-Liy" secondAttribute="centerX" multiplier="0.9" id="e22-X7-ecI"/>
                             <constraint firstItem="zYS-Xy-BLJ" firstAttribute="centerX" secondItem="mUq-au-fxd" secondAttribute="centerX" id="fYX-cL-oal"/>
+                            <constraint firstItem="Vpo-FF-vlE" firstAttribute="top" secondItem="9uS-Ww-zgj" secondAttribute="bottom" constant="10" id="kST-x8-8f7"/>
                             <constraint firstItem="DO1-aA-jDz" firstAttribute="centerX" secondItem="9uS-Ww-zgj" secondAttribute="centerX" id="kg2-Mc-4so"/>
-                            <constraint firstItem="mUq-au-fxd" firstAttribute="centerY" secondItem="4rZ-2D-Liy" secondAttribute="centerY" multiplier="0.4" id="q4o-m4-wm0"/>
-                            <constraint firstItem="zYS-Xy-BLJ" firstAttribute="centerY" secondItem="4rZ-2D-Liy" secondAttribute="centerY" multiplier="0.8" id="rf3-e5-B82"/>
+                            <constraint firstItem="ccO-bK-6gH" firstAttribute="centerY" secondItem="4rZ-2D-Liy" secondAttribute="centerY" multiplier="0.4" id="mbz-4J-CNc"/>
+                            <constraint firstItem="ccO-bK-6gH" firstAttribute="centerX" secondItem="4rZ-2D-Liy" secondAttribute="centerX" id="nH1-wh-NJl"/>
+                            <constraint firstItem="zYS-Xy-BLJ" firstAttribute="centerY" secondItem="4rZ-2D-Liy" secondAttribute="centerY" multiplier="0.9" id="rf3-e5-B82"/>
                             <constraint firstItem="DO1-aA-jDz" firstAttribute="top" secondItem="Vpo-FF-vlE" secondAttribute="bottom" constant="10" id="sv6-Y2-Yps"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c2C-hb-pLX"/>
@@ -1528,10 +1536,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crafter1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BA5-HW-YzN">
-                                            <rect key="frame" x="30.5" y="0.0" width="59.5" height="59.5"/>
+                                            <rect key="frame" x="21.5" y="0.0" width="59.5" height="59.5"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crafter Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEl-o0-OmO">
-                                            <rect key="frame" x="112.5" y="15" width="150" height="29.5"/>
+                                            <rect key="frame" x="96" y="15" width="128" height="29.5"/>
                                             <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="20"/>
                                             <color key="textColor" red="0.40101248029999997" green="0.45025414229999999" blue="0.50808888669999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -1583,6 +1591,7 @@
         <image name="vwlogo" width="520" height="518"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="SGu-cP-RF1"/>
         <segue reference="09r-QY-srj"/>
         <segue reference="MQK-4q-qzK"/>
     </inferredMetricsTieBreakers>
