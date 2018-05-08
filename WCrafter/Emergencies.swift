@@ -30,6 +30,10 @@ class Emergencies: UIViewController {
     @IBAction func ambulance(_ sender: Any) {
         self.makeCall(url: AMBULANCE!)
     }
+    @IBAction func advanceTabbed(_ sender: Any) {
+        performSegue(withIdentifier: "emergenciesToTabbed", sender: self)
+    }
+    
     
     //
     // Functions

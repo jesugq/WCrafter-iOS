@@ -24,7 +24,7 @@ class TabbedViewController: UITabBarController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "tabbedToProfile" {
-            let newView = segue.destination as! Profile
+            let newView = segue.destination as! ProfileViewController
             newView.userGiven = self.userGiven
         }
     }

@@ -67,6 +67,10 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
     @IBAction func advanceClose(_ sender: Any) {
         performSegue(withIdentifier: "profileToClose", sender: self)
     }
+    @IBAction func advanceTabbed(_ sender: Any) {
+        performSegue(withIdentifier: "profileToTabbed", sender: self)
+    }
+    
     
     //
     // Functions
