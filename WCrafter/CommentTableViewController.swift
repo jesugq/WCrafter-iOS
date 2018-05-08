@@ -1,19 +1,22 @@
 import UIKit
 
-class StatTableViewController: UITableViewController {
+class CommentTableViewController: UITableViewController {
     
     // Attributes
-    var stats = [Stat]()
+    var comments = [Comment]()
     
     let defaultSession = URLSession(configuration: .default)
     var dataTask: URLSessionDataTask?
+    
+    // Prepared Attributes
+    var userGiven : String = ""
 
     //
     // View Controller Functions
     //
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.defineStats()
+        self.defineComments()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,20 +28,20 @@ class StatTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return stats.count
+        return comments.count
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Identify each cell to have a specific format and interface layout.
-        let cellIdentifier = "Stat"
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? StatTableViewCell else {
-            fatalError("The created instance is not a Stat.")
+        let cellIdentifier = "Comment"
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? CommentTableViewCell else {
+            fatalError("The created instance is not a Comment.")
         }
         
         // Obtain the values from the item at position indexPath in the array.
-        let stat = stats[indexPath.row]
+        let comment = comments[indexPath.row]
         
-        cell.addValues(photo: stat.photo, value: stat.value, descr: stat.descr)
+        cell.addValues(username: comment.user, rating: comment.rating, comment: comment.comment)
         
         return cell
     }
@@ -47,30 +50,32 @@ class StatTableViewController: UITableViewController {
         return 60
     }
     
-    func defineStats() {
-        stats = [Stat]()
+    //
+    // Functions
+    //
+    func defineComments() {
         self.hardcodeLoading()
         //self.performLoading()
     }
     
     func hardcodeLoading() {
-        let string = "card\n3G1F08\nodometerdelta\n13.4\nroad\n8465 KM\nbattery\nRegular\nenginetime\n13 horas\nodometer\nRP\nspeed\n52 KM/hora\nspeedbreak\n8465\nengine\nRegular"
+        let string = "Fer\n4.5\nMuy bien.\nChucho\n5\nNice.\nPaola\n3.5\nEstuvo bien.\nHumberto\n2\nNo."
         let data = string.data(using: String.Encoding(rawValue: String.Encoding.ascii.rawValue))
         
         self.sendResult(data: data!)
     }
     
-    func performLoading() {
+    func performLoading(){
         // Prevents multiple data task sessions.
         if dataTask != nil {
             dataTask?.cancel()
         }
         
-        // Temporary login website. This will be changed to VW's official url.
+        // Temporary crafter receiving website. This will be changed to VW's official url.
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        let url = NSURL(string: "http://www.iroseapps.com/moviles/Stats.php)")
+        let url = NSURL(string: "https://www.iroseapps.com/moviles/comments.php?username=\(userGiven)")
         
-        // Request information from an URL with a Data Task, calling function verifyResult() if successful.
+        // Request information from an URL with a Data Task, calling function verifyResult if successful.
         let request = URLRequest(url: url! as URL)
         dataTask = defaultSession.dataTask(with: request){
             data, response, error in DispatchQueue.main.async {
@@ -81,39 +86,37 @@ class StatTableViewController: UITableViewController {
                 print(error.localizedDescription)
             } else if let httpResponse = response as? HTTPURLResponse {
                 if httpResponse.statusCode == 200 {
-                    DispatchQueue.main.async {
+                    DispatchQueue.main.async{
                         self.sendResult(data: data!)
                     }
                 }
             }
         }
         dataTask?.resume()
+        return
     }
     
-    func sendResult(data: Data) {
+    func sendResult(data: Data){
         // The result given is a String. The expected value for this example is the following.
-        // card     (statistic type)
-        // 3G1F08   (statistic value)
+        // crafter1     (id of each car image)
+        // KJS-91-21    (license plate of each car)
         let value = NSString(data: data, encoding: String.Encoding.ascii.rawValue)
-        let valueArray : [String] = (value?.components(separatedBy: "\n"))!
+        let valueArray : [String] = (value?.components(separatedBy: "\n"))!;
         
-        // Create the necessary amount of elements for the TableView.
-        self.loadStats(valueArray: valueArray)
+        // Create the necessary amount of elements in the TableView.
+        self.loadComments(valueArray: valueArray)
     }
     
-    func loadStats(valueArray: [String]) {
-        // From the result given as a String, create a Stat.
-        for index in stride(from: 0, to: valueArray.count-1, by: 2) {
-            print("\n\(index)\n")
-            guard let stat = Stat(type: valueArray[index], value: valueArray[index+1]) else {
-                fatalError("Unable to create Stat.")
+    func loadComments(valueArray: [String]){
+        // From the result given as a String, create a Crafter.
+        for index in stride(from: 0, to: valueArray.count-2, by: 3) {
+            guard let comment = Comment(user: valueArray[index], ratio: valueArray[index+1], comment: valueArray[index+2]) else {
+                fatalError("Unable to create Comment.")
             }
             
-            // Add said Stat to the Array of Stats.
-            stats += [stat]
+            // Add said Crafter to the Array of Crafters.
+            comments += [comment]
         }
         self.tableView?.reloadData()
     }
-
-    
 }

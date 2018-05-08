@@ -1,11 +1,3 @@
-//
-//  StatTableViewCell.swift
-//  WCrafter
-//
-//  Created by Alumno on 02/05/18.
-//  Copyright © 2018 Alumno. All rights reserved.
-//
-
 import UIKit
 
 class StatTableViewCell: UITableViewCell {
@@ -15,9 +7,15 @@ class StatTableViewCell: UITableViewCell {
     @IBOutlet weak var value: UILabel!
     @IBOutlet weak var descr: UILabel!
     
-
+    //
+    // View Controller Functions
+    //
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
     }
     
     //

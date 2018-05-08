@@ -17,10 +17,7 @@ class CrafterTableViewController: UITableViewController {
     //
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Attempt to get the Crafter list.
-        self.hardcodeLoading()
-        //performLoading()
+        self.defineCrafters()
     }
     
     override func didReceiveMemoryWarning() {
@@ -66,6 +63,11 @@ class CrafterTableViewController: UITableViewController {
     //
     // Functions
     //
+    func defineCrafters() {
+        self.hardcodeLoading()
+        //performLoading()
+    }
+    
     func shareWithParent(photoSent: UIImage, plateSent: String) {
         parentView?.receiveFromChild(photoSent: photoSent, plateSent: plateSent)
         parentView?.advanceFromChild()
