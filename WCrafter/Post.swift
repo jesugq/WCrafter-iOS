@@ -13,6 +13,11 @@ class Post {
             return nil
         }
         
+        // No code given.
+        guard !code.isEmpty else {
+            return nil
+        }
+        
         self.desc = desc
         self.code = code
     }

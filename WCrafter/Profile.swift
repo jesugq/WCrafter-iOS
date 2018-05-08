@@ -52,7 +52,7 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
     // UI Actions
     //
     @IBAction func changeSelfie(_ sender: UITapGestureRecognizer) {
-        self.callPickerController()
+        _ = self.callPickerController()
     }
     
     @IBAction func advancePerformance(_ sender: Any) {
@@ -71,17 +71,19 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         performSegue(withIdentifier: "profileToTabbed", sender: self)
     }
     
-    
     //
     // Functions
     //
-    func callPickerController() {
+    func callPickerController() -> Bool {
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
             imagePicker.delegate = self
             imagePicker.sourceType = .savedPhotosAlbum
             imagePicker.allowsEditing = false
             
             self.present(imagePicker, animated: true, completion: nil)
+            return true
+        } else {
+            return false
         }
     }
     
@@ -102,10 +104,10 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
     }
     
     func hardcodeDriver() {
-        let string = "Patricia Gonzalez\n4.5"
+        let string = "\(userGiven)\n4.5"
         let data = string.data(using: String.Encoding(rawValue: String.Encoding.ascii.rawValue))
         
-        self.verifyResult(data: data!)
+        _ = self.verifyResult(data: data!)
     }
     
     func performDriver() {
@@ -133,7 +135,7 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
             } else if let httpResponse = response as? HTTPURLResponse {
                 if httpResponse.statusCode == 200 {
                     DispatchQueue.main.async {
-                        self.verifyResult(data: data!)
+                        _ = self.verifyResult(data: data!)
                     }
                 }
             }
@@ -141,15 +143,20 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         dataTask?.resume()
     }
     
-    func verifyResult(data: Data){
+    func verifyResult(data: Data) -> Bool {
         // The result given is a String. The expected value for this example is the following.
         // Patricia González    (driver name)
         // 4.5                  (driver rating)
         let value = NSString(data: data, encoding: String.Encoding.ascii.rawValue)
         let valueArray : [String] = (value?.components(separatedBy: "\n"))!;
         
+        if valueArray.count < 2 {
+            return false
+        }
+        
         updateDriver(driver: valueArray[0])
         updateRating(rating: Float(valueArray[1])!)
+        return true
     }
     
     func updateDriver(driver : String) {

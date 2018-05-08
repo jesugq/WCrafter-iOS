@@ -29,14 +29,16 @@ class Confirmation: UIViewController {
         newView.userGiven = self.userGiven
     }
     
+    //
     // UI Actions
-
+    //
     @IBAction func confirm(_ sender: Any) {
         performSegue(withIdentifier: "confirmToRoutes", sender: self)
     }
     
+    //
     // Functions
-    
+    //
     func presentCrafter() {
         photo.image = photoGiven
         plate.text = plateGiven

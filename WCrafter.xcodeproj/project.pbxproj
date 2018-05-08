@@ -13,8 +13,6 @@
 		FB03D01A20509B3F00AFEA84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB03D01820509B3F00AFEA84 /* Main.storyboard */; };
 		FB03D01C20509B3F00AFEA84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB03D01B20509B3F00AFEA84 /* Assets.xcassets */; };
 		FB03D01F20509B3F00AFEA84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB03D01D20509B3F00AFEA84 /* LaunchScreen.storyboard */; };
-		FB03D02A20509B3F00AFEA84 /* WCrafterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03D02920509B3F00AFEA84 /* WCrafterTests.swift */; };
-		FB03D03520509B3F00AFEA84 /* WCrafterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03D03420509B3F00AFEA84 /* WCrafterUITests.swift */; };
 		FB0B7418209509E2003FF85D /* Notices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B7417209509E2003FF85D /* Notices.swift */; };
 		FB0B741C20950E49003FF85D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B741B20950E49003FF85D /* Post.swift */; };
 		FB0B741E2095158B003FF85D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B741D2095158B003FF85D /* PostTableViewCell.swift */; };
@@ -28,6 +26,11 @@
 		FB5B28BA209146A50063C5D2 /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B28B9209146A50063C5D2 /* Confirmation.swift */; };
 		FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68130D208E646E00223332 /* CrafterTableViewCell.swift */; };
 		FB681310208E8DE100223332 /* Crafter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68130F208E8DE100223332 /* Crafter.swift */; };
+		FB918E5A20A235BE00061449 /* AuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB918E5920A235BE00061449 /* AuthenticationTests.swift */; };
+		FB918E5E20A23E4500061449 /* CrafterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB918E5D20A23E4500061449 /* CrafterTests.swift */; };
+		FB918E6020A266D100061449 /* PassengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB918E5F20A266D100061449 /* PassengerTests.swift */; };
+		FB918E6220A2681900061449 /* PostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB918E6120A2681900061449 /* PostTests.swift */; };
+		FB918E6420A26DC200061449 /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB918E6320A26DC200061449 /* ProfileTests.swift */; };
 		FB9F0A27209A3DC100BCC82A /* ToppedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9F0A26209A3DC100BCC82A /* ToppedViewController.swift */; };
 		FB9F0A2B209A453300BCC82A /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9F0A2A209A453300BCC82A /* Stat.swift */; };
 		FB9F0A2D209A58E300BCC82A /* StatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9F0A2C209A58E300BCC82A /* StatTableViewController.swift */; };
@@ -75,10 +78,8 @@
 		FB03D01E20509B3F00AFEA84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB03D02020509B3F00AFEA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB03D02520509B3F00AFEA84 /* WCrafterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WCrafterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB03D02920509B3F00AFEA84 /* WCrafterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCrafterTests.swift; sourceTree = "<group>"; };
 		FB03D02B20509B3F00AFEA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB03D03020509B3F00AFEA84 /* WCrafterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WCrafterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB03D03420509B3F00AFEA84 /* WCrafterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCrafterUITests.swift; sourceTree = "<group>"; };
 		FB03D03620509B3F00AFEA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB0B7417209509E2003FF85D /* Notices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notices.swift; sourceTree = "<group>"; };
 		FB0B741B20950E49003FF85D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -93,6 +94,11 @@
 		FB5B28B9209146A50063C5D2 /* Confirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
 		FB68130D208E646E00223332 /* CrafterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrafterTableViewCell.swift; sourceTree = "<group>"; };
 		FB68130F208E8DE100223332 /* Crafter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crafter.swift; sourceTree = "<group>"; };
+		FB918E5920A235BE00061449 /* AuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
+		FB918E5D20A23E4500061449 /* CrafterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrafterTests.swift; sourceTree = "<group>"; };
+		FB918E5F20A266D100061449 /* PassengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerTests.swift; sourceTree = "<group>"; };
+		FB918E6120A2681900061449 /* PostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTests.swift; sourceTree = "<group>"; };
+		FB918E6320A26DC200061449 /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
 		FB9F0A26209A3DC100BCC82A /* ToppedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppedViewController.swift; sourceTree = "<group>"; };
 		FB9F0A2A209A453300BCC82A /* Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
 		FB9F0A2C209A58E300BCC82A /* StatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTableViewController.swift; sourceTree = "<group>"; };
@@ -199,7 +205,11 @@
 		FB03D02820509B3F00AFEA84 /* WCrafterTests */ = {
 			isa = PBXGroup;
 			children = (
-				FB03D02920509B3F00AFEA84 /* WCrafterTests.swift */,
+				FB918E6320A26DC200061449 /* ProfileTests.swift */,
+				FB918E6120A2681900061449 /* PostTests.swift */,
+				FB918E5F20A266D100061449 /* PassengerTests.swift */,
+				FB918E5D20A23E4500061449 /* CrafterTests.swift */,
+				FB918E5920A235BE00061449 /* AuthenticationTests.swift */,
 				FB03D02B20509B3F00AFEA84 /* Info.plist */,
 			);
 			path = WCrafterTests;
@@ -208,7 +218,6 @@
 		FB03D03320509B3F00AFEA84 /* WCrafterUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FB03D03420509B3F00AFEA84 /* WCrafterUITests.swift */,
 				FB03D03620509B3F00AFEA84 /* Info.plist */,
 			);
 			path = WCrafterUITests;
@@ -405,7 +414,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB03D02A20509B3F00AFEA84 /* WCrafterTests.swift in Sources */,
+				FB918E5A20A235BE00061449 /* AuthenticationTests.swift in Sources */,
+				FB918E6020A266D100061449 /* PassengerTests.swift in Sources */,
+				FB918E5E20A23E4500061449 /* CrafterTests.swift in Sources */,
+				FB918E6220A2681900061449 /* PostTests.swift in Sources */,
+				FB918E6420A26DC200061449 /* ProfileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +426,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB03D03520509B3F00AFEA84 /* WCrafterUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

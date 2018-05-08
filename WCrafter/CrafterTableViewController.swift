@@ -65,7 +65,7 @@ class CrafterTableViewController: UITableViewController {
     //
     func defineCrafters() {
         self.hardcodeLoading()
-        //performLoading()
+        //_ = performLoading()
     }
     
     func shareWithParent(photoSent: UIImage, plateSent: String) {
@@ -77,10 +77,10 @@ class CrafterTableViewController: UITableViewController {
         let string = "crafter1\nUSA-03-64\ncrafter2\nIYO-23-81\ncrafter3\nNIL-76-21\ncrafter4\nINS-78-23\ncrafter5\nNEW-71-92"
         let data = string.data(using: String.Encoding(rawValue: String.Encoding.ascii.rawValue))
         
-        self.sendResult(data: data!)
+        _ = self.sendResult(data: data!)
     }
     
-    func performLoading(){
+    func performLoading() -> Bool {
         // Prevents multiple data task sessions.
         if dataTask != nil {
             dataTask?.cancel()
@@ -102,24 +102,30 @@ class CrafterTableViewController: UITableViewController {
             } else if let httpResponse = response as? HTTPURLResponse {
                 if httpResponse.statusCode == 200 {
                     DispatchQueue.main.async{
-                        self.sendResult(data: data!)
+                        _ = self.sendResult(data: data!)
                     }
                 }
             }
         }
         dataTask?.resume()
-        return
+        return true
     }
     
-    func sendResult(data: Data){
+    func sendResult(data: Data) -> Bool {
         // The result given is a String. The expected value for this example is the following.
         // crafter1     (id of each car image)
         // KJS-91-21    (license plate of each car)
         let value = NSString(data: data, encoding: String.Encoding.ascii.rawValue)
         let valueArray : [String] = (value?.components(separatedBy: "\n"))!;
         
+        // Prevents a faulty input from being executed.
+        if valueArray.count % 2 != 0 {
+            return false
+        }
+        
         // Create the necessary amount of elements in the TableView.
         self.loadCrafters(valueArray: valueArray)
+        return true
     }
     
     func loadCrafters(valueArray: [String]){

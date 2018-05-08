@@ -49,9 +49,11 @@ class Authentication: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Prepare the Selection ViewController to receive the username as the name to present.
-        let newView = segue.destination as! Selection
-        userSent = user.text!
-        newView.userGiven = userSent
+        if segue.identifier == "authToSelection" {
+            let newView = segue.destination as! Selection
+            userSent = user.text!
+            newView.userGiven = userSent
+        }
     }
     
     //
@@ -59,7 +61,7 @@ class Authentication: UIViewController {
     //
     @IBAction func login(_ sender: Any) {
         self.hardcodeLogin()
-        //self.performLogin()
+        //_ = self.performLogin()
     }
     
     @IBAction func passForget(_ sender: Any) {
@@ -80,7 +82,7 @@ class Authentication: UIViewController {
         performSegue(withIdentifier: "authToSelect", sender: self)
     }
     
-    func performLogin() {
+    func performLogin() -> Bool {
         // Prevents multiple data task sessions.
         if dataTask != nil {
             dataTask?.cancel()
@@ -89,7 +91,7 @@ class Authentication: UIViewController {
         // Prevents logins with no values.
         if user.text!.isEmpty || pass.text!.isEmpty {
             printAlert(title: "Credenciales vacías.", message: "El usuario y/o contraseña se encuentran vacíos.")
-            return
+            return false
         }
         
         // Convert the characters to php compatible format.
@@ -112,15 +114,16 @@ class Authentication: UIViewController {
             } else if let httpResponse = response as? HTTPURLResponse {
                 if httpResponse.statusCode == 200 {
                     DispatchQueue.main.async {
-                        self.verifyResult(data: data!)
+                        _ = self.verifyResult(data: data!)
                     }
                 }
             }
         }
         dataTask?.resume()
+        return true
     }
     
-    func verifyResult(data: Data){
+    func verifyResult(data: Data) -> Bool {
         // The result given is a String. The expected value for this example is the following.
         // true / false
         let value = NSString(data: data, encoding: String.Encoding.ascii.rawValue)
@@ -128,8 +131,10 @@ class Authentication: UIViewController {
         // Advance to the next view, or send an alert of failure.
         if value == "true" {
             performSegue(withIdentifier: "authToSelection", sender: self)
+            return true
         } else {
             printAlert(title: "Credenciales Inválidas", message: "El usuario y/o contraseña ingresados son incorrectos.")
+            return false
         }
     }
     
@@ -139,6 +144,6 @@ class Authentication: UIViewController {
         alert.addAction(action)
         self.present(alert, animated: true)
     }
-    
+
 }
 

@@ -24,7 +24,7 @@
         <!--Authentication-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="Authentication" id="9pv-A4-QxB" customClass="Authentication" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Authentication" title="Authentication" id="9pv-A4-QxB" customClass="Authentication" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,7 +151,7 @@
         <!--Selection-->
         <scene sceneID="TcG-gt-V3F">
             <objects>
-                <viewController title="Selection" id="MVF-FS-2d4" customClass="Selection" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Selection" title="Selection" id="MVF-FS-2d4" customClass="Selection" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8kA-0w-yBm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -267,7 +267,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Maneje con precaución!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPq-yx-xqo">
-                                <rect key="frame" x="52.5" y="416.5" width="215" height="24.5"/>
+                                <rect key="frame" x="53" y="416.5" width="215" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <color key="textColor" red="0.1133498922" green="0.1215296909" blue="0.1256859303" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -714,19 +714,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origen:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0o4-s4-z0h">
-                                <rect key="frame" x="32" y="105.5" width="96" height="29.5"/>
+                                <rect key="frame" x="32" y="106" width="96" height="29.5"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destino:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncl-oK-B7D">
-                                <rect key="frame" x="32.5" y="165" width="96" height="29.5"/>
+                                <rect key="frame" x="32.5" y="165.5" width="96" height="29.5"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo restante:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnb-Lu-yVY">
-                                <rect key="frame" x="84" y="228" width="152" height="24.5"/>
+                                <rect key="frame" x="84.5" y="228" width="152" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -750,7 +750,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nave 82" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYm-05-Ixv">
-                                <rect key="frame" x="205" y="167" width="70" height="25"/>
+                                <rect key="frame" x="205" y="167.5" width="70" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1026,13 +1026,13 @@
         <!--Profile-->
         <scene sceneID="5Xe-Tl-57t">
             <objects>
-                <viewController id="d7d-ZX-tHb" customClass="Profile" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Profile" id="d7d-ZX-tHb" customClass="Profile" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MYd-DI-MYU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perfil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYM-xj-8Vx">
-                                <rect key="frame" x="80" y="83.5" width="160" height="25"/>
+                                <rect key="frame" x="80" y="84" width="160" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1054,13 +1054,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conductor(a)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQq-Ex-Euz">
-                                <rect key="frame" x="113.5" y="249" width="93.5" height="21"/>
+                                <rect key="frame" x="114" y="249" width="93.5" height="21"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="17"/>
                                 <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating: X.Y" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="270-xa-rYE">
-                                <rect key="frame" x="112.5" y="275" width="95.5" height="25"/>
+                                <rect key="frame" x="113" y="275" width="95.5" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1442,7 +1442,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cambiar Contraseña" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccO-bK-6gH">
-                                <rect key="frame" x="70.5" y="83.5" width="180" height="25"/>
+                                <rect key="frame" x="71" y="84" width="179.5" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1591,7 +1591,6 @@
         <image name="vwlogo" width="520" height="518"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SGu-cP-RF1"/>
         <segue reference="09r-QY-srj"/>
         <segue reference="MQK-4q-qzK"/>
     </inferredMetricsTieBreakers>

@@ -55,7 +55,7 @@ class PostTableViewController: UITableViewController {
         // Reinitialize the posts array for values of the other type.
         posts = [Post]()
         self.hardcodeLoading()
-        //self.performLoading()
+        //_ = self.performLoading()
     }
     
     func hardcodeLoading() {
@@ -63,16 +63,16 @@ class PostTableViewController: UITableViewController {
             let string = "Mantenimiento del motor\nMDM-817\nRevision del vehiculo\nRVV-812\nMantenimiento preventivo\nMPR-901"
             let data = string.data(using: String.Encoding(rawValue: String.Encoding.ascii.rawValue))
             
-            self.sendResult(data: data!)
+            _ = self.sendResult(data: data!)
         } else if typeGiven == "Fallas" {
             let string = "Falla de Motor\nXYZ-781\nSobrecalentamiento\nSBC-681"
             let data = string.data(using: String.Encoding(rawValue: String.Encoding.ascii.rawValue))
             
-            self.sendResult(data: data!)
+            _ = self.sendResult(data: data!)
         }
     }
     
-    func performLoading() {
+    func performLoading() -> Bool {
         // Prevents multiple data task sessions.
         if dataTask != nil {
             dataTask?.cancel()
@@ -97,23 +97,29 @@ class PostTableViewController: UITableViewController {
             } else if let httpResponse = response as? HTTPURLResponse {
                 if httpResponse.statusCode == 200 {
                     DispatchQueue.main.async {
-                        self.sendResult(data: data!)
+                        _ = self.sendResult(data: data!)
                     }
                 }
             }
         }
         dataTask?.resume()
+        return true
     }
     
-    func sendResult(data: Data) {
+    func sendResult(data: Data) -> Bool {
         // The result given is a String. The expected value for this example is the following.
         // Motor failure    (Description for each post)
         // MF-09            (Error code for each post)
         let value = NSString(data: data, encoding: String.Encoding.ascii.rawValue)
         let valueArray : [String] = (value?.components(separatedBy: "\n"))!
         
+        if valueArray.count % 2 != 0 {
+            return false
+        }
+        
         // Create the necessary amount of elements for the TableView.
         self.loadPosts(valueArray: valueArray)
+        return true
     }
     
     func loadPosts(valueArray : [String]) {

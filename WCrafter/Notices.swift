@@ -48,7 +48,6 @@ class Notices: UIViewController {
     func defineType() {
         let option = segmented.selectedSegmentIndex
         typeSent = segmented.titleForSegment(at: option)!
-        
     }
     
 }

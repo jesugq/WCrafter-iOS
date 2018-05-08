@@ -16,7 +16,7 @@ class Passenger: UIViewController {
     }
 
     @IBAction func more(_ sender: UITapGestureRecognizer) {
-        if cont == 20{
+        if !canIncrease() {
             let alertController = UIAlertController(title: "Error", message:
                 "No puedes llevar más de 20 pasajeros.", preferredStyle: UIAlertControllerStyle.alert)
             let action = UIAlertAction(title: "OK", style: .default)
@@ -29,11 +29,19 @@ class Passenger: UIViewController {
     }
     
     @IBAction func less(_ sender: UITapGestureRecognizer) {
-        if cont == 0 {
+        if !canDecrease() {
             number.text = "\(cont)"
         } else {
             cont-=1
             number.text = "\(cont)"
         }
+    }
+    
+    func canIncrease() -> Bool {
+        return cont < 20
+    }
+    
+    func canDecrease() -> Bool {
+        return cont > 0
     }
 }
