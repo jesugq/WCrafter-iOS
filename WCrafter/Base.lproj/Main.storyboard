@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SbA-1E-4XL">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -26,37 +26,37 @@
             <objects>
                 <viewController title="Authentication" id="9pv-A4-QxB" customClass="Authentication" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vwlogo" translatesAutoresizingMaskIntoConstraints="NO" id="HCB-xh-M5x">
-                                <rect key="frame" x="122" y="118" width="131" height="131"/>
+                                <rect key="frame" x="104" y="76" width="112" height="112"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="HCB-xh-M5x" secondAttribute="height" multiplier="1:1" id="AFf-eQ-J7r"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VWM Servicio de Ruta Interno" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9S-MQ-ECz">
-                                <rect key="frame" x="56.5" y="259" width="262.5" height="49"/>
+                                <rect key="frame" x="48" y="198" width="224" height="49"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <color key="textColor" red="0.11334989219903946" green="0.12152969092130661" blue="0.1256859302520752" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.5001917481" green="0.5329533219" blue="0.56603372100000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z7C-Nr-aXr">
-                                <rect key="frame" x="37.5" y="328" width="300" height="30"/>
+                                <rect key="frame" x="32" y="267" width="256" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="Usuario"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tQy-ua-9u0">
-                                <rect key="frame" x="38" y="378" width="300" height="30"/>
+                                <rect key="frame" x="32.5" y="317" width="256" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="Contraseña"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLD-Cc-wou">
-                                <rect key="frame" x="75" y="428" width="225" height="31"/>
+                                <rect key="frame" x="64" y="367" width="192" height="31"/>
                                 <color key="backgroundColor" red="0.0033265808597207069" green="0.60010772943496704" blue="0.85194152593612671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="15"/>
                                 <state key="normal" title="Ingresar">
@@ -67,7 +67,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exP-ua-nQe">
-                                <rect key="frame" x="75" y="474" width="225" height="31"/>
+                                <rect key="frame" x="64" y="413" width="192" height="31"/>
                                 <color key="backgroundColor" red="0.0033265808597207069" green="0.60010772943496704" blue="0.85194152593612671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="15"/>
                                 <state key="normal" title="¿Olvidaste tu contraseña?">
@@ -137,7 +137,7 @@
             <objects>
                 <navigationController title="EntryNavigation" id="SbA-1E-4XL" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qfb-o4-Q6b">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -153,29 +153,29 @@
             <objects>
                 <viewController title="Selection" id="MVF-FS-2d4" customClass="Selection" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8kA-0w-yBm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saludos Patricia" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4P-fW-GTj">
-                                <rect key="frame" x="37.5" y="259" width="300" height="24.5"/>
+                                <rect key="frame" x="32" y="198" width="256" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <color key="textColor" red="0.11334989219903946" green="0.12152969092130661" blue="0.1256859302520752" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vwlogo" translatesAutoresizingMaskIntoConstraints="NO" id="eKv-Ow-DMm">
-                                <rect key="frame" x="122" y="118" width="131" height="131"/>
+                                <rect key="frame" x="104" y="76" width="112" height="112"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eKv-Ow-DMm" secondAttribute="height" multiplier="1:1" id="KbC-J8-6p1"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿En qué camioneta se encuentra?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lry-r3-euZ">
-                                <rect key="frame" x="37.5" y="283.5" width="300" height="18.5"/>
+                                <rect key="frame" x="32" y="222.5" width="256" height="18.5"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="15"/>
                                 <color key="textColor" red="0.32939437030000002" green="0.38705939049999999" blue="0.47363287209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clx-5w-DgE">
-                                <rect key="frame" x="37.5" y="312" width="300" height="345"/>
+                                <rect key="frame" x="32" y="251" width="256" height="219"/>
                                 <connections>
                                     <segue destination="PLy-L5-mEO" kind="embed" identifier="selectToContainer" id="atm-Hu-F6A"/>
                                 </connections>
@@ -233,29 +233,29 @@
             <objects>
                 <viewController id="jgs-R1-BaK" customClass="Confirmation" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PhT-MT-3Pv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7dh-zC-L4j">
-                                <rect key="frame" x="56.5" y="126.5" width="262.5" height="147.5"/>
+                                <rect key="frame" x="48" y="81" width="224" height="126"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7dh-zC-L4j" secondAttribute="height" multiplier="16:9" id="fyC-XY-4i4"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KQS-61-17" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5I-cM-AoK">
-                                <rect key="frame" x="37.5" y="304" width="300" height="24.5"/>
+                                <rect key="frame" x="32" y="237" width="256" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <color key="textColor" red="0.1133498922" green="0.1215296909" blue="0.1256859303" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Es ésta su camioneta?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVb-Px-8dd">
-                                <rect key="frame" x="37.5" y="328" width="300" height="18.5"/>
+                                <rect key="frame" x="32" y="261" width="256" height="18.5"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="15"/>
                                 <color key="textColor" red="0.32939437030000002" green="0.38705939049999999" blue="0.47363287209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5t2-tL-rEK">
-                                <rect key="frame" x="75" y="381.5" width="225" height="100"/>
+                                <rect key="frame" x="64" y="314.5" width="192" height="72"/>
                                 <color key="backgroundColor" red="0.00332658086" green="0.60010772940000001" blue="0.85194152590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="25"/>
                                 <state key="normal" title="Confirmar">
@@ -267,7 +267,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Maneje con precaución!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPq-yx-xqo">
-                                <rect key="frame" x="80" y="511.5" width="215" height="24.5"/>
+                                <rect key="frame" x="52.5" y="416.5" width="215" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <color key="textColor" red="0.1133498922" green="0.1215296909" blue="0.1256859303" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -328,7 +328,7 @@
             <objects>
                 <navigationController title="TabbedNavigation" id="meL-qu-xEv" customClass="ToppedViewController" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JoS-j6-ADr">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -344,12 +344,11 @@
             <objects>
                 <viewController title="Passengers" id="Ym6-Lw-ger" customClass="Passenger" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vJQ-Wq-Hfh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8M-w5-uW1" colorLabel="IBBuiltInLabel-Green">
-                                <rect key="frame" x="0.0" y="244" width="320" height="187"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8M-w5-uW1" colorLabel="IBBuiltInLabel-Green">
+                                <rect key="frame" x="0.0" y="240" width="320" height="240"/>
                                 <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -359,9 +358,8 @@
                                     <outletCollection property="gestureRecognizers" destination="A8w-mE-HWh" appends="YES" id="Cyh-DY-ECj"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXb-eu-3oe" colorLabel="IBBuiltInLabel-Green">
-                                <rect key="frame" x="0.0" y="53" width="320" height="194"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXb-eu-3oe" colorLabel="IBBuiltInLabel-Green">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
                                 <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -378,23 +376,46 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ah7-bN-K3n">
-                                <rect key="frame" x="130" y="207" width="60" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ah7-bN-K3n">
+                                <rect key="frame" x="96" y="192" width="128" height="96"/>
+                                <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="80"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow down" translatesAutoresizingMaskIntoConstraints="NO" id="XqS-qS-ECU">
-                                <rect key="frame" x="135" y="323" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow up" translatesAutoresizingMaskIntoConstraints="NO" id="QFM-aw-mFs">
+                                <rect key="frame" x="120" y="80.5" width="80" height="79.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QFM-aw-mFs" secondAttribute="height" multiplier="1:1" id="VTg-ui-l2R"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow up" translatesAutoresizingMaskIntoConstraints="NO" id="QFM-aw-mFs">
-                                <rect key="frame" x="135" y="102" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow down" translatesAutoresizingMaskIntoConstraints="NO" id="XqS-qS-ECU">
+                                <rect key="frame" x="120" y="320.5" width="80" height="79.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XqS-qS-ECU" secondAttribute="height" multiplier="1:1" id="Pwo-rv-9QI"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QFM-aw-mFs" firstAttribute="centerX" secondItem="vJQ-Wq-Hfh" secondAttribute="centerX" id="0De-9f-oWs"/>
+                            <constraint firstItem="gXb-eu-3oe" firstAttribute="centerY" secondItem="vJQ-Wq-Hfh" secondAttribute="centerY" multiplier="0.5" id="1e3-x8-XQB"/>
+                            <constraint firstItem="XqS-qS-ECU" firstAttribute="centerY" secondItem="vJQ-Wq-Hfh" secondAttribute="centerY" multiplier="1.5" id="1h8-AP-M8v"/>
+                            <constraint firstItem="C8M-w5-uW1" firstAttribute="height" secondItem="vJQ-Wq-Hfh" secondAttribute="height" multiplier="0.5" id="77L-BO-t4K"/>
+                            <constraint firstItem="Ah7-bN-K3n" firstAttribute="centerY" secondItem="vJQ-Wq-Hfh" secondAttribute="centerY" id="Bj6-nQ-DKi"/>
+                            <constraint firstItem="gXb-eu-3oe" firstAttribute="width" secondItem="vJQ-Wq-Hfh" secondAttribute="width" id="DVB-B4-JvR"/>
+                            <constraint firstItem="C8M-w5-uW1" firstAttribute="centerX" secondItem="vJQ-Wq-Hfh" secondAttribute="centerX" id="DkH-Vp-CLU"/>
+                            <constraint firstItem="QFM-aw-mFs" firstAttribute="width" secondItem="vJQ-Wq-Hfh" secondAttribute="width" multiplier="0.25" id="EP1-kH-lHr"/>
+                            <constraint firstItem="C8M-w5-uW1" firstAttribute="centerY" secondItem="vJQ-Wq-Hfh" secondAttribute="centerY" multiplier="1.5" id="HNl-zb-BQ7"/>
+                            <constraint firstItem="Ah7-bN-K3n" firstAttribute="height" secondItem="vJQ-Wq-Hfh" secondAttribute="height" multiplier="0.2" id="Hzh-dx-eQp"/>
+                            <constraint firstItem="Ah7-bN-K3n" firstAttribute="width" secondItem="vJQ-Wq-Hfh" secondAttribute="width" multiplier="0.4" id="Jih-Na-ePf"/>
+                            <constraint firstItem="Ah7-bN-K3n" firstAttribute="centerX" secondItem="vJQ-Wq-Hfh" secondAttribute="centerX" id="KZM-2V-d38"/>
+                            <constraint firstItem="gXb-eu-3oe" firstAttribute="height" secondItem="vJQ-Wq-Hfh" secondAttribute="height" multiplier="0.5" id="LWt-Ds-CnV"/>
+                            <constraint firstItem="gXb-eu-3oe" firstAttribute="centerX" secondItem="vJQ-Wq-Hfh" secondAttribute="centerX" id="Xxr-Z4-x6f"/>
+                            <constraint firstItem="XqS-qS-ECU" firstAttribute="centerX" secondItem="vJQ-Wq-Hfh" secondAttribute="centerX" id="Zt7-ip-rfP"/>
+                            <constraint firstItem="C8M-w5-uW1" firstAttribute="width" secondItem="vJQ-Wq-Hfh" secondAttribute="width" id="bNK-Wc-6NZ"/>
+                            <constraint firstItem="QFM-aw-mFs" firstAttribute="centerY" secondItem="vJQ-Wq-Hfh" secondAttribute="centerY" multiplier="0.5" id="wLj-Uh-1YC"/>
+                            <constraint firstItem="XqS-qS-ECU" firstAttribute="width" secondItem="vJQ-Wq-Hfh" secondAttribute="width" multiplier="0.25" id="wc1-FI-5Mc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ihg-Td-F47"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Registro" image="registro" id="pk4-Aw-cKm"/>
@@ -421,11 +442,11 @@
             <objects>
                 <viewController title="Notices" id="WIY-iG-3i1" customClass="Notices" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eWI-Ti-GZO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Rwh-Ee-2nj">
-                                <rect key="frame" x="19" y="79" width="337.5" height="29"/>
+                                <rect key="frame" x="16" y="79" width="288" height="29"/>
                                 <segments>
                                     <segment title="Notificaciones"/>
                                     <segment title="Fallas"/>
@@ -436,7 +457,7 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDl-NJ-Zu5">
-                                <rect key="frame" x="19" y="112" width="337.5" height="491"/>
+                                <rect key="frame" x="16" y="112" width="288" height="304"/>
                                 <connections>
                                     <segue destination="h0u-qE-kQZ" kind="embed" id="nrr-Iw-uUW"/>
                                 </connections>
@@ -468,26 +489,26 @@
             <objects>
                 <tableViewController title="Posts" id="h0u-qE-kQZ" customClass="PostTableViewController" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="O56-r1-M2r">
-                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="491"/>
+                        <rect key="frame" x="0.0" y="0.0" width="288" height="304"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Post" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Post" rowHeight="60" id="bJh-Zh-Ygd" userLabel="Post" customClass="PostTableViewCell" customModule="WCrafter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="337.5" height="60"/>
+                                <rect key="frame" x="0.0" y="28" width="288" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bJh-Zh-Ygd" id="4XJ-n8-h84">
-                                    <rect key="frame" x="0.0" y="0.0" width="337.5" height="59.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Failure Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHI-50-4vr">
-                                            <rect key="frame" x="8.5" y="4.5" width="253" height="21"/>
+                                            <rect key="frame" x="7" y="4.5" width="216" height="21"/>
                                             <accessibility key="accessibilityConfiguration" identifier="desc"/>
                                             <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="17"/>
                                             <color key="textColor" red="0.109428294" green="0.117607899" blue="0.1217646971" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Failure Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRo-9f-hMB">
-                                            <rect key="frame" x="8.5" y="35.5" width="253" height="19"/>
+                                            <rect key="frame" x="7" y="35.5" width="216" height="19"/>
                                             <accessibility key="accessibilityConfiguration" identifier="code"/>
                                             <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="15"/>
                                             <color key="textColor" red="0.40101248029999997" green="0.45025414229999999" blue="0.50808888669999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -528,66 +549,66 @@
             <objects>
                 <viewController title="Alerts" id="XfC-bZ-qsa" customClass="Alerts" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N7K-DK-LaC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ibd-rc-hFl">
-                                <rect key="frame" x="303.5" y="110" width="51" height="46.5"/>
+                                <rect key="frame" x="255.5" y="79" width="51" height="34"/>
                                 <color key="onTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <action selector="accidentSelected:" destination="XfC-bZ-qsa" eventType="valueChanged" id="XTb-bD-Hhj"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WPI-5N-UVc">
-                                <rect key="frame" x="303.5" y="184" width="51" height="31"/>
+                                <rect key="frame" x="255.5" y="134" width="51" height="31"/>
                                 <color key="onTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <action selector="obstructionSelected:" destination="XfC-bZ-qsa" eventType="valueChanged" id="ZR4-zY-iE7"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y0p-n5-9XJ">
-                                <rect key="frame" x="303" y="252" width="51" height="31"/>
+                                <rect key="frame" x="255" y="189" width="51" height="31"/>
                                 <color key="onTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <action selector="delaySelected:" destination="XfC-bZ-qsa" eventType="valueChanged" id="ZAW-Ki-O8C"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mf4-VB-pgT">
-                                <rect key="frame" x="303" y="318" width="51" height="31"/>
+                                <rect key="frame" x="255" y="241.5" width="51" height="31"/>
                                 <color key="onTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <action selector="otherSelected:" destination="XfC-bZ-qsa" eventType="valueChanged" id="g6o-2w-wCD"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accidente" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9m-Nq-u5W">
-                                <rect key="frame" x="19" y="110" width="187.5" height="46.5"/>
+                                <rect key="frame" x="16" y="79" width="160" height="34"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obstrucción" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AC-1g-Q5a">
-                                <rect key="frame" x="19" y="176.5" width="187.5" height="47"/>
+                                <rect key="frame" x="16" y="133" width="160" height="34"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retraso" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j5-jt-rTc">
-                                <rect key="frame" x="19" y="243.5" width="187.5" height="47"/>
+                                <rect key="frame" x="16" y="187" width="160" height="33.5"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Otro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyV-DC-DMK">
-                                <rect key="frame" x="19" y="310.5" width="187.5" height="47"/>
+                                <rect key="frame" x="16" y="240.5" width="160" height="34"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jow-SW-7uO">
-                                <rect key="frame" x="94" y="377.5" width="187.5" height="21"/>
+                                <rect key="frame" x="80" y="294.5" width="160" height="21"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comentarios" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7y-0b-wIl">
-                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="21"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="21"/>
                                         <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -598,13 +619,13 @@
                                 </constraints>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FFM-4X-Man">
-                                <rect key="frame" x="19" y="418.5" width="337.5" height="30"/>
+                                <rect key="frame" x="16" y="335.5" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVY-Wb-NM4">
-                                <rect key="frame" x="94" y="468.5" width="187.5" height="31"/>
+                                <rect key="frame" x="80" y="385.5" width="160" height="31"/>
                                 <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="15"/>
                                 <state key="normal" title="Reportar">
@@ -675,7 +696,7 @@
             <objects>
                 <viewController title="Routes" id="joZ-h5-w1X" customClass="Destination" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WSL-u5-I6K">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Origen:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Op0-Vu-sKo">
@@ -692,57 +713,70 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Origen:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0o4-s4-z0h">
-                                <rect key="frame" x="37" y="97" width="95" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origen:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0o4-s4-z0h">
+                                <rect key="frame" x="32" y="105.5" width="96" height="29.5"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Destino:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncl-oK-B7D">
-                                <rect key="frame" x="37" y="163" width="133" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destino:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncl-oK-B7D">
+                                <rect key="frame" x="32.5" y="165" width="96" height="29.5"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tiempo restante:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnb-Lu-yVY">
-                                <rect key="frame" x="96" y="254" width="129" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo restante:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnb-Lu-yVY">
+                                <rect key="frame" x="84" y="228" width="152" height="24.5"/>
+                                <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nave 82" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYm-05-Ixv">
-                                <rect key="frame" x="188" y="167" width="91" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¡A tiempo!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1O4-Jk-enT">
-                                <rect key="frame" x="92" y="333" width="136" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡A tiempo!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1O4-Jk-enT">
+                                <rect key="frame" x="92" y="341.5" width="136" height="37"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqv-8C-Jmg">
-                                <rect key="frame" x="128" y="283" width="64" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqv-8C-Jmg">
+                                <rect key="frame" x="133.5" y="272.5" width="53.5" height="21"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nave 31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nx1-G7-kLY">
-                                <rect key="frame" x="188" y="104" width="84" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nave 31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nx1-G7-kLY">
+                                <rect key="frame" x="205" y="108" width="70" height="24.5"/>
+                                <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nave 82" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYm-05-Ixv">
+                                <rect key="frame" x="205" y="167" width="70" height="25"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nx1-G7-kLY" firstAttribute="centerY" secondItem="0o4-s4-z0h" secondAttribute="centerY" id="5hW-cL-Nbb"/>
+                            <constraint firstItem="Pnb-Lu-yVY" firstAttribute="centerX" secondItem="WSL-u5-I6K" secondAttribute="centerX" id="8SE-RU-l5i"/>
+                            <constraint firstItem="jYm-05-Ixv" firstAttribute="centerX" secondItem="WSL-u5-I6K" secondAttribute="centerX" multiplier="1.5" id="8fy-np-4m6"/>
+                            <constraint firstItem="1O4-Jk-enT" firstAttribute="centerX" secondItem="WSL-u5-I6K" secondAttribute="centerX" id="8tE-bL-xbv"/>
+                            <constraint firstItem="jYm-05-Ixv" firstAttribute="centerY" secondItem="Ncl-oK-B7D" secondAttribute="centerY" id="Civ-NH-Bap"/>
+                            <constraint firstItem="Kqv-8C-Jmg" firstAttribute="top" secondItem="Pnb-Lu-yVY" secondAttribute="bottom" constant="20" id="EHh-fe-ogL"/>
+                            <constraint firstItem="0o4-s4-z0h" firstAttribute="width" secondItem="WSL-u5-I6K" secondAttribute="width" multiplier="0.3" id="Iji-Su-W49"/>
+                            <constraint firstItem="Kqv-8C-Jmg" firstAttribute="centerX" secondItem="WSL-u5-I6K" secondAttribute="centerX" id="T69-Sb-dGH"/>
+                            <constraint firstItem="jYm-05-Ixv" firstAttribute="width" secondItem="Nx1-G7-kLY" secondAttribute="width" id="TqS-dz-rcF"/>
+                            <constraint firstItem="Ncl-oK-B7D" firstAttribute="centerX" secondItem="0o4-s4-z0h" secondAttribute="centerX" id="VGV-hU-X0r"/>
+                            <constraint firstItem="1O4-Jk-enT" firstAttribute="centerY" secondItem="WSL-u5-I6K" secondAttribute="centerY" multiplier="1.5" id="csN-Qb-e42"/>
+                            <constraint firstItem="Ncl-oK-B7D" firstAttribute="width" secondItem="0o4-s4-z0h" secondAttribute="width" id="ekK-4y-cYS"/>
+                            <constraint firstItem="0o4-s4-z0h" firstAttribute="centerX" secondItem="WSL-u5-I6K" secondAttribute="centerX" multiplier="0.5" id="i2d-68-PM0"/>
+                            <constraint firstItem="Pnb-Lu-yVY" firstAttribute="centerY" secondItem="WSL-u5-I6K" secondAttribute="centerY" id="klL-Tp-BC7"/>
+                            <constraint firstItem="Ncl-oK-B7D" firstAttribute="top" secondItem="0o4-s4-z0h" secondAttribute="bottom" constant="30" id="oKs-NO-Lke"/>
+                            <constraint firstItem="Nx1-G7-kLY" firstAttribute="centerX" secondItem="WSL-u5-I6K" secondAttribute="centerX" multiplier="1.5" id="qdX-hc-eGz"/>
+                            <constraint firstItem="0o4-s4-z0h" firstAttribute="centerY" secondItem="WSL-u5-I6K" secondAttribute="centerY" multiplier="0.5" id="t0H-Mz-E8y"/>
+                            <constraint firstItem="Ncl-oK-B7D" firstAttribute="centerX" secondItem="WSL-u5-I6K" secondAttribute="centerX" multiplier="0.5" id="wA4-td-q4p"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="l9l-RT-gES"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Destinos" image="location" id="C4R-db-W3m"/>
@@ -794,7 +828,7 @@
                             </button>
                         </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="DiD-bo-c7H">
-                            <rect key="frame" x="187.5" y="22" width="0.0" height="0.0"/>
+                            <rect key="frame" x="160" y="22" width="0.0" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volkswagen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLg-BP-Cf5">
@@ -813,7 +847,7 @@
                         <rightBarButtonItems>
                             <barButtonItem image="user" landscapeImage="user" id="p9a-WO-ODz">
                                 <button key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" id="aSL-mH-U9U">
-                                    <rect key="frame" x="329" y="7" width="30" height="30"/>
+                                    <rect key="frame" x="274" y="7" width="30" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="sos"/>
                                     <connections>
@@ -824,7 +858,7 @@
                             </barButtonItem>
                             <barButtonItem image="logo" landscapeImage="logo" id="Roc-Lg-xpg">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FOH-Xd-hnC">
-                                    <rect key="frame" x="281" y="2" width="40" height="40"/>
+                                    <rect key="frame" x="226" y="2" width="40" height="40"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="user"/>
                                     <connections>
@@ -861,7 +895,7 @@
             <objects>
                 <navigationController id="7JT-1y-Rvl" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ex9-xo-tQm">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -877,11 +911,11 @@
             <objects>
                 <viewController id="fi4-ga-gl4" customClass="Emergencies" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a48-oS-hoB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xx-pd-xrI">
-                                <rect key="frame" x="56.5" y="217" width="262.5" height="100"/>
+                                <rect key="frame" x="48" y="156" width="224" height="72"/>
                                 <color key="backgroundColor" red="0.00332658086" green="0.60010772940000001" blue="0.85194152590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="25"/>
                                 <state key="normal" title="Bomberos">
@@ -894,7 +928,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UuA-EN-Bcn">
-                                <rect key="frame" x="56.5" y="350" width="262.5" height="100"/>
+                                <rect key="frame" x="48" y="252" width="224" height="72"/>
                                 <color key="backgroundColor" red="0.00332658086" green="0.60010772940000001" blue="0.85194152590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="25"/>
                                 <state key="normal" title="Seguridad">
@@ -907,7 +941,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZy-mE-Uer">
-                                <rect key="frame" x="56.5" y="483.5" width="262.5" height="100"/>
+                                <rect key="frame" x="48" y="348" width="224" height="72"/>
                                 <color key="backgroundColor" red="0.00332658086" green="0.60010772940000001" blue="0.85194152590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="25"/>
                                 <state key="normal" title="Servicio Médico">
@@ -920,7 +954,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emergencias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hj9-ow-klP">
-                                <rect key="frame" x="56.5" y="121" width="262.5" height="24.5"/>
+                                <rect key="frame" x="48" y="84" width="224" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -963,7 +997,7 @@
                             </button>
                         </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="RNA-lR-koz">
-                            <rect key="frame" x="187.5" y="22" width="0.0" height="0.0"/>
+                            <rect key="frame" x="160" y="22" width="0.0" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volkswagen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DM-xu-DoV">
@@ -994,17 +1028,17 @@
             <objects>
                 <viewController id="d7d-ZX-tHb" customClass="Profile" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MYd-DI-MYU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perfil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYM-xj-8Vx">
-                                <rect key="frame" x="94" y="121" width="187.5" height="25"/>
+                                <rect key="frame" x="80" y="83.5" width="160" height="25"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crafter1" translatesAutoresizingMaskIntoConstraints="NO" id="ZCt-k0-U9G">
-                                <rect key="frame" x="131.5" y="156" width="112.5" height="112.5"/>
+                                <rect key="frame" x="112" y="118.5" width="96" height="96"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZCt-k0-U9G" secondAttribute="height" multiplier="1:1" id="tVc-dL-cmX"/>
@@ -1014,25 +1048,25 @@
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patricia González" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMm-gU-K1p">
-                                <rect key="frame" x="37.5" y="273.5" width="300" height="24.5"/>
+                                <rect key="frame" x="32" y="219.5" width="256" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conductor(a)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQq-Ex-Euz">
-                                <rect key="frame" x="141" y="303" width="93.5" height="21"/>
+                                <rect key="frame" x="113.5" y="249" width="93.5" height="21"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="17"/>
                                 <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating: X.Y" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="270-xa-rYE">
-                                <rect key="frame" x="140" y="329" width="95.5" height="25"/>
+                                <rect key="frame" x="112.5" y="275" width="95.5" height="25"/>
                                 <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgl-y3-287">
-                                <rect key="frame" x="0.0" y="582.5" width="375" height="33"/>
+                                <rect key="frame" x="0.0" y="395.5" width="320" height="33"/>
                                 <color key="backgroundColor" red="0.00332658086" green="0.60010772940000001" blue="0.85194152590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="17"/>
                                 <state key="normal" title="    Cerrar Sesión">
@@ -1047,7 +1081,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohW-MY-2hq">
-                                <rect key="frame" x="0.0" y="542" width="375" height="33"/>
+                                <rect key="frame" x="0.0" y="355" width="320" height="33"/>
                                 <color key="backgroundColor" red="0.00332658086" green="0.60010772940000001" blue="0.85194152590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="17"/>
                                 <state key="normal" title="    Cambiar Contraseña">
@@ -1061,7 +1095,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4x3-3x-qsr">
-                                <rect key="frame" x="0.0" y="501.5" width="375" height="33"/>
+                                <rect key="frame" x="0.0" y="314.5" width="320" height="33"/>
                                 <color key="backgroundColor" red="0.00332658086" green="0.60010772940000001" blue="0.85194152590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="17"/>
                                 <state key="normal" title="    Comentarios">
@@ -1075,7 +1109,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6b-qx-B3H">
-                                <rect key="frame" x="0.0" y="461" width="375" height="33"/>
+                                <rect key="frame" x="0.0" y="274" width="320" height="33"/>
                                 <color key="backgroundColor" red="0.00332658086" green="0.60010772940000001" blue="0.85194152590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="VWText" family="VW Text" pointSize="17"/>
                                 <state key="normal" title="    Rendimiento">
@@ -1137,7 +1171,7 @@
                             </button>
                         </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="ytE-7F-ZYd">
-                            <rect key="frame" x="187.5" y="22" width="0.0" height="0.0"/>
+                            <rect key="frame" x="160" y="22" width="0.0" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volkswagen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0SO-pk-Mb7">
@@ -1179,7 +1213,7 @@
             <objects>
                 <navigationController id="QDV-Ph-irs" customClass="ProfileViewController" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3bj-rP-bz1">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1195,28 +1229,28 @@
             <objects>
                 <tableViewController id="epF-kN-6Zu" customClass="StatTableViewController" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ntm-QS-Bx6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Stat" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Stat" rowHeight="60" id="r17-9b-gV2" userLabel="Stat" customClass="StatTableViewCell" customModule="WCrafter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r17-9b-gV2" id="ELQ-Ol-BtZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W8s-he-skt">
-                                            <rect key="frame" x="17" y="0.0" width="59.5" height="59.5"/>
+                                            <rect key="frame" x="10.5" y="0.0" width="59.5" height="59.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="W8s-he-skt" secondAttribute="height" multiplier="1:1" id="E41-md-cXh"/>
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OLe-Tv-I5J">
-                                            <rect key="frame" x="94" y="5" width="281" height="21"/>
+                                            <rect key="frame" x="80" y="5" width="240" height="21"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistic Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9J-N7-TxM">
-                                                    <rect key="frame" x="0.0" y="0.0" width="281" height="21"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="21"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="desc"/>
                                                     <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="17"/>
                                                     <color key="textColor" red="0.109428294" green="0.117607899" blue="0.1217646971" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1225,7 +1259,7 @@
                                             </subviews>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistic Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bF3-ZU-sUt">
-                                            <rect key="frame" x="94" y="35.5" width="281" height="18.5"/>
+                                            <rect key="frame" x="80" y="35.5" width="240" height="18.5"/>
                                             <accessibility key="accessibilityConfiguration" identifier="desc"/>
                                             <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="15"/>
                                             <color key="textColor" red="0.40101248029999997" green="0.45025414229999999" blue="0.50808888669999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1262,7 +1296,7 @@
                         <nil key="title"/>
                         <barButtonItem key="backBarButtonItem" title="Menú" id="njP-fk-Xps"/>
                         <view key="titleView" contentMode="scaleToFill" id="UX8-nR-hys">
-                            <rect key="frame" x="187.5" y="22" width="0.0" height="0.0"/>
+                            <rect key="frame" x="160" y="22" width="0.0" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volkswagen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxg-Bz-ByA">
@@ -1289,26 +1323,26 @@
             <objects>
                 <tableViewController id="8AG-4i-GII" customClass="CommentTableViewController" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bgY-VY-4vy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Comment" rowHeight="60" id="ngB-3r-OhA" customClass="CommentTableViewCell" customModule="WCrafter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ngB-3r-OhA" id="Qeh-Ra-nwb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username : Rating" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBw-5U-Luo">
-                                            <rect key="frame" x="9.5" y="4.5" width="281" height="21"/>
+                                            <rect key="frame" x="8" y="4.5" width="240" height="21"/>
                                             <accessibility key="accessibilityConfiguration" identifier="desc"/>
                                             <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="17"/>
                                             <color key="textColor" red="0.109428294" green="0.117607899" blue="0.1217646971" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating description aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa🍆" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkD-fL-ZCp">
-                                            <rect key="frame" x="9.5" y="25.5" width="356" height="32.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating description aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkD-fL-ZCp">
+                                            <rect key="frame" x="8" y="25.5" width="304" height="32.5"/>
                                             <accessibility key="accessibilityConfiguration" identifier="code"/>
                                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
                                             <color key="textColor" red="0.40101248029999997" green="0.45025414229999999" blue="0.50808888669999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1341,7 +1375,7 @@
                         <nil key="title"/>
                         <barButtonItem key="backBarButtonItem" title="Menú" id="QaH-X4-TmH"/>
                         <view key="titleView" contentMode="scaleToFill" id="Fu2-3c-nhX">
-                            <rect key="frame" x="187.5" y="22" width="0.0" height="0.0"/>
+                            <rect key="frame" x="160" y="22" width="0.0" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volkswagen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8l-xE-Z9c">
@@ -1368,27 +1402,19 @@
             <objects>
                 <viewController id="4nq-2f-aMI" customClass="ChangePassword" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4rZ-2D-Liy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p83-Si-k9l">
-                                <rect key="frame" x="31" y="108" width="213" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p83-Si-k9l">
+                                <rect key="frame" x="24" y="116.5" width="240" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9uS-Ww-zgj">
-                                <rect key="frame" x="31" y="196" width="213" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKr-F3-oCb">
-                                <rect key="frame" x="189" y="385" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKr-F3-oCb">
+                                <rect key="frame" x="112" y="367.5" width="96" height="33"/>
                                 <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="17"/>
                                 <state key="normal" title="OK">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1397,43 +1423,67 @@
                                     <action selector="savePassword:" destination="4nq-2f-aMI" eventType="touchUpInside" id="RaP-Ph-zhO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contraseña actual: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUq-au-fxd">
-                                <rect key="frame" x="31" y="79" width="149" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña actual: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUq-au-fxd">
+                                <rect key="frame" x="28" y="85.5" width="168.5" height="21"/>
+                                <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nueva contraseña:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYS-Xy-BLJ">
-                                <rect key="frame" x="31" y="167" width="143" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nueva contraseña:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYS-Xy-BLJ">
+                                <rect key="frame" x="28" y="181.5" width="168.5" height="21"/>
+                                <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirmar contraseña:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpo-FF-vlE">
-                                <rect key="frame" x="31" y="234" width="171" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmar contraseña:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpo-FF-vlE">
+                                <rect key="frame" x="28" y="277.5" width="168.5" height="21"/>
+                                <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DO1-aA-jDz">
-                                <rect key="frame" x="31" y="263" width="213" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9uS-Ww-zgj">
+                                <rect key="frame" x="24" y="212.5" width="240" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DO1-aA-jDz">
+                                <rect key="frame" x="24" y="308.5" width="240" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="p83-Si-k9l" firstAttribute="width" secondItem="4rZ-2D-Liy" secondAttribute="width" multiplier="0.75" id="0YV-re-tS9"/>
+                            <constraint firstItem="p83-Si-k9l" firstAttribute="centerX" secondItem="4rZ-2D-Liy" secondAttribute="centerX" multiplier="0.9" id="2uf-CU-Ll1"/>
+                            <constraint firstItem="Vpo-FF-vlE" firstAttribute="width" secondItem="zYS-Xy-BLJ" secondAttribute="width" id="6f6-4y-IDx"/>
+                            <constraint firstItem="9uS-Ww-zgj" firstAttribute="width" secondItem="p83-Si-k9l" secondAttribute="width" id="6yo-ok-2PG"/>
+                            <constraint firstItem="p83-Si-k9l" firstAttribute="top" secondItem="mUq-au-fxd" secondAttribute="bottom" constant="10" id="FQJ-Zt-ynL"/>
+                            <constraint firstItem="fKr-F3-oCb" firstAttribute="centerY" secondItem="4rZ-2D-Liy" secondAttribute="centerY" multiplier="1.6" id="FZx-gh-xUd"/>
+                            <constraint firstItem="Vpo-FF-vlE" firstAttribute="centerY" secondItem="4rZ-2D-Liy" secondAttribute="centerY" multiplier="1.2" id="GTu-wB-g22"/>
+                            <constraint firstItem="fKr-F3-oCb" firstAttribute="centerX" secondItem="4rZ-2D-Liy" secondAttribute="centerX" id="Gby-v8-aU5"/>
+                            <constraint firstItem="fKr-F3-oCb" firstAttribute="width" secondItem="4rZ-2D-Liy" secondAttribute="width" multiplier="0.3" id="HY9-ji-ydf"/>
+                            <constraint firstItem="DO1-aA-jDz" firstAttribute="width" secondItem="9uS-Ww-zgj" secondAttribute="width" id="LOA-gc-JmB"/>
+                            <constraint firstItem="mUq-au-fxd" firstAttribute="centerX" secondItem="4rZ-2D-Liy" secondAttribute="centerX" multiplier="0.7" id="Nmc-wO-tbX"/>
+                            <constraint firstItem="9uS-Ww-zgj" firstAttribute="top" secondItem="zYS-Xy-BLJ" secondAttribute="bottom" constant="10" id="Pkh-Wd-JG6"/>
+                            <constraint firstItem="Vpo-FF-vlE" firstAttribute="centerX" secondItem="zYS-Xy-BLJ" secondAttribute="centerX" id="TJo-MQ-GjR"/>
+                            <constraint firstItem="zYS-Xy-BLJ" firstAttribute="width" secondItem="mUq-au-fxd" secondAttribute="width" id="WSS-h4-2It"/>
+                            <constraint firstItem="9uS-Ww-zgj" firstAttribute="centerX" secondItem="4rZ-2D-Liy" secondAttribute="centerX" multiplier="0.9" id="e22-X7-ecI"/>
+                            <constraint firstItem="zYS-Xy-BLJ" firstAttribute="centerX" secondItem="mUq-au-fxd" secondAttribute="centerX" id="fYX-cL-oal"/>
+                            <constraint firstItem="DO1-aA-jDz" firstAttribute="centerX" secondItem="9uS-Ww-zgj" secondAttribute="centerX" id="kg2-Mc-4so"/>
+                            <constraint firstItem="mUq-au-fxd" firstAttribute="centerY" secondItem="4rZ-2D-Liy" secondAttribute="centerY" multiplier="0.4" id="q4o-m4-wm0"/>
+                            <constraint firstItem="zYS-Xy-BLJ" firstAttribute="centerY" secondItem="4rZ-2D-Liy" secondAttribute="centerY" multiplier="0.8" id="rf3-e5-B82"/>
+                            <constraint firstItem="DO1-aA-jDz" firstAttribute="top" secondItem="Vpo-FF-vlE" secondAttribute="bottom" constant="10" id="sv6-Y2-Yps"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="c2C-hb-pLX"/>
                     </view>
                     <navigationItem key="navigationItem" id="bg9-Mi-Fiw">
                         <nil key="title"/>
                         <barButtonItem key="backBarButtonItem" title="Menú" id="SLt-OY-S3l"/>
                         <view key="titleView" contentMode="scaleToFill" id="WpO-kh-8X9">
-                            <rect key="frame" x="187.5" y="22" width="0.0" height="0.0"/>
+                            <rect key="frame" x="160" y="22" width="0.0" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volkswagen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOU-cv-HPb">
@@ -1466,15 +1516,15 @@
             <objects>
                 <tableViewController title="Crafters" id="PLy-L5-mEO" customClass="CrafterTableViewController" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zkx-6c-UsP">
-                        <rect key="frame" x="0.0" y="0.0" width="300" height="345"/>
+                        <rect key="frame" x="0.0" y="0.0" width="256" height="219"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Crafter" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Crafter" rowHeight="60" id="BRK-XC-xWv" customClass="CrafterTableViewCell" customModule="WCrafter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="300" height="60"/>
+                                <rect key="frame" x="0.0" y="28" width="256" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BRK-XC-xWv" id="8ri-JB-fDP">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="59.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="256" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crafter1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BA5-HW-YzN">
@@ -1533,7 +1583,6 @@
         <image name="vwlogo" width="520" height="518"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SGu-cP-RF1"/>
         <segue reference="09r-QY-srj"/>
         <segue reference="MQK-4q-qzK"/>
     </inferredMetricsTieBreakers>
