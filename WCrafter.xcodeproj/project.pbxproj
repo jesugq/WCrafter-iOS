@@ -43,6 +43,7 @@
 		FBC4EDD920A111BA00DDF506 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4EDD820A111BA00DDF506 /* Comment.swift */; };
 		FBC4EDDB20A1138A00DDF506 /* CommentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4EDDA20A1138A00DDF506 /* CommentTableViewController.swift */; };
 		FBC4EDDD20A11A9A00DDF506 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4EDDC20A11A9A00DDF506 /* CommentTableViewCell.swift */; };
+		FBC4EDDF20A1337800DDF506 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4EDDE20A1337800DDF506 /* ProfileViewController.swift */; };
 		FBE4A3822076B11C008EFCD2 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE4A3812076B11C008EFCD2 /* Selection.swift */; };
 		FBF69791208E966800424AE3 /* CrafterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF69790208E966800424AE3 /* CrafterTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -107,6 +108,7 @@
 		FBC4EDD820A111BA00DDF506 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		FBC4EDDA20A1138A00DDF506 /* CommentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewController.swift; sourceTree = "<group>"; };
 		FBC4EDDC20A11A9A00DDF506 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		FBC4EDDE20A1337800DDF506 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FBE4A3812076B11C008EFCD2 /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
 		FBF69790208E966800424AE3 /* CrafterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrafterTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +179,7 @@
 				FB0B741D2095158B003FF85D /* PostTableViewCell.swift */,
 				FB3CE98920962EEC005DC9F2 /* Alerts.swift */,
 				FB3CE98B209644D2005DC9F2 /* Emergencies.swift */,
+				FBC4EDDE20A1337800DDF506 /* ProfileViewController.swift */,
 				FB3CE9902096878C005DC9F2 /* Profile.swift */,
 				FB9F0A2C209A58E300BCC82A /* StatTableViewController.swift */,
 				FB9F0A2A209A453300BCC82A /* Stat.swift */,
@@ -379,6 +382,7 @@
 				FB9F0A2B209A453300BCC82A /* Stat.swift in Sources */,
 				FB3CE98E209647DC005DC9F2 /* TabbedViewController.swift in Sources */,
 				FB260AA02091549E00890A3D /* Passenger.swift in Sources */,
+				FBC4EDDF20A1337800DDF506 /* ProfileViewController.swift in Sources */,
 				FB276FD9209FA25500E4ECCD /* ChangePassword.swift in Sources */,
 				FBF69791208E966800424AE3 /* CrafterTableViewController.swift in Sources */,
 				FB9F0A27209A3DC100BCC82A /* ToppedViewController.swift in Sources */,
