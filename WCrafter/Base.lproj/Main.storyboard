@@ -1126,7 +1126,7 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Stat" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Stat" rowHeight="60" id="r17-9b-gV2" userLabel="Stat" customClass="StatTableViewCell" customModule="WCrafter" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r17-9b-gV2" id="ELQ-Ol-BtZ" customClass="SKView">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r17-9b-gV2" id="ELQ-Ol-BtZ">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -1208,55 +1208,52 @@
             </objects>
             <point key="canvasLocation" x="184" y="1290"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Comment Table View Controller-->
         <scene sceneID="Plg-i6-UsX">
             <objects>
-                <tableViewController id="8AG-4i-GII" sceneMemberID="viewController">
+                <tableViewController id="8AG-4i-GII" customClass="CommentTableViewController" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bgY-VY-4vy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Comment" rowHeight="80" id="ngB-3r-OhA">
-                                <rect key="frame" x="0.0" y="28" width="320" height="80"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Comment" rowHeight="60" id="ngB-3r-OhA" customClass="CommentTableViewCell" customModule="WCrafter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ngB-3r-OhA" id="Qeh-Ra-nwb">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username : Rating" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBw-5U-Luo">
-                                            <rect key="frame" x="8" y="1.5" width="240" height="21"/>
+                                            <rect key="frame" x="8" y="4.5" width="240" height="21"/>
                                             <accessibility key="accessibilityConfiguration" identifier="desc"/>
                                             <fontDescription key="fontDescription" name="VWHead" family="VW Head" pointSize="17"/>
                                             <color key="textColor" red="0.109428294" green="0.117607899" blue="0.1217646971" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkD-fL-ZCp">
-                                            <rect key="frame" x="8" y="24" width="304" height="39.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating description aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa🍆" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkD-fL-ZCp">
+                                            <rect key="frame" x="8" y="25.5" width="304" height="32.5"/>
                                             <accessibility key="accessibilityConfiguration" identifier="code"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Failure Code">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.40101248029999997" green="0.45025414229999999" blue="0.50808888669999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                            <color key="textColor" red="0.40101248029999997" green="0.45025414229999999" blue="0.50808888669999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.95294117647058818" green="0.96078431372549022" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="lkD-fL-ZCp" firstAttribute="width" secondItem="Qeh-Ra-nwb" secondAttribute="width" multiplier="0.95" id="CpX-dW-okl"/>
-                                        <constraint firstItem="lkD-fL-ZCp" firstAttribute="height" secondItem="Qeh-Ra-nwb" secondAttribute="height" multiplier="0.5" id="TaX-fz-Jbq"/>
+                                        <constraint firstItem="lkD-fL-ZCp" firstAttribute="height" secondItem="Qeh-Ra-nwb" secondAttribute="height" multiplier="0.55" id="TaX-fz-Jbq"/>
                                         <constraint firstItem="lkD-fL-ZCp" firstAttribute="centerX" secondItem="Qeh-Ra-nwb" secondAttribute="centerX" id="WpM-GL-ie3"/>
-                                        <constraint firstItem="lkD-fL-ZCp" firstAttribute="centerY" secondItem="Qeh-Ra-nwb" secondAttribute="centerY" multiplier="1.1" id="YCQ-2c-cCb"/>
+                                        <constraint firstItem="lkD-fL-ZCp" firstAttribute="centerY" secondItem="Qeh-Ra-nwb" secondAttribute="centerY" multiplier="1.4" id="YCQ-2c-cCb"/>
                                         <constraint firstItem="VBw-5U-Luo" firstAttribute="centerX" secondItem="Qeh-Ra-nwb" secondAttribute="centerX" multiplier="0.8" id="ZPr-s3-YWr"/>
-                                        <constraint firstItem="VBw-5U-Luo" firstAttribute="centerY" secondItem="Qeh-Ra-nwb" secondAttribute="centerY" multiplier="0.3" id="biF-yJ-Yp2"/>
+                                        <constraint firstItem="VBw-5U-Luo" firstAttribute="centerY" secondItem="Qeh-Ra-nwb" secondAttribute="centerY" multiplier="0.5" id="biF-yJ-Yp2"/>
                                         <constraint firstItem="VBw-5U-Luo" firstAttribute="width" secondItem="Qeh-Ra-nwb" secondAttribute="width" multiplier="0.75" id="qvq-P7-Z0F"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="comment" destination="lkD-fL-ZCp" id="tlb-HY-e1B"/>
+                                    <outlet property="usernameRating" destination="VBw-5U-Luo" id="xdx-IR-GZT"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

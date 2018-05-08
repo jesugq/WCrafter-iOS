@@ -40,6 +40,9 @@
 		FBA015DA2093DC2400EC2F9C /* VWText-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBA015D62093DC2400EC2F9C /* VWText-BoldItalic.otf */; };
 		FBA015DB2093DC2400EC2F9C /* VWText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBA015D72093DC2400EC2F9C /* VWText-Regular.otf */; };
 		FBA015DC2093DC2400EC2F9C /* VWText-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBA015D82093DC2400EC2F9C /* VWText-RegularItalic.otf */; };
+		FBC4EDD920A111BA00DDF506 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4EDD820A111BA00DDF506 /* Comment.swift */; };
+		FBC4EDDB20A1138A00DDF506 /* CommentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4EDDA20A1138A00DDF506 /* CommentTableViewController.swift */; };
+		FBC4EDDD20A11A9A00DDF506 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4EDDC20A11A9A00DDF506 /* CommentTableViewCell.swift */; };
 		FBE4A3822076B11C008EFCD2 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE4A3812076B11C008EFCD2 /* Selection.swift */; };
 		FBF69791208E966800424AE3 /* CrafterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF69790208E966800424AE3 /* CrafterTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -101,6 +104,9 @@
 		FBA015D62093DC2400EC2F9C /* VWText-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VWText-BoldItalic.otf"; sourceTree = "<group>"; };
 		FBA015D72093DC2400EC2F9C /* VWText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VWText-Regular.otf"; sourceTree = "<group>"; };
 		FBA015D82093DC2400EC2F9C /* VWText-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VWText-RegularItalic.otf"; sourceTree = "<group>"; };
+		FBC4EDD820A111BA00DDF506 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		FBC4EDDA20A1138A00DDF506 /* CommentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewController.swift; sourceTree = "<group>"; };
+		FBC4EDDC20A11A9A00DDF506 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		FBE4A3812076B11C008EFCD2 /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
 		FBF69790208E966800424AE3 /* CrafterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrafterTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,8 +182,11 @@
 				FB9F0A2A209A453300BCC82A /* Stat.swift */,
 				FB9F0A2E209A5CD900BCC82A /* StatTableViewCell.swift */,
 				FB276FD8209FA25500E4ECCD /* ChangePassword.swift */,
-				FB03D01820509B3F00AFEA84 /* Main.storyboard */,
+				FBC4EDDA20A1138A00DDF506 /* CommentTableViewController.swift */,
+				FBC4EDD820A111BA00DDF506 /* Comment.swift */,
+				FBC4EDDC20A11A9A00DDF506 /* CommentTableViewCell.swift */,
 				FB03D01B20509B3F00AFEA84 /* Assets.xcassets */,
+				FB03D01820509B3F00AFEA84 /* Main.storyboard */,
 				FB03D01D20509B3F00AFEA84 /* LaunchScreen.storyboard */,
 				FB03D02020509B3F00AFEA84 /* Info.plist */,
 			);
@@ -361,6 +370,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB0B741C20950E49003FF85D /* Post.swift in Sources */,
+				FBC4EDD920A111BA00DDF506 /* Comment.swift in Sources */,
+				FBC4EDDD20A11A9A00DDF506 /* CommentTableViewCell.swift in Sources */,
 				FB0B742020952573003FF85D /* PostTableViewController.swift in Sources */,
 				FB0B7418209509E2003FF85D /* Notices.swift in Sources */,
 				FB681310208E8DE100223332 /* Crafter.swift in Sources */,
@@ -377,6 +388,7 @@
 				FB3CE98A20962EEC005DC9F2 /* Alerts.swift in Sources */,
 				9EB5068B2098471F00F6F082 /* Destination.swift in Sources */,
 				FB03D01320509B3F00AFEA84 /* AppDelegate.swift in Sources */,
+				FBC4EDDB20A1138A00DDF506 /* CommentTableViewController.swift in Sources */,
 				FB9F0A2D209A58E300BCC82A /* StatTableViewController.swift in Sources */,
 				FB03D01520509B3F00AFEA84 /* Authentication.swift in Sources */,
 				FB68130E208E646E00223332 /* CrafterTableViewCell.swift in Sources */,

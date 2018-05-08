@@ -29,6 +29,14 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         super.didReceiveMemoryWarning()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Prepare the Selection ViewController to receive the username as the name to present.
+        if segue.identifier == "profileToComments" {
+            let newView = segue.destination as! CommentTableViewController
+            newView.userGiven = userGiven
+        }
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         // Dismiss itself with no changes to the gallery.
         self.dismiss(animated: true, completion: { () -> Void in })
@@ -38,6 +46,7 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         }
         self.saveImage()
     }
+    
     
     //
     // UI Actions

@@ -65,7 +65,7 @@ class PostTableViewController: UITableViewController {
             
             self.sendResult(data: data!)
         } else if typeGiven == "Fallas" {
-            let string = "Falla de Motor\nXYZ-781\nSobrecalentamiento de Motor\nSBC-681"
+            let string = "Falla de Motor\nXYZ-781\nSobrecalentamiento\nSBC-681"
             let data = string.data(using: String.Encoding(rawValue: String.Encoding.ascii.rawValue))
             
             self.sendResult(data: data!)

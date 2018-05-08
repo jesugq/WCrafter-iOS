@@ -4,8 +4,8 @@ class Stat {
     
     // Attributes
     var photo : UIImage
-    var value : String = ""
-    var descr : String = ""
+    var value : String
+    var descr : String
     
     // Constructor
     init?(type: String, value: String) {
