@@ -55,17 +55,17 @@ class CommentTableViewController: UITableViewController {
     //
     func defineComments() {
         self.hardcodeLoading()
-        //self.performLoading()
+        //_ = self.performLoading()
     }
     
     func hardcodeLoading() {
         let string = "Fer\n4.5\nMuy bien.\nChucho\n5\nNice.\nPaola\n3.5\nEstuvo bien.\nHumberto\n2\nNo."
         let data = string.data(using: String.Encoding(rawValue: String.Encoding.ascii.rawValue))
         
-        self.sendResult(data: data!)
+        _ = self.sendResult(data: data!)
     }
     
-    func performLoading(){
+    func performLoading() -> Bool {
         // Prevents multiple data task sessions.
         if dataTask != nil {
             dataTask?.cancel()
@@ -87,24 +87,29 @@ class CommentTableViewController: UITableViewController {
             } else if let httpResponse = response as? HTTPURLResponse {
                 if httpResponse.statusCode == 200 {
                     DispatchQueue.main.async{
-                        self.sendResult(data: data!)
+                        _ = self.sendResult(data: data!)
                     }
                 }
             }
         }
         dataTask?.resume()
-        return
+        return true
     }
     
-    func sendResult(data: Data){
+    func sendResult(data: Data) -> Bool{
         // The result given is a String. The expected value for this example is the following.
         // crafter1     (id of each car image)
         // KJS-91-21    (license plate of each car)
         let value = NSString(data: data, encoding: String.Encoding.ascii.rawValue)
         let valueArray : [String] = (value?.components(separatedBy: "\n"))!;
         
+        if valueArray.count % 3 != 0 {
+            return false
+        }
+        
         // Create the necessary amount of elements in the TableView.
         self.loadComments(valueArray: valueArray)
+        return true
     }
     
     func loadComments(valueArray: [String]){

@@ -58,6 +58,10 @@ class ChangePassword: UIViewController {
     
     
     @IBAction func savePassword(_ sender: Any) {
+        _ = self.checkPasswords()
+    }
+    
+    func checkPasswords() -> Bool {
         // Check if the two new passwords are the same
         if newPassword.text != newPassword2.text{
             //If not, it asks again
@@ -66,6 +70,8 @@ class ChangePassword: UIViewController {
             let action = UIAlertAction(title: "OK", style: .default)
             alertController.addAction(action)
             self.present(alertController, animated: true, completion: nil)
+            
+            return false
         } else{
             // Prevents multiple data task sessions.
             if dataTask != nil {
@@ -100,26 +106,35 @@ class ChangePassword: UIViewController {
                 } else if let httpResponse = response as? HTTPURLResponse {
                     if httpResponse.statusCode == 200 {
                         DispatchQueue.main.async {
-                            self.verifyResult(data: data!)
+                            _ = self.verifyResult(data: data!)
                         }
                     }
                 }
             }
             dataTask?.resume()
+            return true
         }
     }
     
-    func verifyResult(data: Data){
+    func verifyResult(data: Data) -> Bool{
         // The result given is a String. The expected value for this example is the following.
         // true / false
         let value = NSString(data: data, encoding: String.Encoding.ascii.rawValue)
         
         // Advance to the next view, or send an alert of failure.
         if value == "true" {
-            performSegue(withIdentifier: "authToSelection", sender: self)
+            //Save in data base
+            let alertController = UIAlertController(title: "Correct", message:
+                "Contraseña guardada", preferredStyle: UIAlertControllerStyle.alert)
+            let action = UIAlertAction(title: "OK", style: .default)
+            alertController.addAction(action)
+            self.present(alertController, animated: true, completion: nil)
+            return true
         } else {
             let alertController = UIAlertController(title: "Incorrect", message:
                 "Contraseñas incorrectas", preferredStyle: UIAlertControllerStyle.alert)
-            self.present(alertController, animated: true, completion: nil)            }
+            self.present(alertController, animated: true, completion: nil)
+            return false
+        }
     }
 }

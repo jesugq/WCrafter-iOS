@@ -57,10 +57,10 @@ class StatTableViewController: UITableViewController {
         let string = "card\n3G1F08\nodometerdelta\n13.4\nroad\n8465 KM\nbattery\nRegular\nenginetime\n13 horas\nodometer\nRP\nspeed\n52 KM/hora\nspeedbreak\n8465\nengine\nRegular"
         let data = string.data(using: String.Encoding(rawValue: String.Encoding.ascii.rawValue))
         
-        self.sendResult(data: data!)
+        _ = self.sendResult(data: data!)
     }
     
-    func performLoading() {
+    func performLoading() -> Bool {
         // Prevents multiple data task sessions.
         if dataTask != nil {
             dataTask?.cancel()
@@ -68,7 +68,7 @@ class StatTableViewController: UITableViewController {
         
         // Temporary login website. This will be changed to VW's official url.
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        let url = NSURL(string: "http://www.iroseapps.com/moviles/Stats.php)")
+        let url = NSURL(string: "http://www.iroseapps.com/moviles/stats.php)")
         
         // Request information from an URL with a Data Task, calling function verifyResult() if successful.
         let request = URLRequest(url: url! as URL)
@@ -82,23 +82,29 @@ class StatTableViewController: UITableViewController {
             } else if let httpResponse = response as? HTTPURLResponse {
                 if httpResponse.statusCode == 200 {
                     DispatchQueue.main.async {
-                        self.sendResult(data: data!)
+                        _ = self.sendResult(data: data!)
                     }
                 }
             }
         }
         dataTask?.resume()
+        return true
     }
     
-    func sendResult(data: Data) {
+    func sendResult(data: Data) -> Bool {
         // The result given is a String. The expected value for this example is the following.
         // card     (statistic type)
         // 3G1F08   (statistic value)
         let value = NSString(data: data, encoding: String.Encoding.ascii.rawValue)
         let valueArray : [String] = (value?.components(separatedBy: "\n"))!
         
+        if valueArray.count % 2 != 0 {
+            return false
+        }
+        
         // Create the necessary amount of elements for the TableView.
         self.loadStats(valueArray: valueArray)
+        return true
     }
     
     func loadStats(valueArray: [String]) {

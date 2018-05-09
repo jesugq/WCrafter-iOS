@@ -31,6 +31,9 @@
 		FB918E6020A266D100061449 /* PassengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB918E5F20A266D100061449 /* PassengerTests.swift */; };
 		FB918E6220A2681900061449 /* PostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB918E6120A2681900061449 /* PostTests.swift */; };
 		FB918E6420A26DC200061449 /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB918E6320A26DC200061449 /* ProfileTests.swift */; };
+		FB918E6620A271A900061449 /* StatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB918E6520A271A900061449 /* StatTests.swift */; };
+		FB918E6820A277C800061449 /* ChangePasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB918E6720A277C800061449 /* ChangePasswordTests.swift */; };
+		FB918E6A20A27CDD00061449 /* CommentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB918E6920A27CDD00061449 /* CommentTests.swift */; };
 		FB9F0A27209A3DC100BCC82A /* ToppedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9F0A26209A3DC100BCC82A /* ToppedViewController.swift */; };
 		FB9F0A2B209A453300BCC82A /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9F0A2A209A453300BCC82A /* Stat.swift */; };
 		FB9F0A2D209A58E300BCC82A /* StatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9F0A2C209A58E300BCC82A /* StatTableViewController.swift */; };
@@ -99,6 +102,9 @@
 		FB918E5F20A266D100061449 /* PassengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerTests.swift; sourceTree = "<group>"; };
 		FB918E6120A2681900061449 /* PostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTests.swift; sourceTree = "<group>"; };
 		FB918E6320A26DC200061449 /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
+		FB918E6520A271A900061449 /* StatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTests.swift; sourceTree = "<group>"; };
+		FB918E6720A277C800061449 /* ChangePasswordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordTests.swift; sourceTree = "<group>"; };
+		FB918E6920A27CDD00061449 /* CommentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTests.swift; sourceTree = "<group>"; };
 		FB9F0A26209A3DC100BCC82A /* ToppedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppedViewController.swift; sourceTree = "<group>"; };
 		FB9F0A2A209A453300BCC82A /* Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
 		FB9F0A2C209A58E300BCC82A /* StatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTableViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +211,9 @@
 		FB03D02820509B3F00AFEA84 /* WCrafterTests */ = {
 			isa = PBXGroup;
 			children = (
+				FB918E6920A27CDD00061449 /* CommentTests.swift */,
+				FB918E6720A277C800061449 /* ChangePasswordTests.swift */,
+				FB918E6520A271A900061449 /* StatTests.swift */,
 				FB918E6320A26DC200061449 /* ProfileTests.swift */,
 				FB918E6120A2681900061449 /* PostTests.swift */,
 				FB918E5F20A266D100061449 /* PassengerTests.swift */,
@@ -417,8 +426,11 @@
 				FB918E5A20A235BE00061449 /* AuthenticationTests.swift in Sources */,
 				FB918E6020A266D100061449 /* PassengerTests.swift in Sources */,
 				FB918E5E20A23E4500061449 /* CrafterTests.swift in Sources */,
+				FB918E6A20A27CDD00061449 /* CommentTests.swift in Sources */,
 				FB918E6220A2681900061449 /* PostTests.swift in Sources */,
 				FB918E6420A26DC200061449 /* ProfileTests.swift in Sources */,
+				FB918E6620A271A900061449 /* StatTests.swift in Sources */,
+				FB918E6820A277C800061449 /* ChangePasswordTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

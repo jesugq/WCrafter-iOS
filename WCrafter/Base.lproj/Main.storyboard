@@ -1400,7 +1400,7 @@
         <!--Change Password-->
         <scene sceneID="JMY-jy-90j">
             <objects>
-                <viewController id="4nq-2f-aMI" customClass="ChangePassword" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChangePassword" id="4nq-2f-aMI" customClass="ChangePassword" customModule="WCrafter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4rZ-2D-Liy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
